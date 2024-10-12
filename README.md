@@ -1,7 +1,4 @@
----
-layout: page
-title: Arnau Marin-Llobet | Ph.D. Candidate
----
+
 # Hey, I'm Arnau
 
 Welcome to my webpage! It’s a simple placeholder for now, just to let you know I exist. I’m a Ph.D. student at Harvard SEAS, working on brain-machine interfaces and neuromorphic computing under the guidance of Prof. Jia Liu. My focus is on developing smarter ways for machines to learn and interact with brains, using brain-inspired algorithms and brain-like electronics.
