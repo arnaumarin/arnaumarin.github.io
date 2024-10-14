@@ -1,6 +1,6 @@
 
 # Hey, I'm Arnau
-Welcome to my webpage! It’s still a work in progress, but it's here to let you know I exist. I’m a Ph.D. student at Harvard SEAS, focusing on brain-machine interfaces under the guidance of Prof. Jia Liu. Right now, I'm exploring ways for machines to learn and interact with the brain, using brain-inspired algorithms and brain-like electronics.
+Welcome to my webpage! It’s still a work in progress, but it's here to let you know I exist. I’m a Ph.D. student at Harvard, focusing on brain-machine interfaces under the guidance of Prof. Jia Liu. Right now, I'm exploring ways for machines to learn and interact with the brain, using brain-inspired algorithms and brain-like electronics.
 
 I earned my B.Sc. in Electrical Engineering from UPC-Barcelona Tech in 2018, and along the way, I’ve had the opportunity to work at places like Intel Labs + ZHAW, IDIBAPS in Barcelona, the University of Montreal, and the University of Utah, among others.
 
