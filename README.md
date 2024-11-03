@@ -7,5 +7,4 @@ In the past, i earned my b.sc. in electrical engineering from upc-barcelona Tech
 It’s still a work in progress, but i’ll be adding updates soon, hopefully. In the meantime, here are a few photos taken by people i like:
 
 <img src="/images/picture.png" alt="Cambridge, MA" width="25%">
-<img src="/images/pictureplane.png" alt="Plane" width="25%">
 <img src="/images/picturesea.png" alt="Sea" width="25%">
