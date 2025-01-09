@@ -19,4 +19,4 @@ Previously, I had the privilege of working and collaborating with [Prof. Yulia S
 ## ✨ **Get in Touch!** ✨
 Please get in touch if you’re interested in my work in any form or want to collaborate, don’t hesitate to reach out! I'm always excited to hear from researchers, students and companies pursuing the same goals. If you work for a school or other research organisation and would be interested in hearing more about my work and computational neuroscience in general, I would be delighted to try help organise an outreach activity with you!
 
-Feel free to reach out by email or contact me on Bluesky :)
+You can find me by email or contacting me on Bluesky :)
