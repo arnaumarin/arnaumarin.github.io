@@ -9,7 +9,7 @@ redirect_from:
 
 Hello, thanks for visting! 
 
-Hi, I’m Arnau, a second-year PhD student at the Harvard John A. Paulson School of Engineering and Applied Sciences, where I’m fortunate to be advised by [Prof. Jia Liu](https://liulab.seas.harvard.edu/).
+Hi, I’m Arnau, a second-year PhD student at the Harvard John A. Paulson School of Engineering and Applied Sciences, where I’m very fortunate to be advised by [Prof. Jia Liu](https://liulab.seas.harvard.edu/).
 
 I'm trained in electrical engineering, signal processing, and bioinformatics. Currently, my research focuses on computational neuroscience, agentic AI, and developing flexible brain-computer interfaces to address neurological disorders.
 
