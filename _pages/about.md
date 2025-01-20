@@ -21,4 +21,4 @@ Please get in touch if you’re interested in my work in any form or want to col
 
 You can find me by email or contacting me on Bluesky :)
 
-<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=veWkSMHp1I0nj35Clcg0npU11sSePs1hI3Ir3tBUVSo&cl=ffffff&w=a"></script>
+<a href='https://mapmyvisitors.com/web/1bxfk'  title='Visit tracker'><img src='https://mapmyvisitors.com/map.png?cl=ffffff&w=284&t=n&d=veWkSMHp1I0nj35Clcg0npU11sSePs1hI3Ir3tBUVSo'/></a>
