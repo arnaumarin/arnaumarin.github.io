@@ -7,4 +7,4 @@ redirect_from:
   - "/nmp.html"
 ---
 
-Thanks for visiting this.. but there's nothing here. I'm lazy. 
+Thanks for visiting this.

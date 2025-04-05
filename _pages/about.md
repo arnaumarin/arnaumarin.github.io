@@ -15,10 +15,7 @@ I'm trained in electrical engineering, signal processing, and bioinformatics. Cu
 
 Previously, I had the privilege of working and collaborating with [Prof. Yulia Sandamirskaya](https://sandamirskaya.eu/) (Neuromorphic Computing Lab, Intel), [Prof. Mavi Sanchez-Vives](https://www.icrea.cat/community/icreas/17606/maria-victoria-sanchez-vives/) (ICREA and University of Barcelona), and [Prof. Benjamin Sanchez-Terrones](https://srl.ece.utah.edu/) (University of Utah), among others.
 
-
-## ✨ **Get in Touch!** ✨
-Please get in touch if you’re interested in my work in any form or want to collaborate, don’t hesitate to reach out! I'm always excited to hear from researchers, students and companies pursuing the same goals. If you work for a school or other research organisation and would be interested in hearing more about my work and computational neuroscience in general, I would be delighted to try help organise an outreach activity with you!
-
-You can find me by email or contacting me on Bluesky :)
+## **Get in Touch!**
+Please get in touch if you’re interested in my work in any form or want to collaborate, don’t hesitate to reach out! 
 
 <a href='https://mapmyvisitors.com/web/1bxfk'  title='Visit tracker'><img src='https://mapmyvisitors.com/map.png?cl=ffffff&w=284&t=n&d=veWkSMHp1I0nj35Clcg0npU11sSePs1hI3Ir3tBUVSo'/></a>
