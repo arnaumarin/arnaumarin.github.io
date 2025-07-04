@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Arnau Marin-Llobet"
-title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+title                    : "Arnau Marin-Llobet - PhD Student @ Harvard | AI · AI Agents · BCI"
+title_separator          : "|"
+name                     : &name "Arnau Marin-Llobet"
+description              : &description "PhD student at Harvard researching computational neuroscience, agentic AI, and brain-computer interfaces. Creator of SpikeAgent and BCI-Agent. Passionate about advancing neurotechnology and AI for science."
 url                      : https://arnaumarin.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "arnaumarin/arnaumarin.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -22,9 +22,9 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : ""
+  name             : "Arnau Marin-Llobet"
   pronouns         : # example: "she/her"  
-  bio              : "Summer 2022, Salt Lake City"
+  bio              : "PhD student @ Harvard | AI · AI Agents · BCI"
   location         : "Boston, MA"
   employer         : "Harvard University"
   uri              : # URL
@@ -58,7 +58,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "arnau-marin-llobet" # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -66,7 +66,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : # Username for X / Twitter
+  twitter          : "Arnauya" # Username for X / Twitter
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
@@ -89,7 +89,7 @@ breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
+# talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -127,21 +127,28 @@ bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
+# SEO Keywords
+keywords: "Arnau Marin-Llobet, Harvard PhD, computational neuroscience, agentic AI, brain-computer interfaces, BCI, SpikeAgent, neurotechnology, AI for science, machine learning, neural engineering"
+
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter "Arnauya"
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "profile.png"  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : "Person" # Person or Organization (defaults to Person)
+  name                   : "Arnau Marin-Llobet" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://twitter.com/Arnauya"
+    - "https://linkedin.com/in/arnau-marin-llobet"
+    - "https://github.com/arnaumarin"
+    - "https://bsky.app/profile/arnauya.bsky.social"
 
 
 # Analytics
@@ -212,18 +219,6 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -246,41 +241,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 
 # Sass/SCSS
