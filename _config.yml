@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Arnau Marin-Llobet - PhD Student @ Harvard | AI · AI Agents · BCI"
+title                    : "Arnau Marin-Llobet - PhD Student @ Harvard"
 title_separator          : "|"
 name                     : &name "Arnau Marin-Llobet"
-description              : &description "PhD student at Harvard researching computational neuroscience, agentic AI, and brain-computer interfaces. Creator of SpikeAgent and BCI-Agent. Passionate about advancing neurotechnology and AI for science."
+description              : &description "PhD student at Harvard researching computational neuroscience and neural engineering. Creator of SpikeAgent and BCI-Agent. Passionate about advancing neurotechnology and scientific discovery."
 url                      : https://arnaumarin.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "arnaumarin/arnaumarin.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Arnau Marin-Llobet"
   pronouns         : # example: "she/her"  
-  bio              : "PhD student @ Harvard | AI · AI Agents · BCI"
+  bio              : "PhD student @ Harvard"
   location         : "Boston, MA"
   employer         : "Harvard University"
   uri              : # URL
