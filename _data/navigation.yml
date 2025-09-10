@@ -1,3 +1,5 @@
-# Main navigation links (currently empty for minimal site)
+# Main navigation links
 
 main:
+  - title: "Media Coverage"
+    url: /media/
