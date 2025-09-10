@@ -5,8 +5,6 @@ excerpt: "Press coverage and media mentions of my research work."
 author_profile: true
 ---
 
-# Media Coverage
-
 ## Press & Articles
 
 ### 2025
