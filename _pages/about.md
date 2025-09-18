@@ -12,17 +12,19 @@ Hi there, thanks for vising my internet space.
 
 *My research is generously supported by fellowships from the Rafael del Pino Foundation, NSF NeuroPAC, and RCC at Harvard.*
 
-I'm a PhD student at Harvard developing AI agents for neuroscience research and computational approaches to understanding and interpreting both natural and artificial intelligence systems.
+I'm a PhD student at Harvard broadly fascinated by the study of natural and artificial black boxes (natural brains and AI models) and how we can better understand and leverage their inner workings. 
 
-## Research
+Recently, my interests have centered on using AI agents to automate, accelerate, and augment scientific discovery, as well as exploring mechanistic interpretability in large-scale models.
 
-I focus on building AI agents that can autonomously conduct scientific research, analyze complex neural data, and make new discoveries in neuroscience.
+## Selected recent projects
+
+
 
 I created [SpikeAgent](https://github.com/LiuLab-Bioelectronics-Harvard/SpikeAgent), an AI agent based on large language models (LLMs) that does spike sorting and neural signal processing for you. 
 
+I also developed [BCI-Agent](https://github.com/LiuLab-Bioelectronics-Harvard/BCI-Agent), a multi-agent system that can infer cell-type specific brain-computer interfaces across different species—without the need for transgenic animals. 
 
-I also developed [BCI-Agent](https://github.com/LiuLab-Bioelectronics-Harvard/BCI-Agent), a multi-agent system that helps you understand single-cell neural recordings by making it possible to infer cell types across different species, without needing transgenic animals—something that was not possible before.
-If you want to learn more about that, feel free to contact either me or anyone of the team through Github or email!
+If you’d like to learn more, feel free to contact me or any team member through GitHub or email!
 
 ## Collaborations
 I've had the privilege of working with exceptional researchers including [Prof. Yulia Sandamirskaya](https://sandamirskaya.eu/) at the Neuromorphic Computing Lab at Intel and Zhaw, [Prof. Mavi Sanchez-Vives](hhttps://www.icrea.cat/community/icreas/17606/maria-victoria-sanchez-vives/) at ICREA and University of Barcelona, and [Prof. Benjamin Sanchez-Terrones](https://ece.uic.edu/profiles/terrones-benjamin/) at University of Utah; among others. 
