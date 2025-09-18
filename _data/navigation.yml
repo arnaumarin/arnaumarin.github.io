@@ -1,5 +1,7 @@
 # Main navigation links
 
 main:
+  - title: "Honors"
+    url: /honors/
   - title: "Media Coverage"
     url: /media/

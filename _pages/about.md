@@ -10,7 +10,9 @@ redirect_from:
 
 Hi there, thanks for vising my internet space.
 
-I'm a PhD student at Harvard developing AI agents for neuroscience research and computational approaches to understanding both natural and artificial intelligence systems.
+*My research is generously supported by fellowships from the Rafael del Pino Foundation, NSF NeuroPAC, and RCC at Harvard.*
+
+I'm a PhD student at Harvard developing AI agents for neuroscience research and computational approaches to understanding and interpreting both natural and artificial intelligence systems.
 
 ## Research
 
