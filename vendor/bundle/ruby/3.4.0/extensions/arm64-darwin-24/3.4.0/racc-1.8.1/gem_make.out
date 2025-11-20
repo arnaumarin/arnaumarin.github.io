@@ -1,0 +1,18 @@
+current directory: /Users/arnaumarin/Desktop/GitHub/arnaumarin.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/arnaumarin/Desktop/GitHub/arnaumarin.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251015-84943-52a5p0 sitelibdir\=./.gem.20251015-84943-52a5p0 clean
+
+current directory: /Users/arnaumarin/Desktop/GitHub/arnaumarin.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251015-84943-52a5p0 sitelibdir\=./.gem.20251015-84943-52a5p0
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/arnaumarin/Desktop/GitHub/arnaumarin.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251015-84943-52a5p0 sitelibdir\=./.gem.20251015-84943-52a5p0 install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20251015-84943-52a5p0/racc
+
+current directory: /Users/arnaumarin/Desktop/GitHub/arnaumarin.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251015-84943-52a5p0 sitelibdir\=./.gem.20251015-84943-52a5p0 clean

@@ -9,6 +9,13 @@ author_profile: true
 
 ### 2025
 
+**"A Harvard-developed breakthrough in AI 'seeing': AR glasses turn novices into experts"**  
+*36Kr (New Wisdom)* — November 18, 2025  
+Feature (Chinese) on our Human–AI Co-Embodied Intelligence work and **Agentic Lab**— (with the amazing lead of **Wenbo Wang**). It highlights AR-guided, multi-agent systems that perceive the lab, correct errors in real time, auto-log experiments, and speed up skills transfer for organoid research.  
+[Read the full article](https://36kr.com/p/3558481213586562)
+
+---
+
 **"Should neuroscientists 'vibe code'?"**  
 *The Transmitter* - August 25, 2025  
 An in-depth perspective piece discussing the transformative impact of AI coding tools in neuroscience research, featuring my work on SpikeAgent and AI interfaces for neural data analysis.  
