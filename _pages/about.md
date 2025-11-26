@@ -14,11 +14,9 @@ Hi there, thanks for vising my internet space.
 
 I'm a PhD student at Harvard broadly fascinated by the study of natural and artificial black boxes (natural brains and AI models) and how we can better understand and leverage their inner workings. 
 
-Recently, my interests have centered on using AI agents to automate, accelerate, and augment scientific discovery, as well as exploring mechanistic interpretability in large-scale models.
+Recently, my interests have centered on using AI agents to automate, accelerate, and augment scientific discovery, as well as exploring self-mechanistic interpretability in large-scale AI models.
 
 ## Selected recent projects
-
-
 
 I created [SpikeAgent](https://github.com/LiuLab-Bioelectronics-Harvard/SpikeAgent), an AI agent based on large language models (LLMs) that does spike sorting and neural signal processing for you. 
 
