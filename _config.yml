@@ -25,8 +25,8 @@ author:
   name             : "Arnau Marin-Llobet"
   pronouns         : # example: "she/her"  
   bio              : "PhD student @ Harvard"
-  location         : "Boston, MA"
-  employer         : "Harvard University"
+  location         : # hidden
+  employer         : # hidden
   uri              : # URL
   email            : # obfuscated via JS in templates
 

@@ -135,6 +135,46 @@
 .tag-genomics { background: #e8f5e9; color: #2e7d32; }
 .tag-ai4sci  { background: #fff3e0; color: #e65100; }
 
+/* News timeline */
+.news-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.news-timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: #e0e0e0;
+}
+.news-item {
+  position: relative;
+  padding-left: 26px;
+  padding-bottom: 18px;
+  font-size: 0.92em;
+  line-height: 1.65;
+}
+.news-item:last-child { padding-bottom: 0; }
+.news-item::before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #494e52;
+}
+.news-date {
+  font-weight: 600;
+  color: #494e52;
+  font-size: 0.9em;
+}
+
 /* Media items */
 .media-item {
   padding: 12px 0;
