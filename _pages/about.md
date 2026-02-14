@@ -16,14 +16,10 @@ My research centers on understanding minds and reasoning in biological and artif
 <noscript>amarinllobet [at] g [dot] harvard [dot] edu &middot; a.marinllobet [at] gmail [dot] com</noscript>
 </p>
 
-<h2>Education</h2>
-<ul>
-  <li><strong>Ph.D. in Computational Neuroscience</strong>, <a href="https://seas.harvard.edu/">Harvard University</a>, 2023–present</li>
-  <li><strong>B.Sc. in Electrical Engineering</strong>, <a href="https://telecos.upc.edu/en">Polytechnic University of Catalonia-BarcelonaTech</a>, 2022</li>
-</ul>
+I am a PhD candidate in Computational Neuroscience at [Harvard University](https://seas.harvard.edu/). Before that, I received my B.Sc. in Electrical Engineering from the [Polytechnic University of Catalonia (Barcelona-Tech)](https://telecos.upc.edu/en) in 2022.
 
+<div id="news-section">
 <h2>Selected News</h2>
-
 <ul class="news-timeline" id="news-timeline">
   <li class="news-item">
     <span class="news-date">Dec 8, 2025</span><br>
@@ -68,9 +64,10 @@ My research centers on understanding minds and reasoning in biological and artif
   </li>
 </ul>
 <p style="font-size: 0.88em;">
-<button id="news-more" type="button" style="color: #494e52; background: none; border: none; cursor: pointer; padding: 0; font-family: inherit; font-size: inherit;">Show more &#8595;</button>
-<button id="news-less" type="button" style="color: #494e52; background: none; border: none; cursor: pointer; padding: 0; font-family: inherit; font-size: inherit; margin-left: 12px;">Show less &#8593;</button>
+  <span id="news-more" style="color: #494e52; cursor: pointer;">Show more &#8595;</span>
+  <span id="news-less" style="color: #494e52; cursor: pointer; margin-left: 12px;">Show less &#8593;</span>
 </p>
+</div>
 
 <div class="cv-tabs">
   <nav class="tab-nav">

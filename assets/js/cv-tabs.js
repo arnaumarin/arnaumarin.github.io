@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   /* News show more / less (step by 3) */
   var newsTimeline = document.getElementById('news-timeline');
-  var moreBtn = document.getElementById('news-more');
-  var lessBtn = document.getElementById('news-less');
-  if (newsTimeline && moreBtn && lessBtn) {
+  var moreEl = document.getElementById('news-more');
+  var lessEl = document.getElementById('news-less');
+  if (newsTimeline && moreEl && lessEl) {
     var newsItems = newsTimeline.querySelectorAll('.news-item');
     var STEP = 3;
     var visible = STEP;
@@ -50,20 +50,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateNews() {
       for (var i = 0; i < total; i++) {
-        if (i < visible) { newsItems[i].classList.remove('news-hidden'); }
-        else { newsItems[i].classList.add('news-hidden'); }
+        if (i < visible) {
+          newsItems[i].classList.add('news-visible');
+          newsItems[i].classList.remove('news-hidden');
+        } else {
+          newsItems[i].classList.remove('news-visible');
+          newsItems[i].classList.add('news-hidden');
+        }
       }
-      moreBtn.style.display = visible >= total ? 'none' : '';
-      lessBtn.style.display = visible <= STEP ? 'none' : '';
+      moreEl.style.display = visible >= total ? 'none' : '';
+      lessEl.style.display = visible <= STEP ? 'none' : '';
     }
 
     updateNews();
 
-    moreBtn.addEventListener('click', function() {
+    moreEl.addEventListener('click', function() {
       visible = Math.min(visible + STEP, total);
       updateNews();
     });
-    lessBtn.addEventListener('click', function() {
+    lessEl.addEventListener('click', function() {
       visible = Math.max(visible - STEP, STEP);
       updateNews();
     });
