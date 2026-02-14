@@ -35,6 +35,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // News show more/less toggle
+  var newsToggle = document.getElementById('news-toggle');
+  var newsTimeline = document.getElementById('news-timeline');
+  if (newsToggle && newsTimeline) {
+    newsToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (newsTimeline.classList.contains('collapsed')) {
+        newsTimeline.classList.remove('collapsed');
+        newsToggle.innerHTML = 'Show less &uarr;';
+      } else {
+        newsTimeline.classList.add('collapsed');
+        newsToggle.innerHTML = 'Show more &darr;';
+      }
+    });
+  }
+
   // Publication category filtering
   var filterBtns = document.querySelectorAll('.filter-btn');
   var pubItems = document.querySelectorAll('.pub-item');
