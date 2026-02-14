@@ -8,7 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-*My PhD is generously supported by the [Fundación Rafael del Pino](https://frdelpino.es/), the [RCC-Harvard Graduate Fellowship](https://rcc.harvard.edu/), and [NSF-NeuroPAC](https://www.neuropac.info), among others.*
+<div style="background: #f8f9fa; border-left: 4px solid #494e52; padding: 12px 16px; margin-bottom: 1.5em; font-size: 0.92em; font-style: italic; line-height: 1.6; border-radius: 0 6px 6px 0;">
+My PhD is generously supported by the <a href="https://frdelpino.es/">Fundaci&oacute;n Rafael del Pino</a>, the <a href="https://rcc.harvard.edu/">RCC-Harvard Graduate Fellowship</a>, and <a href="https://www.neuropac.info">NSF-NeuroPAC</a>, among others.
+</div>
 
 I am a PhD candidate in Computational Neuroscience at [Harvard University](https://seas.harvard.edu/). Before that, I received my B.Sc. in Electrical Engineering from the [UPC-BarcelonaTech)](https://telecos.upc.edu/en) in 2022.
 
@@ -16,7 +18,7 @@ I am a PhD candidate in Computational Neuroscience at [Harvard University](https
 <noscript>amarinllobet [at] g [dot] harvard [dot] edu &middot; a.marinllobet [at] gmail [dot] com</noscript>
 </p>
 
-My research centers on understanding minds and reasoning in biological and artificial systems, with an emphasis on mechanistic, autonomous and causal understanding. I combine brain–computer interfaces with computational methods to probe brain circuit mechanisms. Recently, I've been thinking on how to extend or adapt these autonomous interpretability-driven approaches to large language models to support safer and more reliable AI systems.
+My research centers on understanding minds and reasoning in biological and artificial systems, with an emphasis on mechanistic, autonomous and causal understanding. I combine brain–computer interfaces with computational methods to probe brain circuit mechanisms. Recently, I've been thinking on how to extend or adapt these autonomous interpretability-driven approaches to language models to support safer and more reliable AI systems.
 
 
 <div id="news-section">
@@ -69,6 +71,8 @@ My research centers on understanding minds and reasoning in biological and artif
   <span id="news-less" style="color: #494e52; cursor: pointer; margin-left: 12px;">Show less &#8593;</span>
 </p>
 </div>
+
+<p style="margin-top: 2em; color: #666; font-size: 0.9em;">I'm always happy to chat about research, collaborations, or anything else — feel free to reach out by email.</p>
 
 <div class="cv-tabs">
   <nav class="tab-nav">
@@ -278,7 +282,5 @@ My research centers on understanding minds and reasoning in biological and artif
 
   </div>
 </div>
-
-<p style="margin-top: 2em; color: #666; font-size: 0.9em;">I'm always happy to chat about research, collaborations, or anything else — feel free to reach out by email.</p>
 
 <script src="/assets/js/cv-tabs.js"></script>
