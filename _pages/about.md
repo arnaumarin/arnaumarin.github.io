@@ -16,30 +16,73 @@ My research centers on understanding minds and reasoning in biological and artif
 <noscript>amarinllobet [at] g [dot] harvard [dot] edu &middot; a.marinllobet [at] gmail [dot] com</noscript>
 </p>
 
+<h2>Education</h2>
+
+<ul>
+  <li><strong>Ph.D. in Computational Neuroscience</strong>, <a href="https://seas.harvard.edu/">Harvard University</a>, 2023–present</li>
+  <li><strong>M.S. in Engineering</strong>, Harvard University, 2025 (en route with the PhD)</li>
+  <li><strong>B.Sc. in Electrical Engineering</strong>, <a href="https://telecos.upc.edu/en">Polytechnic University of Catalonia (Barcelona-Tech)</a>, 2022</li>
+</ul>
+
+<h2>Selected News</h2>
+
+<ul class="news-timeline collapsed" id="news-timeline">
+  <li class="news-item">
+    <span class="news-date">Dec 8, 2025</span><br>
+    Our commentary on the state of the art in wireless BCIs was published in
+    <a href="https://www.nature.com/articles/s41928-025-01510-2"><em>Nature Electronics</em></a>.
+    Excited to share some thoughts on where the field is heading.
+  </li>
+  <li class="news-item">
+    <span class="news-date">Oct 2025</span><br>
+    Gave a short talk at the <a href="https://lunchandlearnkempner.github.io/">Kempner Seminar Lunch and Learn</a> at Harvard,
+    broadly presenting my work on agents for interpretability in brain networks. And had good free food!
+  </li>
+  <li class="news-item">
+    <span class="news-date">Jun 2025</span><br>
+    Invited talk at the <strong>Rafael del Pino Foundation (C4T)</strong>, Boston &mdash;
+    <em>"Agentic AI for Biology"</em>.
+  </li>
+  <li class="news-item">
+    <span class="news-date">May 2025</span><br>
+    Invited talk at <strong>MIT</strong>, Cambridge &mdash;
+    <em>"AI Agents for Primate Neuroscience"</em>.
+  </li>
+  <li class="news-item">
+    <span class="news-date">Apr 2025</span><br>
+    Invited talks at <strong>Stanford University</strong> (Palo Alto),
+    <strong>UC San Francisco</strong>, and the
+    <strong>Flatiron Institute</strong> (Simons Foundation, New York/Remote)
+    on AI agents for neuroscience and spike sorting.
+    Thanks to the Enigma group at Stanford, Alessio Buccino at the Flatiron Institute, and Prof. Edward Chang at UCSF for the invitations and the exciting, engaging discussions.
+  </li>
+  <li class="news-item">
+    <span class="news-date">Apr 11, 2025</span><br>
+    So happy to see our first paper published! Joint work with Mavi Sanchez-Vives,
+    Leo Dalla Porta, and Arnau Manasanch, now out in
+    <a href="https://www.nature.com/articles/s42003-025-07991-3"><em>Communications Biology</em></a>.
+    All code is available on <a href="https://github.com/arnaumarin/LFPDeepStates">GitHub</a>.
+  </li>
+  <li class="news-item">
+    <span class="news-date">Jul 2024</span><br>
+    Invited talk at <strong>ETH Zurich</strong> &mdash;
+    <em>"Methods to Stably Track Neurons in High-Density Probes"</em>.
+  </li>
+</ul>
+<p><a href="#" id="news-toggle" style="font-size: 0.88em; color: #494e52;">Show more &darr;</a></p>
+
 <div class="cv-tabs">
   <nav class="tab-nav">
-    <button class="tab-btn active" data-tab="about" type="button">About</button>
-    <button class="tab-btn" data-tab="publications" type="button">Publications</button>
+    <button class="tab-btn active" data-tab="publications" type="button">Publications</button>
     <button class="tab-btn" data-tab="media-honors" type="button">Media &amp; Honors</button>
   </nav>
 
-  <!-- ==================== ABOUT ==================== -->
-  <div class="tab-pane active" id="tab-about">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Ph.D. in Engineering Sciences</strong>, Harvard University, 2023–2027 (expected)</li>
-      <li><strong>M.S. in Engineering Sciences</strong>, Harvard University, 2025</li>
-      <li><strong>B.Sc. in Telecommunications Engineering</strong>, Polytechnic University of Catalonia (Barcelona-Tech), 2022</li>
-    </ul>
-
-  </div>
-
   <!-- ==================== PUBLICATIONS ==================== -->
-  <div class="tab-pane" id="tab-publications">
+  <div class="tab-pane active" id="tab-publications">
     <p style="margin-bottom: 1em; color: #666; font-size: 0.9em;">
-      (*) denotes equal contribution. Full list on
-      <a href="https://scholar.google.com/citations?user=4tLG8zwAAAAJ&hl=ca&oi=ao">Google Scholar</a>.
-      If you cannot access any of the papers or preprints, just email me and I will be happy to share them.
+      (*) denotes equal contribution. I included most of my papers and preprints here, but for the full list
+      I encourage you to check my <a href="https://scholar.google.com/citations?user=4tLG8zwAAAAJ&hl=ca&oi=ao">Google Scholar</a>.
+      If you cannot access any of them, just email me and I will be happy to share.
     </p>
 
     <div class="pub-filters">
@@ -65,6 +108,7 @@ My research centers on understanding minds and reasoning in biological and artif
         H. Shen*, S. Zhao*, <strong>A. Marin-Llobet</strong>* et al.
         Realigning representational drift in mouse visual cortex by flexible brain-machine interfaces.
         Under peer review. Preprint in <em>bioRxiv</em>, 2024.
+        <span class="pub-links"><a class="pub-link" href="https://www.biorxiv.org/content/10.1101/2024.05.23.595627v1.abstract">Preprint</a></span>
         <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
       </li>
 
@@ -131,21 +175,13 @@ My research centers on understanding minds and reasoning in biological and artif
         <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
       </li>
 
-      <!-- 10 -->
-      <li class="pub-item" data-cat="neuro">
-        <strong>A. Marin-Llobet</strong> et al.
-        Efficient on-chip cross-subject local field potential decoding for implantable neural interfaces.
-        <em>International Joint Conference on Neural Networks (IEEE)</em>, 2025.
-        <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
-      </li>
-
       <!-- 11 -->
-      <li class="pub-item" data-cat="neuro ai4sci">
+      <li class="pub-item" data-cat="ai4sci">
         J. Lee, Z. Lin, W. Wang, J. Baek, A. J. Lee, A. Aljovic, <strong>A. Marin-Llobet</strong> et al.
         DeviceAgent: An autonomous multimodal AI agent for flexible bioelectronics.
         Under peer review, 2025.
         <span class="pub-links"><a class="pub-link" href="https://www.biorxiv.org/content/10.1101/2025.10.10.681748v1.abstract">Preprint</a></span>
-        <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
+        <span class="pub-tags"><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
       </li>
 
       <!-- 12 -->
@@ -157,12 +193,12 @@ My research centers on understanding minds and reasoning in biological and artif
       </li>
 
       <!-- 13 -->
-      <li class="pub-item" data-cat="dl">
+      <li class="pub-item" data-cat="dl neuro">
         <strong>A. Marin-Llobet</strong>, A. Manasanch, and M. V. Sanchez-Vives.
         Hopfield-enhanced deep neural networks for artifact-resilient brain state decoding.
         <em>NeurIPS Workshop on Associative Memory &amp; Hopfield Networks</em>, 2023.
         <span class="pub-links"><a class="pub-link" href="https://openreview.net/pdf?id=M7yGTXajq5">Paper</a></span>
-        <span class="pub-tags"><span class="pub-tag tag-dl">DL &amp; Interp.</span></span>
+        <span class="pub-tags"><span class="pub-tag tag-dl">DL &amp; Interp.</span><span class="pub-tag tag-neuro">Neuroscience</span></span>
       </li>
 
       <!-- 14 -->
@@ -243,51 +279,6 @@ My research centers on understanding minds and reasoning in biological and artif
 
   </div>
 </div>
-
-<h2 style="margin-top: 1.5em;">Selected News</h2>
-
-<ul class="news-timeline">
-  <li class="news-item">
-    <span class="news-date">Dec 8, 2025</span><br>
-    Our commentary on the state of the art in wireless BCIs was published in
-    <a href="https://www.nature.com/articles/s41928-025-01510-2"><em>Nature Electronics</em></a>.
-    Excited to share some thoughts on where the field is heading.
-  </li>
-  <li class="news-item">
-    <span class="news-date">Oct 2025</span><br>
-    Gave a short talk at the <a href="https://lunchandlearnkempner.github.io/">Kempner Seminar Lunch and Learn</a> at Harvard,
-    broadly presenting my work on agents for interpretability in brain networks. And had good free food!
-  </li>
-  <li class="news-item">
-    <span class="news-date">Jun 2025</span><br>
-    Invited talk at the <strong>Rafael del Pino Foundation (C4T)</strong>, Boston &mdash;
-    <em>"Agentic AI for Biology"</em>.
-  </li>
-  <li class="news-item">
-    <span class="news-date">May 2025</span><br>
-    Invited talk at <strong>MIT</strong>, Cambridge &mdash;
-    <em>"AI Agents for Primate Neuroscience"</em>.
-  </li>
-  <li class="news-item">
-    <span class="news-date">Apr 2025</span><br>
-    Invited talks at <strong>Stanford University</strong> (Palo Alto),
-    <strong>UC San Francisco</strong>, and the
-    <strong>Flatiron Institute</strong> (Simons Foundation, New York/Remote)
-    on AI agents for neuroscience and spike sorting.
-  </li>
-  <li class="news-item">
-    <span class="news-date">Apr 11, 2025</span><br>
-    So happy to see our first paper published! Joint work with Mavi Sanchez-Vives,
-    Leo Dalla Porta, and Arnau Manasanch, now out in
-    <a href="https://www.nature.com/articles/s42003-025-07991-3"><em>Communications Biology</em></a>.
-    All code is available on <a href="https://github.com/arnaumarin/LFPDeepStates">GitHub</a>.
-  </li>
-  <li class="news-item">
-    <span class="news-date">Jul 2024</span><br>
-    Invited talk at <strong>ETH Zurich</strong> &mdash;
-    <em>"Methods to Stably Track Neurons in High-Density Probes"</em>.
-  </li>
-</ul>
 
 <p style="margin-top: 2em; color: #666; font-size: 0.9em;">I'm always happy to chat about research, collaborations, or anything else — feel free to reach out by email.</p>
 
