@@ -12,7 +12,7 @@ redirect_from:
 My PhD is generously supported by the <a href="https://frdelpino.es/">Fundaci&oacute;n Rafael del Pino</a>, the <a href="https://rcc.harvard.edu/">RCC-Harvard Graduate Fellowship</a>, and <a href="https://www.neuropac.info">NSF-NeuroPAC</a>, among others.
 </div>
 
-I am a PhD candidate in Computational Neuroscience at [Harvard University](https://seas.harvard.edu/). Before that, I received my B.Sc. in Electrical Engineering from the [UPC-BarcelonaTech)](https://telecos.upc.edu/en) in 2022.
+I am a PhD candidate in Computational Neuroscience at [Harvard University](https://seas.harvard.edu/). Before that, I received my B.Sc. in Electrical Engineering from the [UPC-BarcelonaTech](https://telecos.upc.edu/en) in 2022.
 
 <p id="contact-email" style="color: #494e52; font-size: 0.9em;">
 <noscript>amarinllobet [at] g [dot] harvard [dot] edu &middot; a.marinllobet [at] gmail [dot] com</noscript>
@@ -77,7 +77,7 @@ My research centers on understanding minds and reasoning in biological and artif
 <div class="cv-tabs">
   <nav class="tab-nav">
     <button class="tab-btn" data-tab="publications" type="button">Publications</button>
-    <button class="tab-btn" data-tab="media-honors" type="button">Media &amp; Honors</button>
+    <button class="tab-btn" data-tab="media-honors" type="button">Media</button>
   </nav>
 
   <!-- ==================== PUBLICATIONS ==================== -->
@@ -250,9 +250,8 @@ My research centers on understanding minds and reasoning in biological and artif
     </ul>
   </div>
 
-  <!-- ==================== MEDIA & HONORS ==================== -->
+  <!-- ==================== MEDIA ==================== -->
   <div class="tab-pane" id="tab-media-honors">
-    <h2>Media</h2>
 
     <div class="media-item">
       <strong>"A Harvard-developed breakthrough in AI 'seeing': AR glasses turn novices into experts"</strong><br>
@@ -270,15 +269,6 @@ My research centers on understanding minds and reasoning in biological and artif
       Perspective on AI coding tools in neuroscience, featuring my work on SpikeAgent.<br>
       <a href="https://www.thetransmitter.org/craft-and-careers/should-neuroscientists-vibe-code/">Read article</a>
     </div>
-
-    <h2>Honors &amp; Awards</h2>
-    <ul>
-      <li><strong>Rafael del Pino Foundation</strong>: Excellence Graduate Fellowship, 2024–2025</li>
-      <li><strong>NSF NeuroPAC</strong>: Accelerating Research on Neuromorphic, 2024</li>
-      <li><strong>Royal Colegio Complutense (RCC-Harvard)</strong>: Graduate Fellowship, 2023–2025</li>
-      <li><strong>Nova 111 (Spain)</strong>: Top 10 Researchers in Computer Science Under 25, 2024</li>
-      <li><strong>Polytechnic University of Catalonia</strong>: Honors Scholarship (Top 5%), 2018</li>
-    </ul>
 
   </div>
 </div>
