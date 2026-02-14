@@ -8,20 +8,11 @@ redirect_from:
   - /about.html
 ---
 
+*My PhD is generously supported by the [Fundación Rafael del Pino](https://frdelpino.es/), the RCC-Harvard Graduate Fellowship, and NSF-NeuroPAC, among others.*
+
 My research centers on understanding minds and reasoning in biological and artificial systems, with an emphasis on mechanistic and causal understanding. I combine brain–computer interfaces with computational methods to probe brain circuit mechanisms, and extend these interpretability-driven approaches to large language models to support safer AI systems.
 
 <p id="contact-email" style="color: #494e52; font-size: 0.9em;">
-<script type="text/javascript">
-(function() {
-  var a='amarinllobet', b='g.harvard.edu';
-  var c='a.marinllobet', d='gmail.com';
-  var el = document.getElementById('contact-email');
-  el.innerHTML =
-    '<i class="fas fa-fw fa-envelope" aria-hidden="true"></i> ' +
-    '<a href="mai'+'lto:'+a+'@'+b+'">'+a+'@'+b+'</a>' +
-    ' &middot; <a href="mai'+'lto:'+c+'@'+d+'">'+c+'@'+d+'</a>';
-})();
-</script>
 <noscript>amarinllobet [at] g [dot] harvard [dot] edu &middot; a.marinllobet [at] gmail [dot] com</noscript>
 </p>
 
@@ -30,7 +21,7 @@ My research centers on understanding minds and reasoning in biological and artif
     <button class="tab-btn active" data-tab="about" type="button">About</button>
     <button class="tab-btn" data-tab="publications" type="button">Publications</button>
     <button class="tab-btn" data-tab="talks" type="button">Talks</button>
-    <button class="tab-btn" data-tab="honors" type="button">Honors</button>
+    <button class="tab-btn" data-tab="media-honors" type="button">Media &amp; Honors</button>
   </nav>
 
   <!-- ==================== ABOUT ==================== -->
@@ -55,7 +46,8 @@ My research centers on understanding minds and reasoning in biological and artif
   <div class="tab-pane" id="tab-publications">
     <p style="margin-bottom: 1em; color: #666; font-size: 0.9em;">
       (*) denotes equal contribution. Full list on
-      <a href="https://scholar.google.com/citations?user=PS_CX0AAAAAJ">Google Scholar</a>.
+      <a href="https://scholar.google.com/citations?user=4tLG8zwAAAAJ&hl=ca&oi=ao">Google Scholar</a>.
+      If you cannot access any of the papers or preprints, just email me and I will be happy to share them.
     </p>
 
     <div class="pub-filters">
@@ -217,18 +209,37 @@ My research centers on understanding minds and reasoning in biological and artif
   <div class="tab-pane" id="tab-talks">
     <h2>Invited Talks</h2>
     <ul>
-      <li>Kempner Institute at Harvard &mdash; <em>"Towards Interpretability of Brain Neural Networks"</em>, 2025</li>
-      <li>Rafael del Pino Foundation (C4T) &mdash; <em>"Agentic AI for Biology"</em>, 2025</li>
-      <li>Massachusetts Institute of Technology &mdash; <em>"AI Agents for Primate Neuroscience"</em>, 2025</li>
-      <li>Stanford University &mdash; <em>"AI Agents for Neuroscience and Neuroengineering"</em>, 2025</li>
-      <li>UC San Francisco &mdash; <em>"AI for Human Neuropixels"</em>, 2025</li>
-      <li>Flatiron Institute (Simons Foundation) &mdash; <em>"AI Agent in Spike Sorting"</em>, 2025</li>
-      <li>ETH Zurich &mdash; <em>"Methods to Stably Track Neurons in High-Density Probes"</em>, 2024</li>
+      <li><strong>Kempner Institute at Harvard</strong>, Boston &mdash; <em>"Towards Interpretability of Brain Neural Networks"</em>, October 2025</li>
+      <li><strong>Rafael del Pino Foundation (C4T)</strong>, Boston &mdash; <em>"Agentic AI for Biology"</em>, June 2025</li>
+      <li><strong>Massachusetts Institute of Technology</strong>, Cambridge &mdash; <em>"AI Agents for Primate Neuroscience"</em>, May 2025</li>
+      <li><strong>Stanford University</strong>, Palo Alto &mdash; <em>"AI Agents for Neuroscience and Neuroengineering"</em>, April 2025</li>
+      <li><strong>UC San Francisco</strong>, San Francisco &mdash; <em>"AI for Human Neuropixels"</em>, April 2025</li>
+      <li><strong>Flatiron Institute (Simons Foundation)</strong>, New York (Remote) &mdash; <em>"AI Agent in Spike Sorting"</em>, April 2025</li>
+      <li><strong>ETH Zurich</strong>, Zurich &mdash; <em>"Methods to Stably Track Neurons in High-Density Probes"</em>, July 2024</li>
     </ul>
   </div>
 
-  <!-- ==================== HONORS ==================== -->
-  <div class="tab-pane" id="tab-honors">
+  <!-- ==================== MEDIA & HONORS ==================== -->
+  <div class="tab-pane" id="tab-media-honors">
+    <h2>Media</h2>
+
+    <div class="media-item">
+      <strong>"A Harvard-developed breakthrough in AI 'seeing': AR glasses turn novices into experts"</strong><br>
+      <em>36Kr (New Wisdom), Toutiao, 163.com</em> &mdash; November 2025<br>
+      Feature on our Human–AI Co-Embodied Intelligence work and Agentic Lab (with the lead of
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=TIyfmcgAAAAJ">Wenbo Wang</a>).<br>
+      <a href="https://36kr.com/p/3558481213586562">36Kr</a> |
+      <a href="https://www.toutiao.com/article/7574040659103990318/?wid=1764194844487">Toutiao</a> |
+      <a href="https://www.163.com/dy/article/KELOSNR30511ABV6.html">163.com</a>
+    </div>
+
+    <div class="media-item">
+      <strong>"Should neuroscientists 'vibe code'?"</strong><br>
+      <em>The Transmitter</em> &mdash; August 2025<br>
+      Perspective on AI coding tools in neuroscience, featuring my work on SpikeAgent.<br>
+      <a href="https://www.thetransmitter.org/craft-and-careers/should-neuroscientists-vibe-code/">Read article</a>
+    </div>
+
     <h2>Honors &amp; Awards</h2>
     <ul>
       <li><strong>Rafael del Pino Foundation</strong>: Excellence Graduate Fellowship, 2024–2025</li>
@@ -246,37 +257,4 @@ My research centers on understanding minds and reasoning in biological and artif
   </div>
 </div>
 
-<!-- Tab & filter switching -->
-<script>
-(function() {
-  // Main tab switching
-  var tabBtns = document.querySelectorAll('.tab-btn');
-  var tabPanes = document.querySelectorAll('.tab-pane');
-  tabBtns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      tabBtns.forEach(function(b) { b.classList.remove('active'); });
-      tabPanes.forEach(function(p) { p.classList.remove('active'); });
-      btn.classList.add('active');
-      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
-    });
-  });
-
-  // Publication category filtering
-  var filterBtns = document.querySelectorAll('.filter-btn');
-  var pubItems = document.querySelectorAll('.pub-item');
-  filterBtns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      filterBtns.forEach(function(b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      var filter = btn.dataset.filter;
-      pubItems.forEach(function(item) {
-        if (filter === 'all' || item.dataset.cat.indexOf(filter) !== -1) {
-          item.classList.remove('hidden');
-        } else {
-          item.classList.add('hidden');
-        }
-      });
-    });
-  });
-})();
-</script>
+<script src="/assets/js/cv-tabs.js"></script>
