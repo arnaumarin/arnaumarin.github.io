@@ -1,0 +1,25 @@
+current directory: /Users/arnaumarin/Desktop/GitHub/arnaumarin.github.io/vendor/bundle/ruby/3.4.0/gems/json-2.18.1/ext/json/ext/parser
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+checking for rb_enc_interned_str() in ruby/encoding.h... yes
+checking for rb_str_to_interned_str() in ruby.h... yes
+checking for rb_hash_new_capa() in ruby.h... yes
+checking for rb_hash_bulk_insert() in ruby.h... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+checking for arm_neon.h... yes
+checking for cpuid.h... no
+creating Makefile
+
+current directory: /Users/arnaumarin/Desktop/GitHub/arnaumarin.github.io/vendor/bundle/ruby/3.4.0/gems/json-2.18.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260214-1164-7tn3l8 sitelibdir\=./.gem.20260214-1164-7tn3l8 clean
+
+current directory: /Users/arnaumarin/Desktop/GitHub/arnaumarin.github.io/vendor/bundle/ruby/3.4.0/gems/json-2.18.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260214-1164-7tn3l8 sitelibdir\=./.gem.20260214-1164-7tn3l8
+compiling parser.c
+linking shared-object json/ext/parser.bundle
+
+current directory: /Users/arnaumarin/Desktop/GitHub/arnaumarin.github.io/vendor/bundle/ruby/3.4.0/gems/json-2.18.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260214-1164-7tn3l8 sitelibdir\=./.gem.20260214-1164-7tn3l8 install
+/usr/bin/install -c -m 0755 parser.bundle ./.gem.20260214-1164-7tn3l8/json/ext
+
+current directory: /Users/arnaumarin/Desktop/GitHub/arnaumarin.github.io/vendor/bundle/ruby/3.4.0/gems/json-2.18.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260214-1164-7tn3l8 sitelibdir\=./.gem.20260214-1164-7tn3l8 clean
