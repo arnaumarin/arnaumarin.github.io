@@ -10,7 +10,7 @@ redirect_from:
 
 *My PhD is generously supported by the [Fundación Rafael del Pino](https://frdelpino.es/), the [RCC-Harvard Graduate Fellowship](https://rcc.harvard.edu/), and [NSF-NeuroPAC](https://www.neuropac.info), among others.*
 
-I am a PhD candidate in Computational Neuroscience at [Harvard University](https://seas.harvard.edu/). Before that, I received my B.Sc. in Electrical Engineering from the [Polytechnic University of Catalonia (Barcelona-Tech)](https://telecos.upc.edu/en) in 2022.
+I am a PhD candidate in Computational Neuroscience at [Harvard University](https://seas.harvard.edu/). Before that, I received my B.Sc. in Electrical Engineering from the [UPC-BarcelonaTech)](https://telecos.upc.edu/en) in 2022.
 
 <p id="contact-email" style="color: #494e52; font-size: 0.9em;">
 <noscript>amarinllobet [at] g [dot] harvard [dot] edu &middot; a.marinllobet [at] gmail [dot] com</noscript>
