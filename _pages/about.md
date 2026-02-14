@@ -17,16 +17,14 @@ My research centers on understanding minds and reasoning in biological and artif
 </p>
 
 <h2>Education</h2>
-
 <ul>
   <li><strong>Ph.D. in Computational Neuroscience</strong>, <a href="https://seas.harvard.edu/">Harvard University</a>, 2023–present</li>
-  <li><strong>M.S. in Engineering</strong> (en route with the PhD)</li>
   <li><strong>B.Sc. in Electrical Engineering</strong>, <a href="https://telecos.upc.edu/en">Polytechnic University of Catalonia-BarcelonaTech</a>, 2022</li>
 </ul>
 
 <h2>Selected News</h2>
 
-<ul class="news-timeline collapsed" id="news-timeline">
+<ul class="news-timeline" id="news-timeline">
   <li class="news-item">
     <span class="news-date">Dec 8, 2025</span><br>
     Our commentary on the state of the art in wireless BCIs was published in
@@ -46,7 +44,7 @@ My research centers on understanding minds and reasoning in biological and artif
   <li class="news-item">
     <span class="news-date">May 2025</span><br>
     Invited talk at <strong>MIT</strong>, Cambridge &mdash;
-    <em>"AI Agents for Primate Neuroscience"</em>.
+    <em>"AI Agents for Automated and Scalable Neuroscience"</em>.
   </li>
   <li class="news-item">
     <span class="news-date">Apr 2025</span><br>
@@ -69,7 +67,10 @@ My research centers on understanding minds and reasoning in biological and artif
     <em>"Methods to Stably Track Neurons in High-Density Probes"</em>.
   </li>
 </ul>
-<p><button id="news-toggle" type="button" style="font-size: 0.88em; color: #494e52; background: none; border: none; cursor: pointer; padding: 0; font-family: inherit;">Show more &darr;</button></p>
+<p style="font-size: 0.88em;">
+<button id="news-more" type="button" style="color: #494e52; background: none; border: none; cursor: pointer; padding: 0; font-family: inherit; font-size: inherit;">Show more &#8595;</button>
+<button id="news-less" type="button" style="color: #494e52; background: none; border: none; cursor: pointer; padding: 0; font-family: inherit; font-size: inherit; margin-left: 12px;">Show less &#8593;</button>
+</p>
 
 <div class="cv-tabs">
   <nav class="tab-nav">

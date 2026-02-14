@@ -38,18 +38,34 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  /* News show more / less toggle */
-  var newsToggle = document.getElementById('news-toggle');
+  /* News show more / less (step by 3) */
   var newsTimeline = document.getElementById('news-timeline');
-  if (newsToggle && newsTimeline) {
-    newsToggle.addEventListener('click', function() {
-      if (newsTimeline.classList.contains('collapsed')) {
-        newsTimeline.classList.remove('collapsed');
-        newsToggle.textContent = 'Show less \u2191';
-      } else {
-        newsTimeline.classList.add('collapsed');
-        newsToggle.textContent = 'Show more \u2193';
+  var moreBtn = document.getElementById('news-more');
+  var lessBtn = document.getElementById('news-less');
+  if (newsTimeline && moreBtn && lessBtn) {
+    var newsItems = newsTimeline.querySelectorAll('.news-item');
+    var STEP = 3;
+    var visible = STEP;
+    var total = newsItems.length;
+
+    function updateNews() {
+      for (var i = 0; i < total; i++) {
+        if (i < visible) { newsItems[i].classList.remove('news-hidden'); }
+        else { newsItems[i].classList.add('news-hidden'); }
       }
+      moreBtn.style.display = visible >= total ? 'none' : '';
+      lessBtn.style.display = visible <= STEP ? 'none' : '';
+    }
+
+    updateNews();
+
+    moreBtn.addEventListener('click', function() {
+      visible = Math.min(visible + STEP, total);
+      updateNews();
+    });
+    lessBtn.addEventListener('click', function() {
+      visible = Math.max(visible - STEP, STEP);
+      updateNews();
     });
   }
 
