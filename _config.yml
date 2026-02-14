@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Arnau Marin-Llobet - PhD Student @ Harvard"
+title                    : "Arnau Marin-Llobet"
 title_separator          : "|"
 name                     : &name "Arnau Marin-Llobet"
 description              : &description "PhD student at Harvard researching computational neuroscience and neural engineering. Creator of SpikeAgent and BCI-Agent. Passionate about advancing neurotechnology and scientific discovery."
@@ -28,11 +28,11 @@ author:
   location         : "Boston, MA"
   employer         : "Harvard University"
   uri              : # URL
-  email            : "amarinllobet@g.harvard.edu" 
+  email            : # obfuscated via JS in templates
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
   orcid            : #"http://orcid.org/yourorcidurl"
   semantic         : # URL
