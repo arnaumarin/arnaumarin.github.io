@@ -21,7 +21,7 @@ My research centers on understanding minds and reasoning in biological and artif
 <ul>
   <li><strong>Ph.D. in Computational Neuroscience</strong>, <a href="https://seas.harvard.edu/">Harvard University</a>, 2023–present</li>
   <li><strong>M.S. in Engineering</strong> (en route with the PhD)</li>
-  <li><strong>B.Sc. in Electrical Engineering</strong>, <a href="https://telecos.upc.edu/en">Polytechnic University of Catalonia (Barcelona-Tech)</a>, 2022</li>
+  <li><strong>B.Sc. in Electrical Engineering</strong>, <a href="https://telecos.upc.edu/en">Polytechnic University of Catalonia-BarcelonaTech</a>, 2022</li>
 </ul>
 
 <h2>Selected News</h2>
