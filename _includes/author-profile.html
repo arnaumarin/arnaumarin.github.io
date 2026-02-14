@@ -33,9 +33,7 @@
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
-      <li id="sidebar-email-item">
-        <i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email
-      </li>
+      <!-- email handled via JS on main page only -->
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
       {% if author.arxiv %}

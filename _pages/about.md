@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-*My PhD is generously supported by the [Fundación Rafael del Pino](https://frdelpino.es/), the RCC-Harvard Graduate Fellowship, and NSF-NeuroPAC, among others.*
+*My PhD is generously supported by the [Fundación Rafael del Pino](https://frdelpino.es/), the [RCC-Harvard Graduate Fellowship](https://rcc.harvard.edu/), and [NSF-NeuroPAC](https://www.neuropac.info), among others.*
 
 My research centers on understanding minds and reasoning in biological and artificial systems, with an emphasis on mechanistic and causal understanding. I combine brain–computer interfaces with computational methods to probe brain circuit mechanisms, and extend these interpretability-driven approaches to large language models to support safer AI systems.
 
@@ -20,7 +20,7 @@ My research centers on understanding minds and reasoning in biological and artif
   <nav class="tab-nav">
     <button class="tab-btn active" data-tab="about" type="button">About</button>
     <button class="tab-btn" data-tab="publications" type="button">Publications</button>
-    <button class="tab-btn" data-tab="talks" type="button">Talks</button>
+    <button class="tab-btn" data-tab="news" type="button">News</button>
     <button class="tab-btn" data-tab="media-honors" type="button">Media &amp; Honors</button>
   </nav>
 
@@ -33,13 +33,6 @@ My research centers on understanding minds and reasoning in biological and artif
       <li><strong>B.Sc. in Telecommunications Engineering</strong>, Polytechnic University of Catalonia (Barcelona-Tech), 2022</li>
     </ul>
 
-    <h2>Selected Research Experience</h2>
-    <ul>
-      <li><strong>Senior AI Interpretability Fellow</strong>, Pivotal Research / FAR.ai, 2026</li>
-      <li><strong>Visiting Applied Scientist</strong>, Intel Neuromorphic Labs &amp; ZHAW (Zurich), 2024</li>
-      <li><strong>Visiting Researcher</strong>, University of Barcelona &amp; IDIBAPS, 2023–2025</li>
-      <li><strong>Research Intern</strong>, University of Montreal, 2022</li>
-    </ul>
   </div>
 
   <!-- ==================== PUBLICATIONS ==================== -->
@@ -205,17 +198,48 @@ My research centers on understanding minds and reasoning in biological and artif
     </ul>
   </div>
 
-  <!-- ==================== TALKS ==================== -->
-  <div class="tab-pane" id="tab-talks">
-    <h2>Invited Talks</h2>
-    <ul>
-      <li><strong>Kempner Institute at Harvard</strong>, Boston &mdash; <em>"Towards Interpretability of Brain Neural Networks"</em>, October 2025</li>
-      <li><strong>Rafael del Pino Foundation (C4T)</strong>, Boston &mdash; <em>"Agentic AI for Biology"</em>, June 2025</li>
-      <li><strong>Massachusetts Institute of Technology</strong>, Cambridge &mdash; <em>"AI Agents for Primate Neuroscience"</em>, May 2025</li>
-      <li><strong>Stanford University</strong>, Palo Alto &mdash; <em>"AI Agents for Neuroscience and Neuroengineering"</em>, April 2025</li>
-      <li><strong>UC San Francisco</strong>, San Francisco &mdash; <em>"AI for Human Neuropixels"</em>, April 2025</li>
-      <li><strong>Flatiron Institute (Simons Foundation)</strong>, New York (Remote) &mdash; <em>"AI Agent in Spike Sorting"</em>, April 2025</li>
-      <li><strong>ETH Zurich</strong>, Zurich &mdash; <em>"Methods to Stably Track Neurons in High-Density Probes"</em>, July 2024</li>
+  <!-- ==================== NEWS ==================== -->
+  <div class="tab-pane" id="tab-news">
+    <ul class="news-timeline">
+      <li class="news-item">
+        <span class="news-date">Dec 8, 2025</span><br>
+        Our commentary on the state of the art in wireless BCIs was published in
+        <a href="https://www.nature.com/articles/s41928-025-01510-2"><em>Nature Electronics</em></a>.
+        Excited to share some thoughts on where the field is heading.
+      </li>
+      <li class="news-item">
+        <span class="news-date">Oct 2025</span><br>
+        Invited talk at the <strong>Kempner Institute at Harvard</strong>, Boston &mdash;
+        <em>"Towards Interpretability of Brain Neural Networks"</em>.
+      </li>
+      <li class="news-item">
+        <span class="news-date">Jun 2025</span><br>
+        Invited talk at the <strong>Rafael del Pino Foundation (C4T)</strong>, Boston &mdash;
+        <em>"Agentic AI for Biology"</em>.
+      </li>
+      <li class="news-item">
+        <span class="news-date">May 2025</span><br>
+        Invited talk at <strong>MIT</strong>, Cambridge &mdash;
+        <em>"AI Agents for Primate Neuroscience"</em>.
+      </li>
+      <li class="news-item">
+        <span class="news-date">Apr 2025</span><br>
+        Invited talks at <strong>Stanford University</strong> (Palo Alto),
+        <strong>UC San Francisco</strong>, and the
+        <strong>Flatiron Institute</strong> (Simons Foundation, New York/Remote)
+        on AI agents for neuroscience and spike sorting.
+      </li>
+      <li class="news-item">
+        <span class="news-date">Apr 11, 2025</span><br>
+        So happy to see our first paper published! Joint work with Mavi Sanchez-Vives,
+        Leo Dalla Porta, and Arnau Manasanch, now out in
+        <a href="https://www.nature.com/articles/s42003-025-07991-3"><em>Communications Biology</em></a>.
+      </li>
+      <li class="news-item">
+        <span class="news-date">Jul 2024</span><br>
+        Invited talk at <strong>ETH Zurich</strong> &mdash;
+        <em>"Methods to Stably Track Neurons in High-Density Probes"</em>.
+      </li>
     </ul>
   </div>
 
@@ -249,12 +273,9 @@ My research centers on understanding minds and reasoning in biological and artif
       <li><strong>Polytechnic University of Catalonia</strong>: Honors Scholarship (Top 5%), 2018</li>
     </ul>
 
-    <h2>Reviewing</h2>
-    <p>Invited reviewer for <em>Gene Reports</em>, <em>Heliyon</em> (Cell Press), COLM, ACL, ICML, and the Mechanistic Interpretability workshop at NeurIPS.</p>
-
-    <h2>Teaching</h2>
-    <p>Teaching Assistant for Neuroengineering (BE131 / ES225) at Harvard, Fall 2024 &amp; Fall 2025.</p>
   </div>
 </div>
+
+<p style="margin-top: 2em; color: #666; font-size: 0.9em;">I'm always happy to chat about research, collaborations, or anything else — feel free to reach out by email.</p>
 
 <script src="/assets/js/cv-tabs.js"></script>
