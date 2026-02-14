@@ -35,8 +35,7 @@
 
 .tab-nav {
   display: flex;
-  border-bottom: 2px solid #eee;
-  gap: 0;
+  gap: 10px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -44,21 +43,20 @@
 .tab-nav::-webkit-scrollbar { display: none; }
 
 .tab-btn {
-  padding: 10px 20px;
-  border: none;
-  background: none;
+  padding: 10px 24px;
+  border: 1.5px solid #ddd;
+  background: #fafafa;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
-  color: #999;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -2px;
-  transition: color 0.25s, border-color 0.25s;
+  color: #666;
+  transition: all 0.25s;
   white-space: nowrap;
   font-family: inherit;
 }
-.tab-btn:hover { color: #494e52; }
-.tab-btn.active { color: #494e52; border-bottom-color: #494e52; }
+.tab-btn:hover { background: #f0f0f0; border-color: #bbb; color: #494e52; }
+.tab-btn.active { background: #494e52; border-color: #494e52; color: #fff; }
 
 .tab-pane {
   display: none;
