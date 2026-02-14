@@ -69,16 +69,16 @@ My research centers on understanding minds and reasoning in biological and artif
     <em>"Methods to Stably Track Neurons in High-Density Probes"</em>.
   </li>
 </ul>
-<p><a href="#" id="news-toggle" style="font-size: 0.88em; color: #494e52;">Show more &darr;</a></p>
+<p><button id="news-toggle" type="button" style="font-size: 0.88em; color: #494e52; background: none; border: none; cursor: pointer; padding: 0; font-family: inherit;">Show more &darr;</button></p>
 
 <div class="cv-tabs">
   <nav class="tab-nav">
-    <button class="tab-btn active" data-tab="publications" type="button">Publications</button>
+    <button class="tab-btn" data-tab="publications" type="button">Publications</button>
     <button class="tab-btn" data-tab="media-honors" type="button">Media &amp; Honors</button>
   </nav>
 
   <!-- ==================== PUBLICATIONS ==================== -->
-  <div class="tab-pane active" id="tab-publications">
+  <div class="tab-pane" id="tab-publications">
     <p style="margin-bottom: 1em; color: #666; font-size: 0.9em;">
       (*) denotes equal contribution. I included most of my papers and preprints here, but for the full list
       I encourage you to check my <a href="https://scholar.google.com/citations?user=4tLG8zwAAAAJ&hl=ca&oi=ao">Google Scholar</a>.

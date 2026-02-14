@@ -23,4 +23,4 @@ An in-depth perspective piece discussing the transformative impact of AI coding 
 
 ---
 
-*This page will be updated as new media coverage becomes available (or when I see it).*
+*This page will be updated as new media coverage becomes available (or when I see it). If you see some news about any of my work let me know :)*

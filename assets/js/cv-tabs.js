@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Email obfuscation - main page
+  /* Email obfuscation - main page */
   var contactEl = document.getElementById('contact-email');
   if (contactEl) {
     var u1 = 'amarinllobet', d1 = 'g.harvard.edu';
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       ' &middot; <a href="mailto:' + e2 + '">' + e2 + '</a>';
   }
 
-  // Email obfuscation - sidebar
+  /* Email obfuscation - sidebar */
   var sidebarEl = document.getElementById('sidebar-email-item');
   if (sidebarEl) {
     var u = 'amarinllobet', d = 'g.harvard.edu';
@@ -23,35 +23,37 @@ document.addEventListener('DOMContentLoaded', function() {
       e + '</a>';
   }
 
-  // Tab switching
+  /* Tab switching - clicking an already-active tab closes it */
   var tabBtns = document.querySelectorAll('.tab-btn');
   var tabPanes = document.querySelectorAll('.tab-pane');
   tabBtns.forEach(function(btn) {
     btn.addEventListener('click', function() {
+      var isActive = btn.classList.contains('active');
       tabBtns.forEach(function(b) { b.classList.remove('active'); });
       tabPanes.forEach(function(p) { p.classList.remove('active'); });
-      btn.classList.add('active');
-      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      if (!isActive) {
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      }
     });
   });
 
-  // News show more/less toggle
+  /* News show more / less toggle */
   var newsToggle = document.getElementById('news-toggle');
   var newsTimeline = document.getElementById('news-timeline');
   if (newsToggle && newsTimeline) {
-    newsToggle.addEventListener('click', function(e) {
-      e.preventDefault();
+    newsToggle.addEventListener('click', function() {
       if (newsTimeline.classList.contains('collapsed')) {
         newsTimeline.classList.remove('collapsed');
-        newsToggle.innerHTML = 'Show less &uarr;';
+        newsToggle.textContent = 'Show less \u2191';
       } else {
         newsTimeline.classList.add('collapsed');
-        newsToggle.innerHTML = 'Show more &darr;';
+        newsToggle.textContent = 'Show more \u2193';
       }
     });
   }
 
-  // Publication category filtering
+  /* Publication category filtering */
   var filterBtns = document.querySelectorAll('.filter-btn');
   var pubItems = document.querySelectorAll('.pub-item');
   filterBtns.forEach(function(btn) {
