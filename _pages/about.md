@@ -182,7 +182,7 @@ My research centers on understanding minds and reasoning in biological and artif
       <li class="pub-item" data-cat="ai4sci">
         J. Lee, Z. Lin, W. Wang, J. Baek, A. J. Lee, A. Aljovic, <strong>A. Marin-Llobet</strong> et al.
         DeviceAgent: An autonomous multimodal AI agent for flexible bioelectronics.
-        Under peer review, 2025.
+        Under peer review. Preprint in <em>bioRxiv</em>, 2025.
         <span class="pub-links"><a class="pub-link" href="https://www.biorxiv.org/content/10.1101/2025.10.10.681748v1.abstract">Preprint</a></span>
         <span class="pub-tags"><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
       </li>
@@ -191,7 +191,7 @@ My research centers on understanding minds and reasoning in biological and artif
       <li class="pub-item" data-cat="dl ai4sci">
         <strong>A. Marin-Llobet</strong> and J. Ferrando.
         Automated Interpretability and Feature Discovery in Language Models with Agents.
-        Under peer review, 2026.
+        Under peer review.
         <span class="pub-tags"><span class="pub-tag tag-dl">DL &amp; Interp.</span><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
       </li>
 
