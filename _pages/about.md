@@ -10,13 +10,14 @@ redirect_from:
 
 *My PhD is generously supported by the [Fundación Rafael del Pino](https://frdelpino.es/), the [RCC-Harvard Graduate Fellowship](https://rcc.harvard.edu/), and [NSF-NeuroPAC](https://www.neuropac.info), among others.*
 
-My research centers on understanding minds and reasoning in biological and artificial systems, with an emphasis on mechanistic and causal understanding. I combine brain–computer interfaces with computational methods to probe brain circuit mechanisms, and extend these interpretability-driven approaches to large language models to support safer AI systems.
+I am a PhD candidate in Computational Neuroscience at [Harvard University](https://seas.harvard.edu/). Before that, I received my B.Sc. in Electrical Engineering from the [Polytechnic University of Catalonia (Barcelona-Tech)](https://telecos.upc.edu/en) in 2022.
 
 <p id="contact-email" style="color: #494e52; font-size: 0.9em;">
 <noscript>amarinllobet [at] g [dot] harvard [dot] edu &middot; a.marinllobet [at] gmail [dot] com</noscript>
 </p>
 
-I am a PhD candidate in Computational Neuroscience at [Harvard University](https://seas.harvard.edu/). Before that, I received my B.Sc. in Electrical Engineering from the [Polytechnic University of Catalonia (Barcelona-Tech)](https://telecos.upc.edu/en) in 2022.
+My research centers on understanding minds and reasoning in biological and artificial systems, with an emphasis on mechanistic, autonomous and causal understanding. I combine brain–computer interfaces with computational methods to probe brain circuit mechanisms. Recently, I've been thinking on how to extend or adapt these autonomous interpretability-driven approaches to large language models to support safer and more reliable AI systems.
+
 
 <div id="news-section">
 <h2>Selected News</h2>

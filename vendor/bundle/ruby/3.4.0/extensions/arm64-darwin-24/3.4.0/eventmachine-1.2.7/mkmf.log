@@ -172,7 +172,7 @@ DYLD_LIBRARY_PATH=.:/opt/homebrew/Cellar/ruby/3.4.7/lib ASAN_OPTIONS=detect_leak
 ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
 Undefined symbols for architecture arm64:
   "_rb_thread_blocking_region", referenced from:
-      _t in conftest-7670cd.o
+      _t in conftest-f0ce2e.o
 ld: symbol(s) not found for architecture arm64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -339,7 +339,7 @@ DYLD_LIBRARY_PATH=.:/opt/homebrew/Cellar/ruby/3.4.7/lib ASAN_OPTIONS=detect_leak
 ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
 Undefined symbols for architecture arm64:
   "_rb_enable_interrupt", referenced from:
-      _t in conftest-916015.o
+      _t in conftest-eca0bf.o
 ld: symbol(s) not found for architecture arm64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -523,7 +523,7 @@ DYLD_LIBRARY_PATH=.:/opt/homebrew/Cellar/ruby/3.4.7/lib ASAN_OPTIONS=detect_leak
 ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
 Undefined symbols for architecture arm64:
   "_pipe2", referenced from:
-      _t in conftest-b0727d.o
+      _t in conftest-9d7ce9.o
 ld: symbol(s) not found for architecture arm64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -580,7 +580,7 @@ DYLD_LIBRARY_PATH=.:/opt/homebrew/Cellar/ruby/3.4.7/lib ASAN_OPTIONS=detect_leak
 ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
 Undefined symbols for architecture arm64:
   "_accept4", referenced from:
-      _t in conftest-a65e5d.o
+      _t in conftest-716cda.o
 ld: symbol(s) not found for architecture arm64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
