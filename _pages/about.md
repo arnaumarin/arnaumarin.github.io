@@ -25,6 +25,19 @@ My research centers on understanding minds and reasoning in biological and artif
 <h2>Selected News</h2>
 <ul class="news-timeline" id="news-timeline">
   <li class="news-item">
+    <span class="news-date">May 2026</span><br>
+    With Javier Ferrando, we released the preprint of
+    <a href="https://arxiv.org/abs/2605.01555"><strong>interpAgent</strong></a>,
+    an autonomous framework to discover and explain features in LLMs (SAEs and other latents).
+    We'll be presenting it at the <strong>ICML AI4WIlD</strong> workshop.
+  </li>
+  <li class="news-item">
+    <span class="news-date">Jun 2026</span><br>
+    I'll be at <strong>CVPR 2026</strong> presenting a precursor of
+    <a href="https://arxiv.org/abs/2605.31556">this paper</a> as a <strong>spotlight</strong> at the
+    <a href="https://sites.google.com/view/how-cvpr-workshop/2026-workshop"><strong>HOW</strong> workshop</a>.
+  </li>
+  <li class="news-item">
     <span class="news-date">Dec 8, 2025</span><br>
     Our commentary on the state of the art in wireless BCIs was published in
     <a href="https://www.nature.com/articles/s41928-025-01510-2"><em>Nature Electronics</em></a>.
@@ -190,8 +203,9 @@ My research centers on understanding minds and reasoning in biological and artif
       <!-- 12 -->
       <li class="pub-item" data-cat="dl ai4sci">
         <strong>A. Marin-Llobet</strong> and J. Ferrando.
-        Automated Interpretability and Feature Discovery in Language Models with Agents.
-        Under peer review.
+        Automated Interpretability and Feature Discovery in Language Models with Agents (interpAgent).
+        To appear at <em>ICML Workshop AI4WIlD</em>, 2026. Preprint in <em>arXiv</em>.
+        <span class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2605.01555">Preprint</a></span>
         <span class="pub-tags"><span class="pub-tag tag-dl">DL &amp; Interp.</span><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
       </li>
 
