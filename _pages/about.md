@@ -12,7 +12,7 @@ redirect_from:
 My PhD is generously supported by the <a href="https://frdelpino.es/">Fundaci&oacute;n Rafael del Pino</a>, the <a href="https://rcc.harvard.edu/">RCC-Harvard Graduate Fellowship</a>, and <a href="https://www.neuropac.info">NSF-NeuroPAC</a>, among others.
 </div>
 
-I am a PhD candidate in Computational Neuroscience at [Harvard University](https://seas.harvard.edu/). Before that, I received my B.Sc. in Electrical Engineering from the [UPC-BarcelonaTech](https://telecos.upc.edu/en) in 2022.
+I am a PhD candidate in Computational Neuroscience at [Harvard University](https://seas.harvard.edu/), where I mostly work with [Mahzarin Banaji](https://psychology.fas.harvard.edu/people/mahzarin-r-banaji), [Demba Ba](https://crisp.seas.harvard.edu/), and [Na Li](https://nali.seas.harvard.edu/), among other collaborators. Before that, I received my B.Sc. in Electrical Engineering from the [UPC-BarcelonaTech](https://telecos.upc.edu/en) in 2022.
 
 <p id="contact-email" style="color: #494e52; font-size: 0.9em;">
 <noscript>amarinllobet [at] g [dot] harvard [dot] edu &middot; a.marinllobet [at] gmail [dot] com</noscript>
