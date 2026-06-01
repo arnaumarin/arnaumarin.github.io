@@ -1,3 +1,5 @@
 # Main navigation links
 
-main: []
+main:
+  - title: "Publications"
+    url: /publications/

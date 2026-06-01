@@ -140,6 +140,41 @@
   .pub-thumb { flex-basis: 80px; width: 80px; height: 60px; }
 }
 
+/* Large card layout — used on the dedicated /publications/ page */
+.pub-list-large .pub-item {
+  padding: 22px 0;
+  font-size: 0.96em;
+  gap: 22px;
+  align-items: flex-start;
+}
+.pub-list-large .pub-thumb {
+  flex: 0 0 260px;
+  width: 260px;
+  height: 170px;
+  border-radius: 6px;
+  border: 1px solid #ececec;
+  background: linear-gradient(135deg, #fafafa 0%, #ececec 100%);
+}
+.pub-list-large .pub-thumb img { object-fit: contain; background: #fff; }
+.pub-list-large .pub-title {
+  font-size: 1.08em;
+  line-height: 1.35;
+  margin-bottom: 4px;
+  color: #2a2a2a;
+}
+.pub-list-large .pub-authors { color: #444; margin-bottom: 2px; }
+.pub-list-large .pub-venue   { color: #666; font-size: 0.93em; margin-bottom: 10px; }
+.pub-list-large .pub-meta-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.pub-list-large .pub-link {
+  font-size: 12px;
+  padding: 3px 11px;
+}
+.pub-list-large .pub-tag { font-size: 11px; padding: 2px 9px; }
+@media (max-width: 720px) {
+  .pub-list-large .pub-item { flex-direction: column; gap: 14px; }
+  .pub-list-large .pub-thumb { flex-basis: auto; width: 100%; height: 200px; }
+}
+
 /* Category Tags */
 .pub-tags {
   display: inline;
