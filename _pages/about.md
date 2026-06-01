@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <div style="background: #f8f9fa; border-left: 4px solid #494e52; padding: 12px 16px; margin-bottom: 1.5em; font-size: 0.92em; font-style: italic; line-height: 1.6; border-radius: 0 6px 6px 0;">
-My PhD is generously supported by the <a href="https://frdelpino.es/">Fundaci&oacute;n Rafael del Pino</a>, the <a href="https://rcc.harvard.edu/">RCC-Harvard Graduate Fellowship</a>, and <a href="https://www.neuropac.info">NSF-NeuroPAC</a>, among others.
+My PhD is generously supported by the <a href="https://frdelpino.es/">Fundaci&oacute;n Rafael del Pino</a>, the <a href="https://rcc.harvard.edu/">RCC-Harvard Graduate Fellowship</a>, <a href="https://www.neuropac.info">NSF-NeuroPAC</a>, the <a href="https://mbb.harvard.edu/">Harvard Mind, Brain, Behavior Interfaculty Initiative</a>, and Coefficient Giving, among others.
 </div>
 
 I am a PhD candidate in Computational Neuroscience at [Harvard University](https://seas.harvard.edu/), where I mostly work with [Mahzarin Banaji](https://psychology.fas.harvard.edu/people/mahzarin-r-banaji), [Demba Ba](https://crisp.seas.harvard.edu/), and [Na Li](https://nali.seas.harvard.edu/), among other collaborators. Before that, I received my B.Sc. in Electrical Engineering from the [UPC-BarcelonaTech](https://telecos.upc.edu/en) in 2022.
