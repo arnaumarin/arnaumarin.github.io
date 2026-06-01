@@ -96,19 +96,11 @@ My research centers on understanding minds and reasoning in biological and artif
 
   <!-- ==================== PUBLICATIONS ==================== -->
   <div class="tab-pane" id="tab-publications">
-    <p style="margin-bottom: 1em; color: #666; font-size: 0.9em;">
-      (*) denotes equal contribution. I included most of my papers and preprints here, but for the full list
-      I encourage you to check my <a href="https://scholar.google.com/citations?user=4tLG8zwAAAAJ&hl=ca&oi=ao">Google Scholar</a>.
-      If you cannot access any of them, just email me and I will be happy to share.
+    <h3 style="margin-top: 0; margin-bottom: 0.6em;">Selected Publications</h3>
+    <p style="margin-bottom: 1.2em; color: #666; font-size: 0.9em;">
+      Full list on <a href="https://scholar.google.com/citations?user=4tLG8zwAAAAJ&hl=ca&oi=ao">Google Scholar</a>.
+      (*) denotes equal contribution.
     </p>
-
-    <div class="pub-filters">
-      <button class="filter-btn active" data-filter="all" type="button">All</button>
-      <button class="filter-btn" data-filter="neuro" type="button">Neuroscience &amp; BCIs</button>
-      <button class="filter-btn" data-filter="dl" type="button">DL &amp; AI Interpretability</button>
-      <button class="filter-btn" data-filter="genomics" type="button">Genomics &amp; Clinical</button>
-      <button class="filter-btn" data-filter="ai4sci" type="button">AI for Discovery</button>
-    </div>
 
     <ul class="pub-list">
       <!-- 1 -->
@@ -121,15 +113,6 @@ My research centers on understanding minds and reasoning in biological and artif
         <span class="pub-links"><a class="pub-link" href="https://www.nature.com/articles/s41928-025-01510-2">Paper</a></span>
         <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
         </div>
-      </li>
-
-      <!-- 2 -->
-      <li class="pub-item" data-cat="neuro">
-        H. Shen*, S. Zhao*, <strong>A. Marin-Llobet</strong>* et al.
-        Realigning representational drift in mouse visual cortex by flexible brain-machine interfaces.
-        Under peer review. Preprint in <em>bioRxiv</em>, 2024.
-        <span class="pub-links"><a class="pub-link" href="https://www.biorxiv.org/content/10.1101/2024.05.23.595627v1.abstract">Preprint</a></span>
-        <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
       </li>
 
       <!-- 3 -->
@@ -168,51 +151,6 @@ My research centers on understanding minds and reasoning in biological and artif
         </div>
       </li>
 
-      <!-- 6 -->
-      <li class="pub-item" data-cat="neuro">
-        <strong>A. Marin-Llobet</strong> et al.
-        Riemannian geometry for the classification of brain states with intracortical brain recordings.
-        <em>Advanced Intelligent Systems</em>, e202500480, 2025.
-        <span class="pub-links"><a class="pub-link" href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202500480">Paper</a></span>
-        <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
-      </li>
-
-      <!-- 7 -->
-      <li class="pub-item" data-cat="neuro ai4sci">
-        A. Aljovic, Z. Lin, W. Wang, X. Zhang, <strong>A. Marin-Llobet</strong> et al.
-        An autonomous AI agent for universal behavior analysis.
-        Under peer review. Preprint in <em>bioRxiv</em>, 2025.
-        <span class="pub-links"><a class="pub-link" href="https://www.biorxiv.org/content/10.1101/2025.05.15.653585v1.abstract">Preprint</a><a class="pub-link" href="https://github.com/LiuLab-Bioelectronics-Harvard/BehaveAgent">Code</a></span>
-        <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
-      </li>
-
-      <!-- 8 -->
-      <li class="pub-item" data-cat="neuro">
-        H. Zhao, X. Zhang, <strong>A. Marin-Llobet</strong>, X. Lin, J. Liu.
-        Benchmarking spike source localization algorithms in high density probes.
-        Under peer review. Preprint in <em>arXiv</em>, 2025.
-        <span class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2508.13451">Preprint</a></span>
-        <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
-      </li>
-
-      <!-- 9 -->
-      <li class="pub-item" data-cat="neuro">
-        Y. He* and <strong>A. Marin-Llobet</strong>* et al.
-        End-to-end multimodal deep learning for real-time decoding of monthslong neural activity from the same cells.
-        Under peer review. Preprint in <em>bioRxiv</em>, 2024.
-        <span class="pub-links"><a class="pub-link" href="https://www.biorxiv.org/content/10.1101/2024.10.14.618046v1">Preprint</a></span>
-        <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
-      </li>
-
-      <!-- 11 -->
-      <li class="pub-item" data-cat="ai4sci">
-        J. Lee, Z. Lin, W. Wang, J. Baek, A. J. Lee, A. Aljovic, <strong>A. Marin-Llobet</strong> et al.
-        DeviceAgent: An autonomous multimodal AI agent for flexible bioelectronics.
-        Under peer review. Preprint in <em>bioRxiv</em>, 2025.
-        <span class="pub-links"><a class="pub-link" href="https://www.biorxiv.org/content/10.1101/2025.10.10.681748v1.abstract">Preprint</a></span>
-        <span class="pub-tags"><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
-      </li>
-
       <!-- 12 -->
       <li class="pub-item" data-cat="dl ai4sci">
         <div class="pub-thumb"><img src="/images/pub/interpagent.png" alt="" onerror="this.style.display='none'"></div>
@@ -225,58 +163,6 @@ My research centers on understanding minds and reasoning in biological and artif
         </div>
       </li>
 
-      <!-- 13 -->
-      <li class="pub-item" data-cat="dl neuro">
-        <strong>A. Marin-Llobet</strong>, A. Manasanch, and M. V. Sanchez-Vives.
-        Hopfield-enhanced deep neural networks for artifact-resilient brain state decoding.
-        <em>NeurIPS Workshop on Associative Memory &amp; Hopfield Networks</em>, 2023.
-        <span class="pub-links"><a class="pub-link" href="https://openreview.net/pdf?id=M7yGTXajq5">Paper</a></span>
-        <span class="pub-tags"><span class="pub-tag tag-dl">DL &amp; Interp.</span><span class="pub-tag tag-neuro">Neuroscience</span></span>
-      </li>
-
-      <!-- 14 -->
-      <li class="pub-item" data-cat="genomics ai4sci">
-        Z. Lin*, W. Wang*, <strong>A. Marin-Llobet</strong> et al.
-        Autonomous spatial transcriptomics AI agent charts sc-pancreas maturation in vivo.
-        Under peer review. Preprint in <em>bioRxiv</em>, 2025.
-        <span class="pub-links"><a class="pub-link" href="https://www.biorxiv.org/content/10.1101/2025.04.01.646731v1.abstract">Preprint</a><a class="pub-link" href="https://github.com/LiuLab-Bioelectronics-Harvard/STAgent">Code</a></span>
-        <span class="pub-tags"><span class="pub-tag tag-genomics">Genomics</span><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
-      </li>
-
-      <!-- 15 -->
-      <li class="pub-item" data-cat="genomics">
-        <strong>A. Marin-Llobet</strong> et al.
-        MECP2 and SH3KBP1 genes as pathogenic contributors to autism spectrum disorder and immunodeficiency.
-        Under peer review.
-        <span class="pub-tags"><span class="pub-tag tag-genomics">Genomics</span></span>
-      </li>
-
-      <!-- 16 -->
-      <li class="pub-item" data-cat="genomics">
-        X. Luo, J. Shi, <strong>A. Marin-Llobet</strong> et al.
-        Electrical impedance myography method of measuring anisotropic tongue tissue.
-        <em>Physiological Measurement</em>, 44(5):055007, 2023.
-        <span class="pub-links"><a class="pub-link" href="https://iopscience.iop.org/article/10.1088/1361-6579/acd51c/meta">Paper</a></span>
-        <span class="pub-tags"><span class="pub-tag tag-genomics">Genomics</span></span>
-      </li>
-
-      <!-- 17 -->
-      <li class="pub-item" data-cat="genomics">
-        <strong>A. Marin-Llobet</strong> et al.
-        A pilot study on neonatal ultrasound patterns unraveling associations with obstetric factors.
-        <em>IEEE International Conference on Body Sensor Networks</em>, 2023.
-        <span class="pub-links"><a class="pub-link" href="https://ieeexplore.ieee.org/abstract/document/10331376">Paper</a></span>
-        <span class="pub-tags"><span class="pub-tag tag-genomics">Genomics</span></span>
-      </li>
-
-      <!-- 18 -->
-      <li class="pub-item" data-cat="genomics ai4sci">
-        W. Wang, ..., <strong>A. Marin-Llobet</strong> et al.
-        Agentic Lab: An agentic-physical AI system for cell and organoid experimentation and manufacturing.
-        Under peer review. Preprint in <em>bioRxiv</em>, 2025.
-        <span class="pub-links"><a class="pub-link" href="https://www.biorxiv.org/content/10.1101/2025.11.11.686354v1.abstract">Preprint</a></span>
-        <span class="pub-tags"><span class="pub-tag tag-genomics">Genomics</span><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
-      </li>
     </ul>
   </div>
 
