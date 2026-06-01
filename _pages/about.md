@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <div style="background: #f8f9fa; border-left: 4px solid #494e52; padding: 12px 16px; margin-bottom: 1.5em; font-size: 0.92em; font-style: italic; line-height: 1.6; border-radius: 0 6px 6px 0;">
-My PhD is generously supported by the <a href="https://frdelpino.es/">Fundaci&oacute;n Rafael del Pino</a>, the <a href="https://rcc.harvard.edu/">RCC-Harvard Graduate Fellowship</a>, <a href="https://www.neuropac.info">NSF-NeuroPAC</a>, the <a href="https://mbb.harvard.edu/">Harvard Mind, Brain, Behavior Interfaculty Initiative</a>, and Coefficient Giving, among others.
+My PhD is currently supported by Coefficient Giving, the <a href="https://mbb.harvard.edu/">Harvard Mind, Brain, Behavior Interfaculty Initiative</a>, and the <a href="https://rcc.harvard.edu/">RCC-Harvard Graduate Fellowship</a>; previously by the <a href="https://frdelpino.es/">Fundaci&oacute;n Rafael del Pino</a> and <a href="https://www.neuropac.info">NSF-NeuroPAC</a>, among others.
 </div>
 
 I am a PhD candidate in Computational Neuroscience at [Harvard University](https://seas.harvard.edu/), where I mostly work with [Mahzarin Banaji](https://psychology.fas.harvard.edu/people/mahzarin-r-banaji), [Demba Ba](https://crisp.seas.harvard.edu/), and [Na Li](https://nali.seas.harvard.edu/), among other collaborators. Before that, I received my B.Sc. in Electrical Engineering from the [UPC-BarcelonaTech](https://telecos.upc.edu/en) in 2022.
@@ -87,33 +87,5 @@ My research centers on understanding minds and reasoning in biological and artif
 </div>
 
 <p style="margin-top: 2em; color: #666; font-size: 0.9em;">I'm always happy to chat about research, collaborations, or anything else — feel free to reach out by email.</p>
-
-<div class="cv-tabs">
-  <nav class="tab-nav">
-    <button class="tab-btn" data-tab="media-honors" type="button">Media</button>
-  </nav>
-
-  <!-- ==================== MEDIA ==================== -->
-  <div class="tab-pane" id="tab-media-honors">
-
-    <div class="media-item">
-      <strong>"A Harvard-developed breakthrough in AI 'seeing': AR glasses turn novices into experts"</strong><br>
-      <em>36Kr (New Wisdom), Toutiao, 163.com</em> &mdash; November 2025<br>
-      Feature on our Human–AI Co-Embodied Intelligence work and Agentic Lab (with the lead of
-      <a href="https://scholar.google.com/citations?hl=en&amp;user=TIyfmcgAAAAJ">Wenbo Wang</a>).<br>
-      <a href="https://36kr.com/p/3558481213586562">36Kr</a> |
-      <a href="https://www.toutiao.com/article/7574040659103990318/?wid=1764194844487">Toutiao</a> |
-      <a href="https://www.163.com/dy/article/KELOSNR30511ABV6.html">163.com</a>
-    </div>
-
-    <div class="media-item">
-      <strong>"Should neuroscientists 'vibe code'?"</strong><br>
-      <em>The Transmitter</em> &mdash; August 2025<br>
-      Perspective on AI coding tools in neuroscience, featuring my work on SpikeAgent.<br>
-      <a href="https://www.thetransmitter.org/craft-and-careers/should-neuroscientists-vibe-code/">Read article</a>
-    </div>
-
-  </div>
-</div>
 
 <script src="/assets/js/cv-tabs.js"></script>
