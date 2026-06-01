@@ -1,18 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  /* Email obfuscation - main page */
-  var contactEl = document.getElementById('contact-email');
-  if (contactEl) {
-    var u1 = 'amarinllobet', d1 = 'g.harvard.edu';
-    var u2 = 'a.marinllobet', d2 = 'gmail.com';
-    var e1 = u1 + '@' + d1;
-    var e2 = u2 + '@' + d2;
-    contactEl.innerHTML =
-      '<i class="fas fa-fw fa-envelope" aria-hidden="true"></i> ' +
-      '<a href="mailto:' + e1 + '">' + e1 + '</a>' +
-      ' &middot; <a href="mailto:' + e2 + '">' + e2 + '</a>';
-  }
-
-  /* Email obfuscation - sidebar */
+  /* Email obfuscation - sidebar (kept JS-only since it's a clickable mailto link) */
   var sidebarEl = document.getElementById('sidebar-email-item');
   if (sidebarEl) {
     var u = 'amarinllobet', d = 'g.harvard.edu';
@@ -37,42 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-
-  /* News show more / less (step by 3) */
-  var newsTimeline = document.getElementById('news-timeline');
-  var moreEl = document.getElementById('news-more');
-  var lessEl = document.getElementById('news-less');
-  if (newsTimeline && moreEl && lessEl) {
-    var newsItems = newsTimeline.querySelectorAll('.news-item');
-    var STEP = 3;
-    var visible = STEP;
-    var total = newsItems.length;
-
-    function updateNews() {
-      for (var i = 0; i < total; i++) {
-        if (i < visible) {
-          newsItems[i].classList.add('news-visible');
-          newsItems[i].classList.remove('news-hidden');
-        } else {
-          newsItems[i].classList.remove('news-visible');
-          newsItems[i].classList.add('news-hidden');
-        }
-      }
-      moreEl.style.display = visible >= total ? 'none' : '';
-      lessEl.style.display = visible <= STEP ? 'none' : '';
-    }
-
-    updateNews();
-
-    moreEl.addEventListener('click', function() {
-      visible = Math.min(visible + STEP, total);
-      updateNews();
-    });
-    lessEl.addEventListener('click', function() {
-      visible = Math.max(visible - STEP, STEP);
-      updateNews();
-    });
-  }
 
   /* Publication category filtering */
   var filterBtns = document.querySelectorAll('.filter-btn');
