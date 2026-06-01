@@ -88,4 +88,13 @@ My research centers on understanding minds and reasoning in biological and artif
 
 <p style="margin-top: 2em; color: #666; font-size: 0.9em;">I'm always happy to chat about research, collaborations, or anything else — feel free to reach out by email.</p>
 
+<div id="visitor-map" style="margin-top: 2.5em;">
+<h2 style="margin-bottom: 0.35em;">Visitors</h2>
+<p style="color: #666; font-size: 0.9em; margin-top: 0;">A live map of where visitors have been stopping by from.</p>
+<div id="visitor-map-box" style="background: #f8f9fa; border: 1px solid #e7e7e7; border-radius: 8px; padding: 16px; text-align: center;">
+<!-- Visitor map via MapMyVisitors (formerly ClustrMaps). Stats dashboard: https://mapmyvisitors.com/web/1c4ze -->
+<script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=0e1633&w=a&t=tt&d=v5sL1BzzzjsM42j_QONFKHUEH0rxJzAuvWEeUA8X74o&co=0b4975&cmo=3acc3a&cmn=ff5353&ct=cdd4d9"></script>
+</div>
+</div>
+
 <script src="/assets/js/cv-tabs.js"></script>
