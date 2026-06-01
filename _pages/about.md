@@ -15,7 +15,10 @@ My PhD is generously supported by the <a href="https://frdelpino.es/">Fundaci&oa
 I am a PhD candidate in Computational Neuroscience at [Harvard University](https://seas.harvard.edu/), where I mostly work with [Mahzarin Banaji](https://psychology.fas.harvard.edu/people/mahzarin-r-banaji), [Demba Ba](https://crisp.seas.harvard.edu/), and [Na Li](https://nali.seas.harvard.edu/), among other collaborators. Before that, I received my B.Sc. in Electrical Engineering from the [UPC-BarcelonaTech](https://telecos.upc.edu/en) in 2022.
 
 <p id="contact-email" style="color: #494e52; font-size: 0.9em;">
-<noscript>amarinllobet [at] g [dot] harvard [dot] edu &middot; a.marinllobet [at] gmail [dot] com</noscript>
+<i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+amarinllobet <span class="email-sep">at</span> g <span class="email-sep">dot</span> harvard <span class="email-sep">dot</span> edu
+&middot;
+a.marinllobet <span class="email-sep">at</span> gmail <span class="email-sep">dot</span> com
 </p>
 
 My research centers on understanding minds and reasoning in biological and artificial systems, with an emphasis on mechanistic, autonomous and causal understanding. I combine brain–computer interfaces with computational methods to probe brain circuit mechanisms. Recently, I've been thinking on how to extend or adapt these autonomous interpretability-driven approaches to language models to support safer and more reliable AI systems.
@@ -23,6 +26,7 @@ My research centers on understanding minds and reasoning in biological and artif
 
 <div id="news-section">
 <h2>Selected News</h2>
+<div class="news-scroll">
 <ul class="news-timeline" id="news-timeline">
   <li class="news-item">
     <span class="news-date">May 2026</span><br>
@@ -79,10 +83,7 @@ My research centers on understanding minds and reasoning in biological and artif
     <em>"Methods to Stably Track Neurons in High-Density Probes"</em>.
   </li>
 </ul>
-<p style="font-size: 0.88em;">
-  <span id="news-more" style="color: #494e52; cursor: pointer;">Show more &#8595;</span>
-  <span id="news-less" style="color: #494e52; cursor: pointer; margin-left: 12px;">Show less &#8593;</span>
-</p>
+</div>
 </div>
 
 <p style="margin-top: 2em; color: #666; font-size: 0.9em;">I'm always happy to chat about research, collaborations, or anything else — feel free to reach out by email.</p>
@@ -112,11 +113,14 @@ My research centers on understanding minds and reasoning in biological and artif
     <ul class="pub-list">
       <!-- 1 -->
       <li class="pub-item" data-cat="neuro">
+        <div class="pub-thumb"><img src="/images/pub/wireless-bci.png" alt="" onerror="this.style.display='none'"></div>
+        <div class="pub-content">
         <strong>A. Marin-Llobet</strong> et al.
         Wireless recording with ultrathin brain interfaces.
         <em>Nature Electronics</em>, 8:1144–1145, 2025.
         <span class="pub-links"><a class="pub-link" href="https://www.nature.com/articles/s41928-025-01510-2">Paper</a></span>
         <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
+        </div>
       </li>
 
       <!-- 2 -->
@@ -130,29 +134,38 @@ My research centers on understanding minds and reasoning in biological and artif
 
       <!-- 3 -->
       <li class="pub-item" data-cat="neuro">
+        <div class="pub-thumb"><img src="/images/pub/lfp-deepstates.png" alt="" onerror="this.style.display='none'"></div>
+        <div class="pub-content">
         <strong>A. Marin-Llobet</strong>*, A. Manasanch* et al.
         Neural models for detection and classification of brain states and transitions.
         <em>Communications Biology</em>, 8(1):599, 2025.
         <span class="pub-links"><a class="pub-link" href="https://www.nature.com/articles/s42003-025-07991-3">Paper</a><a class="pub-link" href="https://github.com/arnaumarin/LFPDeepStates">Code</a></span>
         <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
+        </div>
       </li>
 
       <!-- 4 -->
       <li class="pub-item" data-cat="neuro ai4sci">
+        <div class="pub-thumb"><img src="/images/pub/cellagent.png" alt="" onerror="this.style.display='none'"></div>
+        <div class="pub-content">
         <strong>A. Marin-Llobet</strong>, Z. Lin, J. Baek et al.
         An AI agent for cell-type specific interpretable brain-computer interfaces.
         Under peer review. Preprint in <em>bioRxiv</em>, 2025.
         <span class="pub-links"><a class="pub-link" href="https://www.biorxiv.org/content/10.1101/2025.09.11.675660v1">Preprint</a></span>
         <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
+        </div>
       </li>
 
       <!-- 5 -->
       <li class="pub-item" data-cat="neuro ai4sci">
+        <div class="pub-thumb"><img src="/images/pub/spikeagent.png" alt="" onerror="this.style.display='none'"></div>
+        <div class="pub-content">
         Z. Lin* and <strong>A. Marin-Llobet</strong>* et al.
         Spike sorting AI agent.
         Under peer review. Preprint in <em>bioRxiv</em>, 2025.
         <span class="pub-links"><a class="pub-link" href="https://www.biorxiv.org/content/10.1101/2025.02.11.637754v1">Preprint</a><a class="pub-link" href="https://github.com/spikeagent/spikeagent">Code</a></span>
         <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
+        </div>
       </li>
 
       <!-- 6 -->
@@ -202,11 +215,14 @@ My research centers on understanding minds and reasoning in biological and artif
 
       <!-- 12 -->
       <li class="pub-item" data-cat="dl ai4sci">
+        <div class="pub-thumb"><img src="/images/pub/interpagent.png" alt="" onerror="this.style.display='none'"></div>
+        <div class="pub-content">
         <strong>A. Marin-Llobet</strong> and J. Ferrando.
         Automated Interpretability and Feature Discovery in Language Models with Agents (interpAgent).
         To appear at <em>ICML Workshop AI4WIlD</em>, 2026. Preprint in <em>arXiv</em>.
         <span class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2605.01555">Preprint</a></span>
         <span class="pub-tags"><span class="pub-tag tag-dl">DL &amp; Interp.</span><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
+        </div>
       </li>
 
       <!-- 13 -->
