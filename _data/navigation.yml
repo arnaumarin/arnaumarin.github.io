@@ -3,3 +3,5 @@
 main:
   - title: "Publications"
     url: /publications/
+  - title: "Media"
+    url: /media/
