@@ -55,6 +55,7 @@ My research centers on understanding minds and reasoning in biological and artif
         To appear at the <strong>AIWILD workshop, ICML 2026</strong> in Seoul.
         <div class="news-links">
           <a class="pub-link" href="https://arxiv.org/abs/2605.01555">arXiv</a>
+          <a class="pub-link" href="https://github.com/arnaumarin/InterpAgent">GitHub</a>
           <a class="pub-link" href="https://agentwild-workshop.github.io/icml2026/">workshop</a>
         </div>
       </div>
@@ -131,7 +132,7 @@ My research centers on understanding minds and reasoning in biological and artif
         Leo Dalla Porta, and Arnau Manasanch, now out in <em>Communications Biology</em>.
         <div class="news-links">
           <a class="pub-link" href="https://www.nature.com/articles/s42003-025-07991-3">paper</a>
-          <a class="pub-link" href="https://github.com/arnaumarin/LFPDeepStates">code</a>
+          <a class="pub-link" href="https://github.com/arnaumarin/LFPDeepStates">GitHub</a>
         </div>
       </div>
       <a class="news-thumb" href="/images/pub/lfp-deepstates.png" target="_blank" rel="noopener">

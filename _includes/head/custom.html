@@ -217,6 +217,30 @@
 .page__content a.pub-link:hover,
 .page__content a.news-thumb { text-decoration: none; border-bottom: none; }
 
+/* TL;DR toggle — button reuses the pub-link pill look */
+button.tldr-btn {
+  border: 1px dashed #b4b4b4;
+  background: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: inherit;
+}
+button.tldr-btn:hover { background: #494e52; border-color: #494e52; color: #fff; }
+button.tldr-btn.active { background: #494e52; border-color: #494e52; color: #fff; }
+.pub-tldr {
+  display: none;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #f8f9fa;
+  border-left: 3px solid #494e52;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.92em;
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+}
+.pub-tldr.open { display: block; animation: cvFadeIn 0.25s ease; }
+
 /* News — timeline with optional thumbnails and show-more expander */
 .news-timeline {
   list-style: none;

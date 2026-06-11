@@ -44,6 +44,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  /* TL;DR toggles on publication items */
+  document.querySelectorAll('.tldr-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var tldr = btn.closest('.pub-content').querySelector('.pub-tldr');
+      if (!tldr) return;
+      var open = tldr.classList.toggle('open');
+      btn.classList.toggle('active', open);
+    });
+  });
+
   /* Publication category filtering */
   var filterBtns = document.querySelectorAll('.filter-btn');
   var pubItems = document.querySelectorAll('.pub-item');
