@@ -44,14 +44,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  /* TL;DR toggles on publication items */
-  document.querySelectorAll('.tldr-btn').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var tldr = btn.closest('.pub-content').querySelector('.pub-tldr');
-      if (!tldr) return;
-      var open = tldr.classList.toggle('open');
-      btn.classList.toggle('active', open);
-    });
+  /* TL;DR toggles on publication items (delegated so it works on any page) */
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.tldr-btn');
+    if (!btn) return;
+    var content = btn.closest('.pub-content');
+    var tldr = content && content.querySelector('.pub-tldr');
+    if (!tldr) return;
+    var open = tldr.classList.toggle('open');
+    btn.classList.toggle('active', open);
   });
 
   /* Publication category filtering */
