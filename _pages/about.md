@@ -165,4 +165,4 @@ My research centers on understanding minds and reasoning in biological and artif
 </div>
 </div>
 
-<script src="/assets/js/cv-tabs.js"></script>
+<script src="/assets/js/cv-tabs.js?v=2"></script>

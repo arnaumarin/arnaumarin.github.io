@@ -14,30 +14,16 @@ Selected publications. Full list on
 <ul class="pub-list pub-list-large">
 
   <li class="pub-item">
-    <div class="pub-thumb"><img src="/images/pub/wireless-bci.png" alt="" onerror="this.style.display='none'"></div>
+    <div class="pub-thumb"><img src="/images/pub/vlm-bias.png" alt="" onerror="this.style.display='none'"></div>
     <div class="pub-content">
-      <div class="pub-title"><strong>Wireless recording with ultrathin brain interfaces.</strong></div>
-      <div class="pub-authors"><strong>A. Marin-Llobet</strong> et al.</div>
-      <div class="pub-venue"><em>Nature Electronics</em>, 8:1144–1145, 2025.</div>
+      <div class="pub-title"><strong>Vision-language models suppress female representations under ambiguous input.</strong></div>
+      <div class="pub-authors"><strong>A. Marin-Llobet</strong>, S. Henniger, M.R. Banaji.</div>
+      <div class="pub-venue">Spotlight at the <em>HOW Workshop, CVPR</em>, 2026. Preprint in <em>arXiv</em>.</div>
       <div class="pub-meta-row">
-        <span class="pub-links"><a class="pub-link" href="https://www.nature.com/articles/s41928-025-01510-2">Paper</a><button class="pub-link tldr-btn" type="button">TL;DR</button></span>
-        <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
+        <span class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2605.31556">Preprint</a><a class="pub-link" href="https://sites.google.com/view/how-cvpr-workshop/2026-workshop">Workshop</a><button class="pub-link tldr-btn" type="button">TL;DR</button></span>
+        <span class="pub-tags"><span class="pub-tag tag-dl">DL &amp; Interp.</span></span>
       </div>
-      <div class="pub-tldr">Commentary on ultrathin, wireless brain implants that stream high-bandwidth neural data without cables &mdash; and what it will take to make them chronic and clinical.</div>
-    </div>
-  </li>
-
-  <li class="pub-item">
-    <div class="pub-thumb"><img src="/images/pub/lfp-deepstates.png" alt="" onerror="this.style.display='none'"></div>
-    <div class="pub-content">
-      <div class="pub-title"><strong>Neural models for detection and classification of brain states and transitions.</strong></div>
-      <div class="pub-authors"><strong>A. Marin-Llobet</strong>*, A. Manasanch* et al.</div>
-      <div class="pub-venue"><em>Communications Biology</em>, 8(1):599, 2025.</div>
-      <div class="pub-meta-row">
-        <span class="pub-links"><a class="pub-link" href="https://www.nature.com/articles/s42003-025-07991-3">Paper</a><a class="pub-link" href="https://github.com/arnaumarin/LFPDeepStates">GitHub</a><button class="pub-link tldr-btn" type="button">TL;DR</button></span>
-        <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
-      </div>
-      <div class="pub-tldr">Deep learning models that detect and classify brain states &mdash; and catch their transitions &mdash; directly from raw LFP recordings, without hand-crafted spectral features.</div>
+      <div class="pub-tldr">On gender-ambiguous images, aligned VLMs collapse to &ldquo;male&rdquo; even for female-stereotyped occupations; our zero-shot LALS metric shows the internal representations and the outputs tell different stories.</div>
     </div>
   </li>
 
@@ -56,6 +42,34 @@ Selected publications. Full list on
   </li>
 
   <li class="pub-item">
+    <div class="pub-thumb"><img src="/images/pub/interpagent.png" alt="" onerror="this.style.display='none'"></div>
+    <div class="pub-content">
+      <div class="pub-title"><strong>Automated Interpretability and Feature Discovery in Language Models with Agents (interpAgent).</strong></div>
+      <div class="pub-authors"><strong>A. Marin-Llobet</strong> and J. Ferrando.</div>
+      <div class="pub-venue">To appear at <em>ICML Workshop AI4WIlD</em>, 2026. Preprint in <em>arXiv</em>.</div>
+      <div class="pub-meta-row">
+        <span class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2605.01555">Preprint</a><a class="pub-link" href="https://github.com/arnaumarin/InterpAgent">GitHub</a><button class="pub-link tldr-btn" type="button">TL;DR</button></span>
+        <span class="pub-tags"><span class="pub-tag tag-dl">DL &amp; Interp.</span><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
+      </div>
+      <div class="pub-tldr">Two cooperating agents &mdash; a FeatureFinder and a FeatureExplainer &mdash; autonomously discover features in LLMs (SAEs and other latents), then generate, stress-test, and rank explanations for them.</div>
+    </div>
+  </li>
+
+  <li class="pub-item">
+    <div class="pub-thumb"><img src="/images/pub/wireless-bci.png" alt="" onerror="this.style.display='none'"></div>
+    <div class="pub-content">
+      <div class="pub-title"><strong>Wireless recording with ultrathin brain interfaces.</strong></div>
+      <div class="pub-authors"><strong>A. Marin-Llobet</strong> et al.</div>
+      <div class="pub-venue"><em>Nature Electronics</em>, 8:1144&ndash;1145, 2025.</div>
+      <div class="pub-meta-row">
+        <span class="pub-links"><a class="pub-link" href="https://www.nature.com/articles/s41928-025-01510-2">Paper</a><button class="pub-link tldr-btn" type="button">TL;DR</button></span>
+        <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
+      </div>
+      <div class="pub-tldr">Commentary on ultrathin, wireless brain implants that stream high-bandwidth neural data without cables &mdash; and what it will take to make them chronic and clinical.</div>
+    </div>
+  </li>
+
+  <li class="pub-item">
     <div class="pub-thumb"><img src="/images/pub/cellagent.png" alt="" onerror="this.style.display='none'"></div>
     <div class="pub-content">
       <div class="pub-title"><strong>An AI agent for cell-type specific interpretable brain-computer interfaces.</strong></div>
@@ -66,6 +80,20 @@ Selected publications. Full list on
         <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
       </div>
       <div class="pub-tldr">An AI agent that turns in vivo recordings into cell-type-specific BCIs: it infers the cell type behind each spike and validates its calls against spatial brain atlases and the literature.</div>
+    </div>
+  </li>
+
+  <li class="pub-item">
+    <div class="pub-thumb"><img src="/images/pub/lfp-deepstates.png" alt="" onerror="this.style.display='none'"></div>
+    <div class="pub-content">
+      <div class="pub-title"><strong>Neural models for detection and classification of brain states and transitions.</strong></div>
+      <div class="pub-authors"><strong>A. Marin-Llobet</strong>*, A. Manasanch* et al.</div>
+      <div class="pub-venue"><em>Communications Biology</em>, 8(1):599, 2025.</div>
+      <div class="pub-meta-row">
+        <span class="pub-links"><a class="pub-link" href="https://www.nature.com/articles/s42003-025-07991-3">Paper</a><a class="pub-link" href="https://github.com/arnaumarin/LFPDeepStates">GitHub</a><button class="pub-link tldr-btn" type="button">TL;DR</button></span>
+        <span class="pub-tags"><span class="pub-tag tag-neuro">Neuroscience</span></span>
+      </div>
+      <div class="pub-tldr">Deep learning models that detect and classify brain states and their transitions directly from raw LFPs &mdash; including an autoencoder that uncovers and helps explain a previously undescribed brain state.</div>
     </div>
   </li>
 
@@ -83,34 +111,6 @@ Selected publications. Full list on
     </div>
   </li>
 
-  <li class="pub-item">
-    <div class="pub-thumb"><img src="/images/pub/vlm-bias.png" alt="" onerror="this.style.display='none'"></div>
-    <div class="pub-content">
-      <div class="pub-title"><strong>Vision-language models suppress female representations under ambiguous input.</strong></div>
-      <div class="pub-authors"><strong>A. Marin-Llobet</strong>, S. Henniger, M.R. Banaji.</div>
-      <div class="pub-venue">Spotlight at the <em>HOW Workshop, CVPR</em>, 2026. Preprint in <em>arXiv</em>.</div>
-      <div class="pub-meta-row">
-        <span class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2605.31556">Preprint</a><a class="pub-link" href="https://sites.google.com/view/how-cvpr-workshop/2026-workshop">Workshop</a><button class="pub-link tldr-btn" type="button">TL;DR</button></span>
-        <span class="pub-tags"><span class="pub-tag tag-dl">DL &amp; Interp.</span></span>
-      </div>
-      <div class="pub-tldr">On gender-ambiguous images, aligned VLMs collapse to &ldquo;male&rdquo; even for female-stereotyped occupations; our zero-shot LALS metric shows the internal representations and the outputs tell different stories.</div>
-    </div>
-  </li>
-
-  <li class="pub-item">
-    <div class="pub-thumb"><img src="/images/pub/interpagent.png" alt="" onerror="this.style.display='none'"></div>
-    <div class="pub-content">
-      <div class="pub-title"><strong>Automated Interpretability and Feature Discovery in Language Models with Agents (interpAgent).</strong></div>
-      <div class="pub-authors"><strong>A. Marin-Llobet</strong> and J. Ferrando.</div>
-      <div class="pub-venue">To appear at <em>ICML Workshop AI4WIlD</em>, 2026. Preprint in <em>arXiv</em>.</div>
-      <div class="pub-meta-row">
-        <span class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2605.01555">Preprint</a><a class="pub-link" href="https://github.com/arnaumarin/InterpAgent">GitHub</a><button class="pub-link tldr-btn" type="button">TL;DR</button></span>
-        <span class="pub-tags"><span class="pub-tag tag-dl">DL &amp; Interp.</span><span class="pub-tag tag-ai4sci">AI for Discovery</span></span>
-      </div>
-      <div class="pub-tldr">Two cooperating agents &mdash; a FeatureFinder and a FeatureExplainer &mdash; autonomously discover features in LLMs (SAEs and other latents), then generate, stress-test, and rank explanations for them.</div>
-    </div>
-  </li>
-
 </ul>
 
-<script src="/assets/js/cv-tabs.js"></script>
+<script src="/assets/js/cv-tabs.js?v=2"></script>
