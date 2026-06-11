@@ -26,64 +26,133 @@ My research centers on understanding minds and reasoning in biological and artif
 
 <div id="news-section">
 <h2>Selected News</h2>
-<div class="news-scroll">
 <ul class="news-timeline" id="news-timeline">
   <li class="news-item">
-    <span class="news-date">May 2026</span><br>
-    With Javier Ferrando, we released the preprint of
-    <a href="https://arxiv.org/abs/2605.01555"><strong>interpAgent</strong></a>,
-    an autonomous framework to discover and explain features in LLMs (SAEs and other latents).
-    We'll be presenting it at the <strong>ICML AI4WIlD</strong> workshop.
+    <span class="news-date">Jun 2026</span>
+    <span class="pub-tag tag-talk">talk</span>
+    <span class="pub-tag tag-spotlight">spotlight</span>
+    <div class="news-body">
+      <div class="news-text">
+        Presented a precursor of <a href="https://arxiv.org/abs/2605.31556">our work on auditing VLMs</a>
+        as a <strong>spotlight</strong> at the <strong>HOW workshop, CVPR 2026</strong>.
+        <div class="news-links">
+          <a class="pub-link" href="https://arxiv.org/abs/2605.31556">arXiv</a>
+          <a class="pub-link" href="https://sites.google.com/view/how-cvpr-workshop/2026-workshop">workshop</a>
+        </div>
+      </div>
+      <a class="news-thumb" href="/images/presenting_cvpr.png" target="_blank" rel="noopener">
+        <img src="/images/presenting_cvpr.png" alt="Presenting at the HOW workshop, CVPR 2026">
+      </a>
+    </div>
   </li>
   <li class="news-item">
-    <span class="news-date">Jun 2026</span><br>
-    I'll be at <strong>CVPR 2026</strong> presenting a precursor of
-    <a href="https://arxiv.org/abs/2605.31556">this paper</a> as a <strong>spotlight</strong> at the
-    <a href="https://sites.google.com/view/how-cvpr-workshop/2026-workshop"><strong>HOW</strong> workshop</a>.
+    <span class="news-date">May 2026</span>
+    <span class="pub-tag tag-paper">paper</span>
+    <div class="news-body">
+      <div class="news-text">
+        With Javier Ferrando, we released <a href="https://arxiv.org/abs/2605.01555"><strong>interpAgent</strong></a> &mdash;
+        an autonomous framework to discover and explain features in LLMs (SAEs and other latents).
+        To appear at the <strong>AIWILD workshop, ICML 2026</strong> in Seoul.
+        <div class="news-links">
+          <a class="pub-link" href="https://arxiv.org/abs/2605.01555">arXiv</a>
+          <a class="pub-link" href="https://agentwild-workshop.github.io/icml2026/">workshop</a>
+        </div>
+      </div>
+      <!-- Add the paper's key figure as images/pub/interpagent.png, then uncomment:
+      <a class="news-thumb" href="/images/pub/interpagent.png" target="_blank" rel="noopener">
+        <img src="/images/pub/interpagent.png" alt="interpAgent overview figure">
+      </a>
+      -->
+    </div>
   </li>
   <li class="news-item">
-    <span class="news-date">Dec 8, 2025</span><br>
-    Our commentary on the state of the art in wireless BCIs was published in
-    <a href="https://www.nature.com/articles/s41928-025-01510-2"><em>Nature Electronics</em></a>.
-    Excited to share some thoughts on where the field is heading.
+    <span class="news-date">Dec 2025</span>
+    <span class="pub-tag tag-paper">paper</span>
+    <div class="news-body">
+      <div class="news-text">
+        Our commentary on the state of the art in wireless BCIs &mdash; and where the field is heading &mdash;
+        is out in <em>Nature Electronics</em>.
+        <div class="news-links">
+          <a class="pub-link" href="https://www.nature.com/articles/s41928-025-01510-2">paper</a>
+        </div>
+      </div>
+    </div>
   </li>
   <li class="news-item">
-    <span class="news-date">Oct 2025</span><br>
-    Gave a short talk at the <a href="https://lunchandlearnkempner.github.io/">Kempner Seminar Lunch and Learn</a> at Harvard,
-    broadly presenting my work on agents for interpretability in brain networks. And had good free food!
+    <span class="news-date">Oct 2025</span>
+    <span class="pub-tag tag-talk">talk</span>
+    <div class="news-body">
+      <div class="news-text">
+        Short talk at the <strong>Kempner Seminar Lunch and Learn</strong> at Harvard
+        on agents for interpretability in brain networks. And had good free food!
+        <div class="news-links">
+          <a class="pub-link" href="https://lunchandlearnkempner.github.io/">seminar</a>
+        </div>
+      </div>
+    </div>
   </li>
-  <li class="news-item">
-    <span class="news-date">Jun 2025</span><br>
-    Invited talk at the <strong>Rafael del Pino Foundation (C4T)</strong>, Boston &mdash;
-    <em>"Agentic AI for Biology"</em>.
+  <li class="news-item news-hidden">
+    <span class="news-date">Jun 2025</span>
+    <span class="pub-tag tag-talk">talk</span>
+    <div class="news-body">
+      <div class="news-text">
+        Invited talk at the <strong>Rafael del Pino Foundation (C4T)</strong>, Boston &mdash;
+        <em>"Agentic AI for Biology"</em>.
+      </div>
+    </div>
   </li>
-  <li class="news-item">
-    <span class="news-date">May 2025</span><br>
-    Invited talk at <strong>MIT</strong>, Cambridge &mdash;
-    <em>"AI Agents for Automated and Scalable Neuroscience"</em>.
+  <li class="news-item news-hidden">
+    <span class="news-date">May 2025</span>
+    <span class="pub-tag tag-talk">talk</span>
+    <div class="news-body">
+      <div class="news-text">
+        Invited talk at <strong>MIT</strong>, Cambridge &mdash;
+        <em>"AI Agents for Automated and Scalable Neuroscience"</em>.
+      </div>
+    </div>
   </li>
-  <li class="news-item">
-    <span class="news-date">Apr 2025</span><br>
-    Invited talks at <strong>Stanford University</strong> (Palo Alto),
-    <strong>UC San Francisco</strong>, and the
-    <strong>Flatiron Institute</strong> (Simons Foundation, New York/Remote)
-    on AI agents for neuroscience and spike sorting.
-    Thanks to the Enigma group at Stanford, Alessio Buccino at the Flatiron Institute, and Prof. Edward Chang at UCSF for the invitations and the exciting, engaging discussions.
+  <li class="news-item news-hidden">
+    <span class="news-date">Apr 2025</span>
+    <span class="pub-tag tag-talk">talk</span>
+    <div class="news-body">
+      <div class="news-text">
+        Invited talks on AI agents for neuroscience and spike sorting at
+        <strong>Stanford University</strong>, <strong>UC San Francisco</strong>, and the
+        <strong>Flatiron Institute</strong> (Simons Foundation).
+        Thanks to the Enigma group, Prof. Edward Chang, and Alessio Buccino for the invitations
+        and the engaging discussions.
+      </div>
+    </div>
   </li>
-  <li class="news-item">
-    <span class="news-date">Apr 11, 2025</span><br>
-    So happy to see our first paper published! Joint work with Mavi Sanchez-Vives,
-    Leo Dalla Porta, and Arnau Manasanch, now out in
-    <a href="https://www.nature.com/articles/s42003-025-07991-3"><em>Communications Biology</em></a>.
-    All code is available on <a href="https://github.com/arnaumarin/LFPDeepStates">GitHub</a>.
+  <li class="news-item news-hidden">
+    <span class="news-date">Apr 2025</span>
+    <span class="pub-tag tag-paper">paper</span>
+    <div class="news-body">
+      <div class="news-text">
+        So happy to see our first paper published! Joint work with Mavi Sanchez-Vives,
+        Leo Dalla Porta, and Arnau Manasanch, now out in <em>Communications Biology</em>.
+        <div class="news-links">
+          <a class="pub-link" href="https://www.nature.com/articles/s42003-025-07991-3">paper</a>
+          <a class="pub-link" href="https://github.com/arnaumarin/LFPDeepStates">code</a>
+        </div>
+      </div>
+      <a class="news-thumb" href="/images/pub/lfp-deepstates.png" target="_blank" rel="noopener">
+        <img src="/images/pub/lfp-deepstates.png" alt="LFP DeepStates figure, Communications Biology">
+      </a>
+    </div>
   </li>
-  <li class="news-item">
-    <span class="news-date">Jul 2024</span><br>
-    Invited talk at <strong>ETH Zurich</strong> &mdash;
-    <em>"Methods to Stably Track Neurons in High-Density Probes"</em>.
+  <li class="news-item news-hidden">
+    <span class="news-date">Jul 2024</span>
+    <span class="pub-tag tag-talk">talk</span>
+    <div class="news-body">
+      <div class="news-text">
+        Invited talk at <strong>ETH Zurich</strong> &mdash;
+        <em>"Methods to Stably Track Neurons in High-Density Probes"</em>.
+      </div>
+    </div>
   </li>
 </ul>
-</div>
+<button id="news-toggle" type="button" aria-expanded="false">Show all news &darr;</button>
 </div>
 
 <p style="margin-top: 2em; color: #666; font-size: 0.9em;">I'm always happy to chat about research, collaborations, or anything else — feel free to reach out by email.</p>

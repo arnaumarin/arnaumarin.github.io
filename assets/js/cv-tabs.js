@@ -25,6 +25,25 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  /* News show-more expander */
+  var newsToggle = document.getElementById('news-toggle');
+  if (newsToggle) {
+    var hiddenNews = document.querySelectorAll('#news-timeline .news-item.news-hidden');
+    if (hiddenNews.length === 0) {
+      newsToggle.style.display = 'none';
+    } else {
+      var newsExpanded = false;
+      newsToggle.addEventListener('click', function() {
+        newsExpanded = !newsExpanded;
+        hiddenNews.forEach(function(item) {
+          item.classList.toggle('news-hidden', !newsExpanded);
+        });
+        newsToggle.setAttribute('aria-expanded', newsExpanded);
+        newsToggle.innerHTML = newsExpanded ? 'Show fewer &uarr;' : 'Show all news &darr;';
+      });
+    }
+  }
+
   /* Publication category filtering */
   var filterBtns = document.querySelectorAll('.filter-btn');
   var pubItems = document.querySelectorAll('.pub-item');
