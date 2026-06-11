@@ -212,6 +212,10 @@
   transition: all 0.2s;
 }
 .pub-link:hover { background: #494e52; color: #fff; }
+/* Beat the theme's content-link underline (".page__content p a" etc.) */
+.page__content a.pub-link,
+.page__content a.pub-link:hover,
+.page__content a.news-thumb { text-decoration: none; border-bottom: none; }
 
 /* News — timeline with optional thumbnails and show-more expander */
 .news-timeline {
