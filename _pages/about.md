@@ -58,11 +58,9 @@ My research centers on understanding minds and reasoning in biological and artif
           <a class="pub-link" href="https://agentwild-workshop.github.io/icml2026/">workshop</a>
         </div>
       </div>
-      <!-- Add the paper's key figure as images/pub/interpagent.png, then uncomment:
       <a class="news-thumb" href="/images/pub/interpagent.png" target="_blank" rel="noopener">
         <img src="/images/pub/interpagent.png" alt="interpAgent overview figure">
       </a>
-      -->
     </div>
   </li>
   <li class="news-item">
