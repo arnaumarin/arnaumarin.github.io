@@ -1,11 +1,17 @@
 <script setup>
+import { ref } from 'vue'
 import media from '../data/media.js'
+
+const open = ref(false)
 </script>
 
 <template>
   <section id="media">
-    <h2 class="section-title">In the Media</h2>
-    <ul class="flex flex-col gap-5">
+    <button class="media-toggle" :aria-expanded="open" @click="open = !open">
+      In the Media <span class="chevron" :class="{ rot: open }">↓</span>
+    </button>
+
+    <ul v-if="open" class="mt-5 flex flex-col gap-5">
       <li v-for="m in media" :key="m.title">
         <p class="media-title">{{ m.title }}</p>
         <p class="media-meta">
@@ -30,6 +36,28 @@ import media from '../data/media.js'
 </template>
 
 <style scoped>
+.media-toggle {
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.2s ease;
+}
+.media-toggle:hover {
+  color: var(--color-teal);
+}
+.chevron {
+  font-size: 0.8em;
+  color: var(--color-faint);
+  transition: transform 0.25s ease;
+}
+.chevron.rot {
+  transform: rotate(180deg);
+}
 .media-title {
   font-weight: 700;
   font-size: 0.92rem;

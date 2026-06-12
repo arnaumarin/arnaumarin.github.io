@@ -5,7 +5,6 @@ import SiteHeader from './components/SiteHeader.vue'
 import NewsList from './components/NewsList.vue'
 import PublicationList from './components/PublicationList.vue'
 import MediaList from './components/MediaList.vue'
-import HonorsList from './components/HonorsList.vue'
 import SiteFooter from './components/SiteFooter.vue'
 </script>
 
@@ -26,7 +25,6 @@ import SiteFooter from './components/SiteFooter.vue'
     <div class="reveal" style="animation-delay: 0.16s"><NewsList /></div>
     <div class="reveal" style="animation-delay: 0.2s"><PublicationList /></div>
     <div class="reveal" style="animation-delay: 0.24s"><MediaList /></div>
-    <div class="reveal" style="animation-delay: 0.28s"><HonorsList /></div>
 
     <SiteFooter />
   </main>
