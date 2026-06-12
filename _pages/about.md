@@ -21,7 +21,7 @@ amarinllobet <span class="email-sep">at</span> g <span class="email-sep">dot</sp
 a.marinllobet <span class="email-sep">at</span> gmail <span class="email-sep">dot</span> com
 </p>
 
-I am mostly interested in computational neuroscience, in opening the black box of the brain to understand how it works and how it makes decisions, from both the cognitive and the mechanistic side. To do that, I develop computational methods, such as autonomous agents and other AI-based approaches, to probe and make sense of that black box. Most recently, I've also been pursuing work and collaborations in AI interpretability, extending these autonomous, interpretability-driven approaches to language models to support safer and more reliable AI systems.
+I am mostly interested in <strong style="color: #2f7f93;">computational neuroscience</strong>, in opening the <strong style="color: #2f7f93;">black box of the brain</strong> to understand how it works and how it makes decisions, from both the <strong style="color: #2f7f93;">cognitive</strong> and the <strong style="color: #2f7f93;">mechanistic</strong> side. To do that, I develop computational methods, such as <strong style="color: #2f7f93;">autonomous agents</strong> and other <strong style="color: #2f7f93;">AI-based approaches</strong>, to probe and make sense of that black box. Most recently, I've also been pursuing work and collaborations in <strong style="color: #2f7f93;">AI interpretability</strong>, extending these autonomous, interpretability-driven approaches to language models to support <strong style="color: #2f7f93;">safer and more reliable AI systems</strong>.
 
 
 <div id="news-section">
