@@ -21,7 +21,7 @@ amarinllobet <span class="email-sep">at</span> g <span class="email-sep">dot</sp
 a.marinllobet <span class="email-sep">at</span> gmail <span class="email-sep">dot</span> com
 </p>
 
-My research centers on understanding minds and reasoning in biological and artificial systems, with an emphasis on mechanistic, autonomous and causal understanding. I combine brain–computer interfaces with computational methods to probe brain circuit mechanisms. Recently, I've been thinking on how to extend or adapt these autonomous interpretability-driven approaches to language models to support safer and more reliable AI systems.
+I am mostly interested in computational neuroscience, in opening the black box of the brain to understand how it works and how it makes decisions, from both the cognitive and the mechanistic side. To do that, I develop computational methods, such as autonomous agents and other AI-based approaches, to probe and make sense of that black box. Most recently, I've also been pursuing work and collaborations in AI interpretability, extending these autonomous, interpretability-driven approaches to language models to support safer and more reliable AI systems.
 
 
 <div id="news-section">
