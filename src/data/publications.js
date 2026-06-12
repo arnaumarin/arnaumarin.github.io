@@ -47,14 +47,6 @@ export default [
                explanations for them.`,
   },
   {
-    title: 'Towards agentic auditing and repairing of LM probes under distribution shift.',
-    authorsHtml: '<strong>A. Marin-Llobet</strong> et al.',
-    venueHtml: 'Preprint.',
-    tags: [{ label: 'DL & Interp.', type: 'dl' }],
-    cats: ['dl'],
-    links: [],
-  },
-  {
     title: 'The parameters in weight-sparse transformers are interpretable.',
     authorsHtml: '<strong>A. Marin-Llobet</strong> and S. Heimersheim.',
     venueHtml: '<em>Mechanistic Interpretability Workshop, ICML</em> 2026.',
@@ -66,9 +58,10 @@ export default [
     title: 'Hopfield-enhanced DNNs for artifact-resilient brain state decoding.',
     authorsHtml: '<strong>A. Marin-Llobet</strong> et al.',
     venueHtml: '<em>NeurIPS Workshop on Associative Memory &amp; Hopfield Networks</em>, 2023.',
+    thumb: '/images/pub/hopfield_neuripsworkshop.png',
     tags: [{ label: 'DL & Interp.', type: 'dl' }, { label: 'Neuroscience', type: 'neuro' }],
     cats: ['dl', 'neuro'],
-    links: [],
+    links: [{ label: 'Paper', href: 'https://arxiv.org/abs/2311.03421' }],
   },
 
   // ── AI Agents for Automated Scientific Discovery ────────────────
