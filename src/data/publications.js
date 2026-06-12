@@ -135,9 +135,10 @@ export default [
     title: 'Riemannian geometry for classification of brain states with intracortical recordings.',
     authorsHtml: '<strong>A. Marin-Llobet</strong> et al.',
     venueHtml: '<em>Advanced Intelligent Systems</em>, e202500480, 2025.',
+    thumb: '/images/pub/geometricML.jpg',
     tags: [{ label: 'Neuroscience', type: 'neuro' }],
     cats: ['neuro'],
-    links: [],
+    links: [{ label: 'Paper', href: 'https://advanced.onlinelibrary.wiley.com/doi/10.1002/aisy.202500480' }],
   },
   {
     title: 'End-to-end multimodal deep learning for months-long neural decoding.',
@@ -145,7 +146,7 @@ export default [
     venueHtml: 'Preprint, 2024.',
     tags: [{ label: 'Neuroscience', type: 'neuro' }],
     cats: ['neuro'],
-    links: [],
+    links: [{ label: 'Preprint', href: 'https://www.biorxiv.org/content/10.1101/2024.10.14.618046v1' }],
   },
   {
     title: 'Efficient on-chip cross-subject local field potential decoding for implantable neural interfaces.',
@@ -153,7 +154,7 @@ export default [
     venueHtml: '<em>IEEE International Joint Conference on Neural Networks (IJCNN)</em>, 2025.',
     tags: [{ label: 'Neuroscience', type: 'neuro' }],
     cats: ['neuro'],
-    links: [],
+    links: [{ label: 'Paper', href: 'https://ieeexplore.ieee.org/document/11228470/' }],
   },
 
   // ── Genomics ────────────────────────────────────────────────────
