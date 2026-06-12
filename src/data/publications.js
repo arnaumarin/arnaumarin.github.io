@@ -52,7 +52,10 @@ export default [
     venueHtml: '<em>Mechanistic Interpretability Workshop, ICML</em> 2026.',
     tags: [{ label: 'DL & Interp.', type: 'dl' }],
     cats: ['dl'],
-    links: [{ label: 'Paper', href: 'https://openreview.net/forum?id=Sx5Qth8Wmz' }],
+    links: [
+      { label: 'Paper', href: 'https://openreview.net/forum?id=Sx5Qth8Wmz' },
+      { label: 'Project website', href: 'https://weightpedia.org/' },
+    ],
   },
   {
     title: 'Hopfield-enhanced DNNs for artifact-resilient brain state decoding.',
@@ -96,7 +99,6 @@ export default [
 
   // ── Computational Neuroscience ──────────────────────────────────
   {
-    selected: true,
     title: 'Wireless recording with ultrathin brain interfaces.',
     authorsHtml: '<strong>A. Marin-Llobet</strong> et al.',
     venueHtml: '<em>Nature Electronics</em>, 8:1144–1145, 2025.',
@@ -144,6 +146,7 @@ export default [
     title: 'End-to-end multimodal deep learning for months-long neural decoding.',
     authorsHtml: 'Y. He* and <strong>A. Marin-Llobet</strong>* et al.',
     venueHtml: 'Preprint, 2024.',
+    thumb: '/images/pub/autosort.png',
     tags: [{ label: 'Neuroscience', type: 'neuro' }],
     cats: ['neuro'],
     links: [{ label: 'Preprint', href: 'https://www.biorxiv.org/content/10.1101/2024.10.14.618046v1' }],
@@ -159,7 +162,6 @@ export default [
 
   // ── Genomics ────────────────────────────────────────────────────
   {
-    selected: true,
     title: 'MECP2 and SH3KBP1 variants associated with autism spectrum disorder and immune dysregulation.',
     authorsHtml: '<strong>A. Marin-Llobet</strong>, C. Hernando-Davalillo, H. Baide Mairena, P. Llobet-Agullo et al.',
     venueHtml: '<em>Frontiers in Immunology</em>, 17:1814088, 2026.',
