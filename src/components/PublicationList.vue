@@ -4,16 +4,18 @@ import pubs, { categories } from '../data/publications.js'
 import Tag from './Tag.vue'
 import VignetteThumb from './VignetteThumb.vue'
 
-const active = ref('all')
+const active = ref('selected')
 const openTldr = ref(new Set())
 
 const filtered = computed(() =>
-  active.value === 'all' ? pubs : pubs.filter((p) => p.cats.includes(active.value)),
+  active.value === 'selected'
+    ? pubs.filter((p) => p.selected)
+    : pubs.filter((p) => p.cats.includes(active.value)),
 )
 
-function toggle(i) {
+function toggle(key) {
   const s = new Set(openTldr.value)
-  s.has(i) ? s.delete(i) : s.add(i)
+  s.has(key) ? s.delete(key) : s.add(key)
   openTldr.value = s
 }
 </script>
@@ -41,8 +43,8 @@ function toggle(i) {
     </div>
 
     <ul class="flex flex-col gap-7">
-      <li v-for="(p, i) in filtered" :key="p.title" class="flex gap-4">
-        <VignetteThumb :src="p.thumb" :alt="p.title" />
+      <li v-for="p in filtered" :key="p.title" class="flex gap-4">
+        <VignetteThumb v-if="p.thumb" :src="p.thumb" :alt="p.title" />
         <div class="flex-1 min-w-0">
           <p class="pub-title" v-html="p.title"></p>
           <p class="pub-authors" v-html="p.authorsHtml"></p>
@@ -59,15 +61,15 @@ function toggle(i) {
               style="color: var(--color-teal)"
               >{{ l.label }}</a
             >
-            <button class="tldr-btn" @click="toggle(i)">
-              {{ openTldr.has(i) ? 'TL;DR ↑' : 'TL;DR ↓' }}
+            <button v-if="p.tldrHtml" class="tldr-btn" @click="toggle(p.title)">
+              {{ openTldr.has(p.title) ? 'TL;DR ↑' : 'TL;DR ↓' }}
             </button>
             <span class="ml-auto flex flex-wrap gap-1.5">
               <Tag v-for="t in p.tags" :key="t.label" :label="t.label" :type="t.type" />
             </span>
           </div>
 
-          <p v-if="openTldr.has(i)" class="pub-tldr" v-html="p.tldrHtml"></p>
+          <p v-if="openTldr.has(p.title)" class="pub-tldr" v-html="p.tldrHtml"></p>
         </div>
       </li>
     </ul>
