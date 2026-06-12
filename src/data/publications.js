@@ -1,0 +1,109 @@
+// Selected publications. `cats` drives the category filter.
+// Tag types: neuro · dl · genomics · ai4sci
+
+export const categories = [
+  { key: 'all', label: 'All' },
+  { key: 'neuro', label: 'Neuroscience' },
+  { key: 'dl', label: 'DL & Interp.' },
+  { key: 'genomics', label: 'Genomics' },
+  { key: 'ai4sci', label: 'AI for Discovery' },
+]
+
+export default [
+  {
+    title: 'Vision-language models suppress female representations under ambiguous input.',
+    authorsHtml: '<strong>A. Marin-Llobet</strong>, S. Henniger, M.R. Banaji.',
+    venueHtml: 'Spotlight at the <em>HOW Workshop, CVPR</em>, 2026. Preprint in <em>arXiv</em>.',
+    thumb: '/images/pub/vlm-bias.png',
+    tags: [{ label: 'DL & Interp.', type: 'dl' }],
+    cats: ['dl'],
+    links: [
+      { label: 'Preprint', href: 'https://arxiv.org/abs/2605.31556' },
+      { label: 'Workshop', href: 'https://sites.google.com/view/how-cvpr-workshop/2026-workshop' },
+    ],
+    tldrHtml: `On gender-ambiguous images, aligned VLMs collapse to “male” even for female-stereotyped
+               occupations; our zero-shot LALS metric shows the internal representations and the outputs
+               tell different stories.`,
+  },
+  {
+    title: 'MECP2 and SH3KBP1 variants associated with autism spectrum disorder and immune dysregulation.',
+    authorsHtml: '<strong>A. Marin-Llobet</strong>, C. Hernando-Davalillo, H. Baide Mairena, P. Llobet-Agullo et al.',
+    venueHtml: '<em>Frontiers in Immunology</em>, 17:1814088, 2026.',
+    thumb: '/images/pub/mecp2.png',
+    tags: [{ label: 'Genomics', type: 'genomics' }],
+    cats: ['genomics'],
+    links: [
+      { label: 'Paper', href: 'https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1814088/full' },
+    ],
+    tldrHtml: `Two boys with autism, immune dysregulation, and congenital cardiac anomalies, each carrying
+               a distinct X-chromosome copy-number variant (an <em>MECP2</em> duplication and an
+               <em>SH3KBP1</em> variant) — a case for joint genetic–immune workups in ASD.`,
+  },
+  {
+    title: 'Automated Interpretability and Feature Discovery in Language Models with Agents (interpAgent).',
+    authorsHtml: '<strong>A. Marin-Llobet</strong> and J. Ferrando.',
+    venueHtml: 'To appear at <em>ICML Workshop AI4WIlD</em>, 2026. Preprint in <em>arXiv</em>.',
+    thumb: '/images/pub/interpagent.png',
+    tags: [{ label: 'DL & Interp.', type: 'dl' }, { label: 'AI for Discovery', type: 'ai4sci' }],
+    cats: ['dl', 'ai4sci'],
+    links: [
+      { label: 'Preprint', href: 'https://arxiv.org/abs/2605.01555' },
+      { label: 'GitHub', href: 'https://github.com/arnaumarin/InterpAgent' },
+    ],
+    tldrHtml: `Two cooperating agents — a FeatureFinder and a FeatureExplainer — autonomously discover
+               features in LLMs (SAEs and other latents), then generate, stress-test, and rank
+               explanations for them.`,
+  },
+  {
+    title: 'Wireless recording with ultrathin brain interfaces.',
+    authorsHtml: '<strong>A. Marin-Llobet</strong> et al.',
+    venueHtml: '<em>Nature Electronics</em>, 8:1144–1145, 2025.',
+    thumb: '/images/pub/wireless-bci.png',
+    tags: [{ label: 'Neuroscience', type: 'neuro' }],
+    cats: ['neuro'],
+    links: [{ label: 'Paper', href: 'https://www.nature.com/articles/s41928-025-01510-2' }],
+    tldrHtml: `Commentary on ultrathin, wireless brain implants that stream high-bandwidth neural data
+               without cables — and what it will take to make them chronic and clinical.`,
+  },
+  {
+    title: 'An AI agent for cell-type specific interpretable brain-computer interfaces.',
+    authorsHtml: '<strong>A. Marin-Llobet</strong>, Z. Lin, J. Baek et al.',
+    venueHtml: 'Under peer review. Preprint in <em>bioRxiv</em>, 2025.',
+    thumb: '/images/pub/cellagent.png',
+    tags: [{ label: 'Neuroscience', type: 'neuro' }, { label: 'AI for Discovery', type: 'ai4sci' }],
+    cats: ['neuro', 'ai4sci'],
+    links: [{ label: 'Preprint', href: 'https://www.biorxiv.org/content/10.1101/2025.09.11.675660v1' }],
+    tldrHtml: `An AI agent that turns in vivo recordings into cell-type-specific BCIs: it infers the cell
+               type behind each spike and validates its calls against spatial brain atlases and the
+               literature.`,
+  },
+  {
+    title: 'Neural models for detection and classification of brain states and transitions.',
+    authorsHtml: '<strong>A. Marin-Llobet</strong>*, A. Manasanch* et al.',
+    venueHtml: '<em>Communications Biology</em>, 8(1):599, 2025.',
+    thumb: '/images/pub/lfp-deepstates.png',
+    tags: [{ label: 'Neuroscience', type: 'neuro' }],
+    cats: ['neuro'],
+    links: [
+      { label: 'Paper', href: 'https://www.nature.com/articles/s42003-025-07991-3' },
+      { label: 'GitHub', href: 'https://github.com/arnaumarin/LFPDeepStates' },
+    ],
+    tldrHtml: `Deep learning models that detect and classify brain states and their transitions directly
+               from raw LFPs — including an autoencoder that uncovers and helps explain a previously
+               undescribed brain state.`,
+  },
+  {
+    title: 'Spike sorting AI agent.',
+    authorsHtml: 'Z. Lin* and <strong>A. Marin-Llobet</strong>* et al.',
+    venueHtml: 'Under peer review. Preprint in <em>bioRxiv</em>, 2025.',
+    thumb: '/images/pub/spikeagent.png',
+    tags: [{ label: 'Neuroscience', type: 'neuro' }, { label: 'AI for Discovery', type: 'ai4sci' }],
+    cats: ['neuro', 'ai4sci'],
+    links: [
+      { label: 'Preprint', href: 'https://www.biorxiv.org/content/10.1101/2025.02.11.637754v1' },
+      { label: 'GitHub', href: 'https://github.com/spikeagent/spikeagent' },
+    ],
+    tldrHtml: `A multimodal LLM agent that automates the full spike-sorting workflow — preprocessing,
+               sorting, and visual curation — with step-by-step reasoning a human can audit.`,
+  },
+]

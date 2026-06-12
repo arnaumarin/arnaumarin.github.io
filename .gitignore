@@ -8,6 +8,6 @@ local/
 # Ignore the Gemfile that is generated
 Gemfile.lock
 
-# Ingore files created by npm
+# Files created by npm / Vite
 node_modules
-package-lock.json
+dist/
