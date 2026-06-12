@@ -155,6 +155,7 @@ export default [
     title: 'Efficient on-chip cross-subject local field potential decoding for implantable neural interfaces.',
     authorsHtml: '<strong>A. Marin-Llobet</strong> et al.',
     venueHtml: '<em>IEEE International Joint Conference on Neural Networks (IJCNN)</em>, 2025.',
+    thumb: '/images/pub/IJCNN.png',
     tags: [{ label: 'Neuroscience', type: 'neuro' }],
     cats: ['neuro'],
     links: [{ label: 'Paper', href: 'https://ieeexplore.ieee.org/document/11228470/' }],
