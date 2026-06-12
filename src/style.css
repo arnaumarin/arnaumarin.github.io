@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@500;600&display=swap');
+@import 'tailwindcss';
+
+/* ── Design tokens ──────────────────────────────────────────────── */
+@theme {
+  --color-teal: #2f7f93;
+  --color-teal-soft: #2f7f9322;
+  --color-ink: #1a1a1a;
+  --color-muted: #666666;
+  --color-faint: #8a8a8a;
+  --color-rule: #e7e7e7;
+
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --container-prose: 42rem;
+}
+
+/* ── Base ───────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-ink);
+  }
+  ::selection {
+    background: var(--color-teal);
+    color: #fff;
+  }
+}
+
+/* ── The signature hover-underline sweep ────────────────────────── */
+@layer components {
+  .sweep {
+    position: relative;
+    font-weight: 600;
+    color: var(--color-ink);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .sweep::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 0.16em;
+    background: var(--color-teal);
+    opacity: 0.85;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .sweep:hover::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+  }
+
+  /* Inline prose links inherit the sweep but stay teal-tinted */
+  .prose-link {
+    color: var(--color-teal);
+    font-weight: 600;
+    text-decoration: none;
+    background-image: linear-gradient(var(--color-teal), var(--color-teal));
+    background-size: 0% 1.5px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+  }
+  .prose-link:hover {
+    background-size: 100% 1.5px;
+  }
+
+  /* Teal-bolded keyword accents in the bio */
+  .accent {
+    color: var(--color-teal);
+    font-weight: 700;
+  }
+
+  /* ── Vignette thumbnails (rotate + straighten on hover) ───────── */
+  .vignette {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.13);
+    transform: rotate(-2deg);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+    background: #f4f5f6;
+  }
+  .vignette:nth-child(even) {
+    transform: rotate(2deg);
+  }
+  .vignette:hover {
+    transform: rotate(0deg) scale(1.06);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.22);
+  }
+  .vignette img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ── Mono pill badges ─────────────────────────────────────────── */
+  .badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.12em 0.5em;
+    border-radius: 4px;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+  .badge-neuro    { background: #1565c01a; color: #1565c0; }
+  .badge-dl       { background: #7b1fa21a; color: #7b1fa2; }
+  .badge-genomics { background: #2e7d321a; color: #2e7d32; }
+  .badge-ai4sci   { background: #e651001a; color: #e65100; }
+  .badge-talk     { background: #2f7f931a; color: #2f7f93; }
+  .badge-paper    { background: #4949521a; color: #494952; }
+  .badge-spotlight{ background: #c8910022; color: #b07d00; }
+
+  /* ── Section headings ─────────────────────────────────────────── */
+  .section-title {
+    font-size: 1.18rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-rule);
+  }
+
+  /* ── News timeline ────────────────────────────────────────────── */
+  .timeline {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 0.5em;
+    bottom: 0.5em;
+    width: 1.5px;
+    background: var(--color-rule);
+  }
+  .news-row {
+    position: relative;
+    padding-left: 1.75rem;
+    padding-bottom: 1.6rem;
+  }
+  .news-row::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.45em;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--color-rule);
+  }
+  .news-row:first-child::before {
+    border-color: var(--color-teal);
+    box-shadow: 0 0 0 3px var(--color-teal-soft);
+  }
+}
+
+/* ── Staggered page-load reveal ─────────────────────────────────── */
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: reveal-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  @keyframes reveal-in {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
