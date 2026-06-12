@@ -56,6 +56,9 @@ export default [
       { label: 'Paper', href: 'https://openreview.net/forum?id=Sx5Qth8Wmz' },
       { label: 'Project website', href: 'https://weightpedia.org/' },
     ],
+    tldrHtml: `Training transformers to be weight-sparse makes their individual parameters legible: rather
+               than entangled superposition, the weights map onto interpretable circuits you can read off
+               directly.`,
   },
   {
     title: 'Hopfield-enhanced DNNs for artifact-resilient brain state decoding.',
@@ -65,6 +68,9 @@ export default [
     tags: [{ label: 'DL & Interp.', type: 'dl' }, { label: 'Neuroscience', type: 'neuro' }],
     cats: ['dl', 'neuro'],
     links: [{ label: 'Paper', href: 'https://arxiv.org/abs/2311.03421' }],
+    tldrHtml: `Pairing a Hopfield associative-memory module with a CNN to decode brain states from neural
+               recordings — the memory layer cleans up corrupted inputs, keeping decoding robust under
+               heavy artifacts.`,
   },
 
   // ── AI Agents for Automated Scientific Discovery ────────────────
@@ -116,6 +122,8 @@ export default [
     tags: [{ label: 'Neuroscience', type: 'neuro' }],
     cats: ['neuro'],
     links: [],
+    tldrHtml: `Single-neuron tuning in visual cortex drifts over days; we realign these shifting
+               representations so that decoders trained once stay accurate across long recording sessions.`,
   },
   {
     selected: true,
@@ -141,6 +149,9 @@ export default [
     tags: [{ label: 'Neuroscience', type: 'neuro' }],
     cats: ['neuro'],
     links: [{ label: 'Paper', href: 'https://advanced.onlinelibrary.wiley.com/doi/10.1002/aisy.202500480' }],
+    tldrHtml: `Representing intracortical recordings as covariance matrices and classifying brain states
+               (awake, slow-oscillation, microarousal) directly on the Riemannian manifold — geometry-aware
+               features that beat flat Euclidean baselines.`,
   },
   {
     title: 'End-to-end multimodal deep learning for months-long neural decoding.',
@@ -150,6 +161,9 @@ export default [
     tags: [{ label: 'Neuroscience', type: 'neuro' }],
     cats: ['neuro'],
     links: [{ label: 'Preprint', href: 'https://www.biorxiv.org/content/10.1101/2024.10.14.618046v1' }],
+    tldrHtml: `AutoSort: an end-to-end multimodal model that turns months-long electrophysiology into
+               stable, real-time neural decoding — no manual spike curation, robust as the recording
+               changes over time.`,
   },
   {
     title: 'Efficient on-chip cross-subject local field potential decoding for implantable neural interfaces.',
@@ -159,6 +173,9 @@ export default [
     tags: [{ label: 'Neuroscience', type: 'neuro' }],
     cats: ['neuro'],
     links: [{ label: 'Paper', href: 'https://ieeexplore.ieee.org/document/11228470/' }],
+    tldrHtml: `A compact, 8-bit-quantized LFP decoder that runs on-chip (RISC-V) for implantable interfaces
+               and is trained across subjects, so it generalizes to a new subject without per-person
+               retraining.`,
   },
 
   // ── Genomics ────────────────────────────────────────────────────
