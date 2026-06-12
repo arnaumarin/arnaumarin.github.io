@@ -16,6 +16,21 @@ export default [
   // ── DL & Interpretability / AI safety ───────────────────────────
   {
     selected: true,
+    title: 'The parameters in weight-sparse transformers are interpretable.',
+    authorsHtml: '<strong>A. Marin-Llobet</strong> and S. Heimersheim.',
+    venueHtml: '<em>Mechanistic Interpretability Workshop, ICML</em> 2026.',
+    tags: [{ label: 'DL & Interp.', type: 'dl' }],
+    cats: ['dl'],
+    links: [
+      { label: 'Paper', href: 'https://openreview.net/forum?id=Sx5Qth8Wmz' },
+      { label: 'Project website', href: 'https://weightpedia.org/' },
+    ],
+    tldrHtml: `Training transformers to be weight-sparse makes their individual parameters legible: rather
+               than entangled superposition, the weights map onto interpretable circuits you can read off
+               directly.`,
+  },
+  {
+    selected: true,
     title: 'Vision-language models suppress female representations under ambiguous input.',
     authorsHtml: '<strong>A. Marin-Llobet</strong>, S. Henniger, M.R. Banaji.',
     venueHtml: 'Preprint. Oral talk at the <em>HOW Workshop, CVPR</em> 2026.',
@@ -45,20 +60,6 @@ export default [
     tldrHtml: `Two cooperating agents — a FeatureFinder and a FeatureExplainer — autonomously discover
                features in LLMs (SAEs and other latents), then generate, stress-test, and rank
                explanations for them.`,
-  },
-  {
-    title: 'The parameters in weight-sparse transformers are interpretable.',
-    authorsHtml: '<strong>A. Marin-Llobet</strong> and S. Heimersheim.',
-    venueHtml: '<em>Mechanistic Interpretability Workshop, ICML</em> 2026.',
-    tags: [{ label: 'DL & Interp.', type: 'dl' }],
-    cats: ['dl'],
-    links: [
-      { label: 'Paper', href: 'https://openreview.net/forum?id=Sx5Qth8Wmz' },
-      { label: 'Project website', href: 'https://weightpedia.org/' },
-    ],
-    tldrHtml: `Training transformers to be weight-sparse makes their individual parameters legible: rather
-               than entangled superposition, the weights map onto interpretable circuits you can read off
-               directly.`,
   },
   {
     title: 'Hopfield-enhanced DNNs for artifact-resilient brain state decoding.',
