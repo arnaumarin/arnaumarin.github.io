@@ -84,10 +84,21 @@
     background-size: 100% 1.5px;
   }
 
-  /* Teal-bolded keyword accents in the bio */
+  /* Highlighted keyword accents in the bio — a soft teal marker, not a link.
+     Dark text with a translucent blue fill behind the lower half of the word. */
   .accent {
-    color: var(--color-teal);
-    font-weight: 700;
+    color: var(--color-ink);
+    font-weight: 600;
+    background-image: linear-gradient(
+      to top,
+      rgba(47, 127, 147, 0.22) 0,
+      rgba(47, 127, 147, 0.22) 0.42em,
+      transparent 0.42em
+    );
+    padding: 0 0.06em;
+    border-radius: 2px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
   }
 
   /* ── Vignette thumbnails (rotate + straighten on hover) ───────── */
