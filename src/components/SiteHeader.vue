@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue'
-import { name, tagline, photo, emails, socials } from '../data/profile.js'
+import { name, tagline, photo, emails, socials, fundingHtml } from '../data/profile.js'
 
 // Assemble mailto at runtime so the address isn't sitting in static HTML.
 const primaryEmail = computed(() => `${emails[0].user}@${emails[0].domain}`)
@@ -26,6 +26,8 @@ const paths = {
         <span style="font-family: var(--font-serif); font-weight: 700">{{ name }}</span>
       </h1>
       <p class="mt-2 text-[0.95rem]" style="color: var(--color-muted)">{{ tagline }}</p>
+
+      <p class="funding-line mt-2" v-html="fundingHtml"></p>
 
       <nav class="mt-4 flex items-center gap-4" aria-label="Social links">
         <a
@@ -60,6 +62,22 @@ const paths = {
 </template>
 
 <style scoped>
+.funding-line {
+  font-size: 0.74rem;
+  line-height: 1.5;
+  color: var(--color-faint);
+  max-width: 38rem;
+}
+.funding-line :deep(a) {
+  color: var(--color-faint);
+  text-decoration: underline;
+  text-decoration-color: var(--color-rule);
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+.funding-line :deep(a:hover) {
+  color: var(--color-teal);
+}
 .icon-link {
   color: var(--color-faint);
   transition: color 0.2s ease, transform 0.2s ease;
