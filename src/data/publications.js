@@ -25,9 +25,8 @@ export default [
       { label: 'Paper', href: 'https://openreview.net/forum?id=Sx5Qth8Wmz' },
       { label: 'Project website', href: 'https://weightpedia.org/' },
     ],
-    tldrHtml: `Training transformers to be weight-sparse makes their individual parameters legible: rather
-               than entangled superposition, the weights map onto interpretable circuits you can read off
-               directly.`,
+    tldrHtml: `An empirical study showing that the weights of weight-sparse transformers are directly
+               interpretable.`,
   },
   {
     selected: true,
