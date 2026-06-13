@@ -1,5 +1,5 @@
 <script setup>
-import { fundingHtml, bioHtml } from './data/profile.js'
+import { bioHtml } from './data/profile.js'
 import TopoBackground from './components/TopoBackground.vue'
 import SiteHeader from './components/SiteHeader.vue'
 import NewsList from './components/NewsList.vue'
@@ -18,7 +18,6 @@ import SiteFooter from './components/SiteFooter.vue'
     <SiteHeader />
 
     <section class="reveal" style="animation-delay: 0.08s">
-      <div class="funding" v-html="fundingHtml"></div>
       <p v-for="(para, i) in bioHtml" :key="i" class="bio" v-html="para"></p>
     </section>
 
@@ -31,17 +30,6 @@ import SiteFooter from './components/SiteFooter.vue'
 </template>
 
 <style scoped>
-.funding {
-  background: #f8f9fa;
-  border-left: 3px solid var(--color-teal);
-  padding: 0.75rem 1rem;
-  margin-bottom: 1.25rem;
-  border-radius: 0 6px 6px 0;
-  font-size: 0.86rem;
-  font-style: italic;
-  line-height: 1.6;
-  color: var(--color-muted);
-}
 .bio {
   font-size: 1rem;
   line-height: 1.68;
