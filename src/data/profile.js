@@ -38,7 +38,7 @@ export const bioHtml = [
    from both the <span class="accent">cognitive</span> and the <span class="accent">mechanistic</span> side.
    To do that, I develop computational methods, such as <span class="accent">autonomous agents</span> and other
    <span class="accent">AI-based approaches</span>, that let me probe and make sense of it. Most recently,
-   I've also been pursuing work and collaborations in <span class="accent">AI interpretability</span>, extending
+   I've also been pursuing work and collaborations in <span class="accent">Interpretability</span>, extending
    these autonomous, interpretability-driven approaches to language models to support
    <span class="accent">safer and more reliable AI systems</span>.`,
 ]
