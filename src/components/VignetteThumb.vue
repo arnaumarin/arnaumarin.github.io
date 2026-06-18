@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from 'vue'
+import { lightbox } from '../store/lightbox.js'
 
-defineProps({
+const props = defineProps({
   src: { type: String, required: true },
   alt: { type: String, default: '' },
-  href: { type: String, default: null },
 })
 
 // Gracefully drop the whole card if the image is missing (e.g. a thumbnail
@@ -13,15 +13,22 @@ const failed = ref(false)
 </script>
 
 <template>
-  <component
-    :is="href ? 'a' : 'div'"
+  <button
     v-if="!failed"
+    type="button"
     class="vignette shrink-0"
-    :href="href"
-    :target="href ? '_blank' : null"
-    :rel="href ? 'noopener' : null"
     :style="{ width: '92px', height: '92px' }"
+    :aria-label="alt ? `View figure: ${alt}` : 'View figure'"
+    @click="lightbox.open(props.src, props.alt)"
   >
     <img :src="src" :alt="alt" loading="lazy" @error="failed = true" />
-  </component>
+  </button>
 </template>
+
+<style scoped>
+button.vignette {
+  border: 0;
+  padding: 0;
+  cursor: zoom-in;
+}
+</style>

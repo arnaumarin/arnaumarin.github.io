@@ -36,12 +36,7 @@ const hiddenCount = news.filter((n) => n.hidden).length
               >
             </div>
           </div>
-          <VignetteThumb
-            v-if="item.thumb"
-            :src="item.thumb"
-            :alt="item.thumbAlt"
-            :href="item.thumb"
-          />
+          <VignetteThumb v-if="item.thumb" :src="item.thumb" :alt="item.thumbAlt" />
         </div>
       </li>
     </ul>

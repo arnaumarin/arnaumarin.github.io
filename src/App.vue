@@ -6,6 +6,7 @@ import NewsList from './components/NewsList.vue'
 import PublicationList from './components/PublicationList.vue'
 import MediaList from './components/MediaList.vue'
 import SiteFooter from './components/SiteFooter.vue'
+import Lightbox from './components/Lightbox.vue'
 </script>
 
 <template>
@@ -27,6 +28,8 @@ import SiteFooter from './components/SiteFooter.vue'
 
     <SiteFooter />
   </main>
+
+  <Lightbox />
 </template>
 
 <style scoped>
