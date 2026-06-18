@@ -4,6 +4,21 @@
 export default [
   {
     date: 'Jun 2026',
+    tags: [{ label: 'paper', type: 'paper' }],
+    html: `New preprint — <a class="prose-link" href="https://arxiv.org/abs/2606.18667"><strong>NEURRATOR</strong></a>:
+           we take mechanistic interpretability out of language models and point it at real brains, decoding
+           spike trains from single neurons in mouse visual cortex into plain-language narration of the
+           viewed scene.`,
+    links: [
+      { label: 'arXiv', href: 'https://arxiv.org/abs/2606.18667' },
+      { label: 'GitHub', href: 'https://github.com/arnaumarin/neurrator' },
+      { label: 'thread', href: 'https://x.com/Arnauya/status/2067476793762947422' },
+    ],
+    thumb: '/images/pub/neurrator.png',
+    thumbAlt: 'NEURRATOR architecture: spike trains decoded into language via CLIP and LLaVA',
+  },
+  {
+    date: 'Jun 2026',
     tags: [{ label: 'talk', type: 'talk' }, { label: 'spotlight', type: 'spotlight' }],
     html: `Presented a precursor of <a class="prose-link" href="https://arxiv.org/abs/2605.31556">our work on auditing VLMs</a>
            as a <strong>spotlight</strong> at the <strong>HOW workshop, CVPR 2026</strong>.`,
