@@ -12,7 +12,7 @@ export default [
     links: [
       { label: 'arXiv', href: 'https://arxiv.org/abs/2606.18667' },
       { label: 'GitHub', href: 'https://github.com/arnaumarin/neurrator' },
-      { label: 'thread', href: 'https://x.com/Arnauya/status/2067476793762947422' },
+      { label: 'X thread', href: 'https://x.com/Arnauya/status/2067476793762947422' },
     ],
     thumb: '/images/pub/neurrator.png',
     thumbAlt: 'NEURRATOR architecture: spike trains decoded into language via CLIP and LLaVA',
