@@ -53,8 +53,8 @@ export default [
   {
     date: 'Oct 2025',
     tags: [{ label: 'talk', type: 'talk' }],
-    html: `Short talk at the <strong>Kempner Seminar Lunch and Learn</strong> at Harvard
-           on agents for interpretability in brain networks. And had good free food!`,
+    html: `Short talk at the <a class="prose-link" href="https://lunchandlearnkempner.github.io/"><strong>Kempner Seminar Lunch and Learn</strong></a>
+           at Harvard on agents for interpretability in brain networks. And had good free food!`,
     links: [{ label: 'seminar', href: 'https://lunchandlearnkempner.github.io/' }],
   },
   {
