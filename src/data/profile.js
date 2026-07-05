@@ -12,7 +12,7 @@ export const emails = [
 
 export const socials = [
   { label: 'GitHub', href: 'https://github.com/arnaumarin', icon: 'github' },
-  { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=4tLG8zwAAAAJ&hl=ca&oi=ao', icon: 'scholar' },
+  { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=4tLG8zwAAAAJ&hl=en&oi=ao', icon: 'scholar' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/arnau-marin-llobet', icon: 'linkedin' },
   { label: 'X', href: 'https://twitter.com/Arnauya', icon: 'x' },
 ]

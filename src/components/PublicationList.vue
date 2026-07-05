@@ -25,7 +25,7 @@ function toggle(key) {
     <h2 class="section-title">Selected Publications</h2>
     <p class="text-[0.86rem] mb-4" style="color: var(--color-muted)">
       Full list on
-      <a class="prose-link" href="https://scholar.google.com/citations?user=4tLG8zwAAAAJ&hl=ca&oi=ao"
+      <a class="prose-link" href="https://scholar.google.com/citations?user=4tLG8zwAAAAJ&hl=en&oi=ao"
         >Google Scholar</a
       >. (*) denotes equal contribution.
     </p>
