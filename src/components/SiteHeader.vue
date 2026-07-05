@@ -27,6 +27,17 @@ const paths = {
       </h1>
       <p class="mt-2 text-[0.95rem]" style="color: var(--color-muted)">{{ tagline }}</p>
 
+      <a
+        class="fellow-banner mt-3"
+        href="https://www.anthropic.com/"
+        target="_blank"
+        rel="noopener"
+        aria-label="Currently a Research Fellow at Anthropic"
+      >
+        <span>Currently, I am a Research Fellow at</span>
+        <img src="/images/anthropic-wordmark.png" alt="Anthropic" class="fellow-logo" />
+      </a>
+
       <p class="funding-line mt-2" v-html="fundingHtml"></p>
 
       <nav class="mt-4 flex items-center gap-4" aria-label="Social links">
@@ -62,6 +73,37 @@ const paths = {
 </template>
 
 <style scoped>
+.fellow-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.42rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(204, 120, 92, 0.32);
+  background: rgba(204, 120, 92, 0.08);
+  font-size: 0.84rem;
+  line-height: 1;
+  color: var(--color-ink);
+  white-space: nowrap;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.fellow-banner:hover {
+  background: rgba(204, 120, 92, 0.14);
+  border-color: rgba(204, 120, 92, 0.5);
+  transform: translateY(-1px);
+}
+.fellow-logo {
+  height: 12px;
+  width: auto;
+  display: block;
+  margin-top: 1px;
+}
+@media (max-width: 420px) {
+  .fellow-banner {
+    white-space: normal;
+    line-height: 1.4;
+  }
+}
 .funding-line {
   font-size: 0.74rem;
   line-height: 1.5;
