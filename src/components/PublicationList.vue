@@ -22,9 +22,9 @@ function toggle(key) {
 
 <template>
   <section id="publications">
-    <h2 class="section-title">Publications</h2>
+    <h2 class="section-title">Selected Publications</h2>
     <p class="text-[0.86rem] mb-4" style="color: var(--color-muted)">
-      Selected publications. Full list on
+      Full list on
       <a class="prose-link" href="https://scholar.google.com/citations?user=4tLG8zwAAAAJ&hl=ca&oi=ao"
         >Google Scholar</a
       >. (*) denotes equal contribution.
