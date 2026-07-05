@@ -1,13 +1,6 @@
-# Ignore the contents of the _site directory and other cache directories
-_site/
-.sass-cache/
-
-# Ignore the directory for local files during development
-local/
-
-# Ignore the Gemfile that is generated
-Gemfile.lock
-
-# Files created by npm / Vite
+# npm / Vite
 node_modules
 dist/
+
+# macOS
+.DS_Store

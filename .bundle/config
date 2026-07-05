@@ -1,3 +1,0 @@
----
-BUNDLE_PATH: "vendor/bundle"
-BUNDLE_BUILD__EVENTMACHINE: "--with-cppflags=-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1"
