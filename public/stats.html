@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visitor map — Arnau Marin-Llobet</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --teal: #2f7f93;
+        --ink: #1a1a1a;
+        --muted: #666;
+        --faint: #8a8a8a;
+        --rule: #e7e7e7;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: #fff;
+        color: var(--ink);
+        font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+        line-height: 1.62;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 3.5rem 1.5rem 4rem;
+      }
+      .back {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 0.78rem;
+        letter-spacing: 0.03em;
+        color: var(--faint);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      .back:hover { color: var(--teal); }
+      h1 {
+        margin-top: 1.4rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+      .sub {
+        margin-top: 0.4rem;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+      .badge-row {
+        margin-top: 1.6rem;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+      .map-box {
+        margin-top: 1.2rem;
+        border: 1px solid var(--rule);
+        border-radius: 12px;
+        padding: 1.2rem;
+        text-align: center;
+      }
+      .map-box img { max-width: 100%; height: auto; }
+      .note {
+        margin-top: 1rem;
+        font-size: 0.78rem;
+        color: var(--faint);
+      }
+      .note a { color: var(--faint); text-decoration: underline; text-underline-offset: 2px; }
+      .note a:hover { color: var(--teal); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="/">&larr; arnaumarin.github.io</a>
+      <h1>Visitor map</h1>
+      <p class="sub">Where visits to this site come from.</p>
+
+      <div class="badge-row">
+        <img
+          src="https://hits.sh/arnaumarin.github.io.svg?style=flat&label=visits&color=2f7f93"
+          alt="Visit counter"
+          height="20"
+        />
+      </div>
+
+      <div class="map-box">
+        <!-- Visitor map via MapMyVisitors (formerly ClustrMaps).
+             Stats dashboard: https://mapmyvisitors.com/web/1c4ze -->
+        <script
+          type="text/javascript"
+          id="mapmyvisitors"
+          src="https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=tt&d=v5sL1BzzzjsM42j_QONFKHUEH0rxJzAuvWEeUA8X74o&co=dbe4ea&cmo=2f7f93&cmn=ff5353&ct=808080"
+        ></script>
+      </div>
+
+      <p class="note">
+        Map by <a href="https://mapmyvisitors.com/web/1c4ze">MapMyVisitors</a>; dots accumulate since 2025.
+      </p>
+    </main>
+
+    <!-- GoatCounter analytics -->
+    <script
+      data-goatcounter="https://arnauya.goatcounter.com/count"
+      async
+      src="https://gc.zgo.at/count.js"
+    ></script>
+  </body>
+</html>
