@@ -16,13 +16,14 @@ export default [
   // ── DL & Interpretability / AI safety ───────────────────────────
   {
     selected: true,
-    title: 'The parameters in weight-sparse transformers are interpretable.',
+    title: 'Individual parameters in weight-sparse transformers appear interpretable.',
     authorsHtml: '<strong>A. Marin-Llobet</strong> and S. Heimersheim.',
     venueHtml: '<em>Mechanistic Interpretability Workshop, ICML</em> 2026.',
     tags: [{ label: 'DL & Interp.', type: 'dl' }],
     cats: ['dl'],
     links: [
-      { label: 'Paper', href: 'https://openreview.net/forum?id=Sx5Qth8Wmz' },
+      { label: 'arXiv', href: 'https://arxiv.org/abs/2607.02964' },
+      { label: 'Workshop paper', href: 'https://openreview.net/forum?id=Sx5Qth8Wmz' },
       { label: 'Project website', href: 'https://weightpedia.org/' },
     ],
     tldrHtml: `An empirical study showing that the weights of weight-sparse transformers are directly
