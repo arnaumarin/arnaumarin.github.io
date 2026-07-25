@@ -26,8 +26,8 @@ export default [
       { label: 'Workshop paper', href: 'https://openreview.net/forum?id=Sx5Qth8Wmz' },
       { label: 'Project website', href: 'https://weightpedia.org/' },
     ],
-    tldrHtml: `An empirical study showing that the weights of weight-sparse transformers are directly
-               interpretable.`,
+    tldrHtml: `An empirical study showing that individual parameters of weight-sparse transformers
+               appear directly interpretable.`,
   },
   {
     selected: true,
