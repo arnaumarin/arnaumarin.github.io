@@ -3,6 +3,20 @@
 
 export default [
   {
+    date: 'Jul 2026',
+    tags: [{ label: 'paper', type: 'paper' }],
+    html: `With Mahzarin Banaji and Steve Lehr, we posted a new preprint:
+           <a class="prose-link" href="https://arxiv.org/abs/2607.20695"><strong>Language Models Embody and
+           Amplify Human Cognitive Distortions: What Is to Be Done?</strong></a>`,
+    links: [{ label: 'arXiv', href: 'https://arxiv.org/abs/2607.20695' }],
+  },
+  {
+    date: 'Jul 2026',
+    tags: [{ label: 'fellowship', type: 'spotlight' }],
+    html: `I started the <a class="prose-link" href="https://www.anthropic.com/"><strong>Anthropic STEM
+           Fellowship</strong></a> in San Francisco, working on agents for neuroscience and long-horizon tasks!`,
+  },
+  {
     date: 'Jun 2026',
     tags: [{ label: 'paper', type: 'paper' }],
     html: `New preprint — <a class="prose-link" href="https://arxiv.org/abs/2606.18667"><strong>NEURRATOR</strong></a>:
