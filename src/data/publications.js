@@ -33,7 +33,7 @@ export default [
     selected: true,
     title: 'Vision-language models suppress female representations under ambiguous input.',
     authorsHtml: '<strong>A. Marin-Llobet</strong>, S. Henniger, M.R. Banaji.',
-    venueHtml: '<em>EMNLP</em> 2026 (Main Conference). Oral talk at the <em>HOW Workshop, CVPR</em> 2026.',
+    venueHtml: '<em>Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, Main Conference, 2026. Also an oral talk at the <em>HOW Workshop, CVPR</em> 2026.',
     thumb: '/images/pub/vlm-bias.png',
     tags: [{ label: 'DL & Interp.', type: 'dl' }],
     cats: ['dl'],
