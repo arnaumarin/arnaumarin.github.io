@@ -33,12 +33,13 @@ export default [
     selected: true,
     title: 'Vision-language models suppress female representations under ambiguous input.',
     authorsHtml: '<strong>A. Marin-Llobet</strong>, S. Henniger, M.R. Banaji.',
-    venueHtml: 'Preprint. Oral talk at the <em>HOW Workshop, CVPR</em> 2026.',
+    venueHtml: '<em>EMNLP</em> 2026 (Main Conference). Oral talk at the <em>HOW Workshop, CVPR</em> 2026.',
     thumb: '/images/pub/vlm-bias.png',
     tags: [{ label: 'DL & Interp.', type: 'dl' }],
     cats: ['dl'],
     links: [
-      { label: 'Preprint', href: 'https://arxiv.org/abs/2605.31556' },
+      { label: 'arXiv', href: 'https://arxiv.org/abs/2605.31556' },
+      { label: 'X thread', href: 'https://x.com/Arnauya/status/2090712173307969952' },
       { label: 'Workshop', href: 'https://sites.google.com/view/how-cvpr-workshop/2026-workshop' },
     ],
     tldrHtml: `On gender-ambiguous images, aligned VLMs collapse to “male” even for female-stereotyped

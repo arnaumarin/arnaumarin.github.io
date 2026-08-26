@@ -3,6 +3,24 @@
 
 export default [
   {
+    date: 'Aug 2026',
+    tags: [{ label: 'paper', type: 'paper' }, { label: 'spotlight', type: 'spotlight' }],
+    html: `Our paper with <a class="prose-link" href="https://henniger.dev/">Simon Henniger</a> and
+           <a class="prose-link" href="https://scholar.google.com/citations?hl=en&user=19SjuiUAAAAJ&view_op=list_works&sortby=pubdate">Mahzarin Banaji</a>
+           was accepted at <strong>EMNLP 2026 (Main)</strong>, the Conference on Empirical Methods in Natural
+           Language Processing:
+           <a class="prose-link" href="https://arxiv.org/abs/2605.31556"><strong>Vision-language models suppress
+           female representations under ambiguous input</strong></a>.
+           <em>TL;DR: when the input is gender-ambiguous, models collapse to a single gender; we use mechanistic
+           interpretability to study why.</em>`,
+    links: [
+      { label: 'arXiv', href: 'https://arxiv.org/abs/2605.31556' },
+      { label: 'X thread', href: 'https://x.com/Arnauya/status/2090712173307969952' },
+    ],
+    thumb: '/images/pub/vlm-bias.png',
+    thumbAlt: 'Vision-language models suppress female representations under ambiguous input',
+  },
+  {
     date: 'Jul 2026',
     tags: [{ label: 'paper', type: 'paper' }],
     html: `With Mahzarin Banaji and Steve Lehr, we posted a new preprint:
