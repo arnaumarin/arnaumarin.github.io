@@ -97,6 +97,22 @@ export default [
   },
   {
     selected: true,
+    title: 'Can neurons speak? Semantic narration of vision at single-cell resolution.',
+    authorsHtml: '<strong>A. Marin-Llobet</strong>, R. Hakim, S. Matias, V.N. Murthy, N. Li, D. Ba.',
+    venueHtml: 'Preprint, 2026.',
+    pubTags: [{ label: 'Preprint', type: 'venue' }],
+    tags: [{ label: 'Neuroscience', type: 'neuro' }, { label: 'DL & Interp.', type: 'dl' }],
+    cats: ['neuro', 'dl'],
+    links: [
+      { label: 'arXiv', href: 'https://arxiv.org/abs/2606.18667' },
+      { label: 'GitHub', href: 'https://github.com/arnaumarin/neurrator' },
+      { label: 'X thread', href: 'https://x.com/Arnauya/status/2067476793762947422' },
+    ],
+    tldrHtml: `We take mechanistic interpretability out of language models and point it at real brains,
+               decoding spike trains from single neurons in mouse visual cortex into plain-language
+               narration of the viewed scene.`,
+  },
+  {
     title: 'An AI agent for cell-type specific interpretable brain-computer interfaces.',
     pubTags: [{ label: 'Preprint', type: 'venue' }],
     authorsHtml: '<strong>A. Marin-Llobet</strong>, Z. Lin, J. Baek et al.',

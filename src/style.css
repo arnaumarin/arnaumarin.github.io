@@ -321,6 +321,14 @@ button { font-family: inherit; }
 }
 .funding-note a:hover { color: var(--c-accent); }
 
+.inline-anthropic {
+  display: inline-block;
+  height: 0.78em;
+  width: auto;
+  vertical-align: baseline;
+  margin-bottom: -0.02em;
+}
+
 /* ===========================
    News
    =========================== */
@@ -369,6 +377,17 @@ button { font-family: inherit; }
   transition: color var(--t);
 }
 .news-toggle:hover { color: var(--c-accent-dark); }
+
+.news-thumb {
+  flex-shrink: 0;
+  width: 120px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  align-self: flex-start;
+}
+@media (max-width: 500px) {
+  .news-thumb { width: 84px; }
+}
 
 /* ===========================
    Publication Cards

@@ -26,7 +26,7 @@ const paths = {
     </div>
     <div class="profile-name">{{ name }}</div>
     <div class="profile-title">
-      PhD Candidate in Computational Neuroscience at
+      PhD Candidate in Electrical and Computer Engineering at
       <a
         href="https://seas.harvard.edu/"
         target="_blank"
@@ -35,17 +35,6 @@ const paths = {
         >Harvard University</a
       >
     </div>
-
-    <a
-      class="profile-badge"
-      href="https://www.anthropic.com/"
-      target="_blank"
-      rel="noopener"
-      aria-label="Currently a Research Fellow at Anthropic"
-    >
-      <span>Research Fellow at</span>
-      <img src="/images/anthropic-wordmark.png" alt="Anthropic" />
-    </a>
 
     <div class="social-links">
       <a :href="mailto" :aria-label="`Email ${primaryEmail}`" title="Email" class="social-link">

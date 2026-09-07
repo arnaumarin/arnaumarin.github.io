@@ -2,9 +2,14 @@
 import { ref, computed } from 'vue'
 import news from '../data/news.js'
 
+const MAX_VISIBLE = 4
 const expanded = ref(false)
-const visible = computed(() => (expanded.value ? news : news.filter((n) => !n.hidden)))
-const hiddenCount = news.filter((n) => n.hidden).length
+const visible = computed(() => (expanded.value ? news : news.slice(0, MAX_VISIBLE)))
+const hiddenCount = news.length - MAX_VISIBLE
+
+// Talk entries show their photo; paper entries stay text-only.
+const talkThumb = (item) =>
+  item.thumb && item.tags?.some((t) => t.label === 'talk') ? item.thumb : null
 </script>
 
 <template>
@@ -28,9 +33,15 @@ const hiddenCount = news.filter((n) => n.hidden).length
             >
           </template>
         </span>
+        <img
+          v-if="talkThumb(item)"
+          :src="talkThumb(item)"
+          :alt="item.thumbAlt || 'Talk photo'"
+          class="news-thumb"
+        />
       </li>
     </ul>
-    <button v-if="hiddenCount" class="news-toggle" @click="expanded = !expanded">
+    <button v-if="hiddenCount > 0" class="news-toggle" @click="expanded = !expanded">
       {{ expanded ? 'Show less' : `Show ${hiddenCount} more` }}
     </button>
   </section>
