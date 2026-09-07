@@ -30,7 +30,10 @@ export const bioHtml = [
    <a class="prose-link" href="https://psychology.fas.harvard.edu/people/mahzarin-r-banaji">Mahzarin Banaji</a>,
    <a class="prose-link" href="https://crisp.seas.harvard.edu/">Demba Ba</a>, and
    <a class="prose-link" href="https://nali.seas.harvard.edu/">Na Li</a>, among other collaborators.
-   Before that, I received my B.Sc. in Electrical Engineering from the
+   Recently, I completed the <a class="prose-link" href="https://www.anthropic.com/">Anthropic</a> STEM
+   Research Fellowship, working on very long-horizon scientific agents and interpretability in biology
+   models, and previously I interned at <a class="prose-link" href="https://machinelearning.apple.com/">Apple</a>,
+   working on explainable long-horizon agents. I received my B.Sc. in Electrical Engineering from the
    <a class="prose-link" href="https://telecos.upc.edu/en">UPC-BarcelonaTech</a> in 2022.`,
 
   `I am mostly interested in <span class="accent">computational neuroscience</span>, in opening the
