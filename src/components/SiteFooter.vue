@@ -1,14 +1,14 @@
-<script setup>
-import VisitorCounter from './VisitorCounter.vue'
-</script>
-
 <template>
-  <footer class="mt-4 pt-6" style="border-top: 1px solid var(--color-rule)">
-    <div class="flex items-center justify-between flex-wrap gap-3">
-      <span class="text-[0.74rem]" style="color: var(--color-faint); font-family: var(--font-mono)">
-        © {{ new Date().getFullYear() }} Arnau Marin-Llobet
-      </span>
-      <VisitorCounter />
-    </div>
+  <footer class="footer">
+    <p>
+      © {{ new Date().getFullYear() }} Arnau Marin-Llobet &nbsp;·&nbsp;
+      <a href="/stats.html" title="Visitor map">Visitor map</a> &nbsp;·&nbsp;
+      Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>
+      <img
+        class="footer-badge"
+        src="https://hits.sh/arnaumarin.github.io.svg?style=flat&label=visits&color=2f6db3"
+        alt="Visit counter"
+      />
+    </p>
   </footer>
 </template>

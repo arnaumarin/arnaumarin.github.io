@@ -1,44 +1,42 @@
 <script setup>
-import { bioHtml } from './data/profile.js'
-import TopoBackground from './components/TopoBackground.vue'
-import SiteHeader from './components/SiteHeader.vue'
+import { bioHtml, fundingHtml, name } from './data/profile.js'
+import ProfileSidebar from './components/ProfileSidebar.vue'
 import NewsList from './components/NewsList.vue'
 import PublicationList from './components/PublicationList.vue'
-import MediaList from './components/MediaList.vue'
 import SiteFooter from './components/SiteFooter.vue'
-import Lightbox from './components/Lightbox.vue'
+
+const scholarUrl = 'https://scholar.google.com/citations?user=4tLG8zwAAAAJ&hl=en&oi=ao'
 </script>
 
 <template>
-  <TopoBackground />
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span>{{ name }}</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/" class="active">About</a></li>
+        <li><a :href="scholarUrl" target="_blank" rel="noopener">Publications</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <main
-    class="mx-auto px-6 py-14 sm:py-20 flex flex-col gap-14 sm:gap-16"
-    style="max-width: var(--container-prose)"
-  >
-    <SiteHeader />
+  <main class="page">
+    <div class="profile-layout">
+      <ProfileSidebar />
 
-    <section class="reveal" style="animation-delay: 0.08s">
-      <p v-for="(para, i) in bioHtml" :key="i" class="bio" v-html="para"></p>
-    </section>
+      <div class="main-content">
+        <!-- Bio -->
+        <section class="section">
+          <p v-for="(para, i) in bioHtml" :key="i" class="bio" v-html="para"></p>
+          <p class="funding-note" v-html="fundingHtml"></p>
+        </section>
 
-    <div class="reveal" style="animation-delay: 0.16s"><NewsList /></div>
-    <div class="reveal" style="animation-delay: 0.2s"><PublicationList /></div>
-    <div class="reveal" style="animation-delay: 0.24s"><MediaList /></div>
-
-    <SiteFooter />
+        <NewsList />
+        <PublicationList />
+      </div>
+    </div>
   </main>
 
-  <Lightbox />
+  <SiteFooter />
 </template>
-
-<style scoped>
-.bio {
-  font-size: 1rem;
-  line-height: 1.68;
-  margin-top: 1rem;
-}
-.bio:first-of-type {
-  margin-top: 0;
-}
-</style>

@@ -17,6 +17,7 @@ export default [
   {
     selected: true,
     title: 'Individual parameters in weight-sparse transformers appear interpretable.',
+    pubTags: [{ label: 'ICML 2026 Workshop', type: 'conference' }],
     authorsHtml: '<strong>A. Marin-Llobet</strong> and S. Heimersheim.',
     venueHtml: '<em>Mechanistic Interpretability Workshop, ICML</em> 2026.',
     tags: [{ label: 'DL & Interp.', type: 'dl' }],
@@ -32,6 +33,7 @@ export default [
   {
     selected: true,
     title: 'Vision-language models suppress female representations under ambiguous input.',
+    pubTags: [{ label: 'EMNLP 2026 Main', type: 'conference' }, { label: 'Oral · CVPR HOW Workshop', type: 'award' }],
     authorsHtml: '<strong>A. Marin-Llobet</strong>, S. Henniger, M.R. Banaji.',
     venueHtml: '<em>Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, Main Conference, 2026. Also an oral talk at the <em>HOW Workshop, CVPR</em> 2026.',
     thumb: '/images/pub/vlm-bias.png',
@@ -49,6 +51,7 @@ export default [
   {
     selected: true,
     title: 'Automated Interpretability and Feature Discovery in Language Models with Agents (interpAgent).',
+    pubTags: [{ label: 'ICML 2026 Workshop', type: 'conference' }],
     authorsHtml: '<strong>A. Marin-Llobet</strong> and J. Ferrando.',
     venueHtml: '<em>ICML 2026 AIWILD Workshop</em>. Preprint, 2026.',
     thumb: '/images/pub/interpagent.png',
@@ -79,6 +82,7 @@ export default [
   {
     selected: true,
     title: 'SpikeAgent: automated curation of neural recordings with reasoning-enabled LLM agents.',
+    pubTags: [{ label: 'Nature Neuroscience', type: 'journal' }],
     authorsHtml: 'Z. Lin* and <strong>A. Marin-Llobet</strong>* et al.',
     venueHtml: '<em>Nature Neuroscience</em>, accepted in principle, 2026.',
     thumb: '/images/pub/spikeagent.png',
@@ -94,6 +98,7 @@ export default [
   {
     selected: true,
     title: 'An AI agent for cell-type specific interpretable brain-computer interfaces.',
+    pubTags: [{ label: 'Preprint', type: 'venue' }],
     authorsHtml: '<strong>A. Marin-Llobet</strong>, Z. Lin, J. Baek et al.',
     venueHtml: 'Preprint, <em>bioRxiv</em>, 2025.',
     thumb: '/images/pub/cellagent.png',
@@ -130,6 +135,7 @@ export default [
   {
     selected: true,
     title: 'Neural models for detection and classification of brain states and transitions.',
+    pubTags: [{ label: 'Communications Biology', type: 'journal' }],
     authorsHtml: '<strong>A. Marin-Llobet</strong>*, A. Manasanch* et al.',
     venueHtml: '<em>Communications Biology</em>, 8(1):599, 2025.',
     thumb: '/images/pub/lfp-deepstates.png',
