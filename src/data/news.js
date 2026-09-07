@@ -1,59 +1,42 @@
-// Selected news. `hidden: true` items appear only after "show all".
-// `html` may contain inline links (rendered with v-html).
+// News, newest first. Keep each entry to 1–2 short sentences.
+// The first 4 are visible; the rest sit behind "Show more".
+// Talk entries with a `thumb` show their photo.
 
 export default [
   {
     date: 'Aug 2026',
-    tags: [{ label: 'paper', type: 'paper' }, { label: 'spotlight', type: 'spotlight' }],
-    html: `Our paper with <a class="prose-link" href="https://henniger.dev/">Simon Henniger</a> and
-           <a class="prose-link" href="https://scholar.google.com/citations?hl=en&user=19SjuiUAAAAJ&view_op=list_works&sortby=pubdate">Mahzarin Banaji</a>
-           was accepted at <strong>EMNLP 2026 (Main)</strong>, the Conference on Empirical Methods in Natural
-           Language Processing:
-           <a class="prose-link" href="https://arxiv.org/abs/2605.31556"><strong>Vision-language models suppress
-           female representations under ambiguous input</strong></a>.
-           <em>TL;DR: when the input is gender-ambiguous, models collapse to a single gender; we use mechanistic
-           interpretability to study why.</em>`,
+    html: `Our <a class="prose-link" href="https://arxiv.org/abs/2605.31556">paper</a> auditing gender bias
+           in VLMs, with Simon Henniger and Mahzarin Banaji, was accepted at <strong>EMNLP 2026 (Main)</strong>!`,
     links: [
       { label: 'arXiv', href: 'https://arxiv.org/abs/2605.31556' },
       { label: 'X thread', href: 'https://x.com/Arnauya/status/2090712173307969952' },
     ],
-    thumb: '/images/pub/vlm-bias.png',
-    thumbAlt: 'Vision-language models suppress female representations under ambiguous input',
   },
   {
     date: 'Jul 2026',
-    tags: [{ label: 'paper', type: 'paper' }],
-    html: `With Mahzarin Banaji and Steve Lehr, we posted a new preprint:
-           <a class="prose-link" href="https://arxiv.org/abs/2607.20695"><strong>Language Models Embody and
-           Amplify Human Cognitive Distortions: What Is to Be Done?</strong></a>`,
+    html: `We posted a new preprint on LLM cognitive distortions with Mahzarin Banaji and Steve Lehr.`,
     links: [{ label: 'arXiv', href: 'https://arxiv.org/abs/2607.20695' }],
   },
   {
     date: 'Jul 2026',
-    tags: [{ label: 'fellowship', type: 'spotlight' }],
-    html: `I started the <a class="prose-link" href="https://www.anthropic.com/"><strong>Anthropic STEM
-           Fellowship</strong></a> in San Francisco, working on agents for neuroscience and long-horizon tasks!`,
+    html: `Started the <a class="prose-link" href="https://www.anthropic.com/"><strong>Anthropic STEM
+           Fellowship</strong></a> in San Francisco.`,
   },
   {
     date: 'Jun 2026',
-    tags: [{ label: 'paper', type: 'paper' }],
-    html: `New preprint — <a class="prose-link" href="https://arxiv.org/abs/2606.18667"><strong>NEURRATOR</strong></a>:
-           we take mechanistic interpretability out of language models and point it at real brains, decoding
-           spike trains from single neurons in mouse visual cortex into plain-language narration of the
-           viewed scene.`,
+    html: `New preprint — <a class="prose-link" href="https://arxiv.org/abs/2606.18667"><strong>Can neurons
+           speak?</strong></a> We decode single-neuron spike trains into plain-language narration.`,
     links: [
       { label: 'arXiv', href: 'https://arxiv.org/abs/2606.18667' },
       { label: 'GitHub', href: 'https://github.com/arnaumarin/neurrator' },
       { label: 'X thread', href: 'https://x.com/Arnauya/status/2067476793762947422' },
     ],
-    thumb: '/images/pub/neurrator.png',
-    thumbAlt: 'NEURRATOR architecture: spike trains decoded into language via CLIP and LLaVA',
   },
   {
     date: 'Jun 2026',
-    tags: [{ label: 'talk', type: 'talk' }, { label: 'spotlight', type: 'spotlight' }],
-    html: `Presented a precursor of <a class="prose-link" href="https://arxiv.org/abs/2605.31556">our work on auditing VLMs</a>
-           as a <strong>spotlight</strong> at the <strong>HOW workshop, CVPR 2026</strong>.`,
+    tags: [{ label: 'talk', type: 'talk' }],
+    html: `Gave a <strong>spotlight talk</strong> on interpretability for gender bias in VLMs at the
+           <strong>HOW workshop, CVPR 2026</strong>.`,
     links: [
       { label: 'arXiv', href: 'https://arxiv.org/abs/2605.31556' },
       { label: 'workshop', href: 'https://sites.google.com/view/how-cvpr-workshop/2026-workshop' },
@@ -63,73 +46,52 @@ export default [
   },
   {
     date: 'May 2026',
-    tags: [{ label: 'paper', type: 'paper' }],
-    html: `With Javier Ferrando, we released <a class="prose-link" href="https://arxiv.org/abs/2605.01555"><strong>interpAgent</strong></a> —
-           an autonomous framework to discover and explain features in LLMs (SAEs and other latents).
-           To appear at the <strong>AIWILD workshop, ICML 2026</strong> in Seoul.`,
+    html: `Released <a class="prose-link" href="https://arxiv.org/abs/2605.01555"><strong>interpAgent</strong></a>,
+           agents that discover and explain features in LLMs. To appear at the AIWILD workshop, ICML 2026.`,
     links: [
       { label: 'arXiv', href: 'https://arxiv.org/abs/2605.01555' },
       { label: 'GitHub', href: 'https://github.com/arnaumarin/InterpAgent' },
       { label: 'workshop', href: 'https://agentwild-workshop.github.io/icml2026/' },
     ],
-    thumb: '/images/pub/interpagent.png',
-    thumbAlt: 'interpAgent overview figure',
   },
   {
     date: 'Dec 2025',
-    tags: [{ label: 'paper', type: 'paper' }],
-    html: `Our commentary on the state of the art in wireless BCIs — and where the field is heading —
-           is out in <em>Nature Electronics</em>.`,
+    html: `Our commentary on wireless BCIs is out in <em>Nature Electronics</em>.`,
     links: [{ label: 'paper', href: 'https://www.nature.com/articles/s41928-025-01510-2' }],
   },
   {
     date: 'Oct 2025',
     tags: [{ label: 'talk', type: 'talk' }],
-    html: `Short talk at the <a class="prose-link" href="https://lunchandlearnkempner.github.io/"><strong>Kempner Seminar Lunch and Learn</strong></a>
-           at Harvard on agents for interpretability in brain networks. And had good free food!`,
-    links: [{ label: 'seminar', href: 'https://lunchandlearnkempner.github.io/' }],
+    html: `Short talk on agents for interpretability in brain networks at the
+           <a class="prose-link" href="https://lunchandlearnkempner.github.io/">Kempner Lunch and Learn</a>, Harvard.`,
   },
   {
     date: 'Jun 2025',
     tags: [{ label: 'talk', type: 'talk' }],
-    hidden: true,
-    html: `Invited talk at the <strong>Rafael del Pino Foundation (C4T)</strong>, Boston —
-           <em>"Agentic AI for Biology"</em>.`,
+    html: `Invited talk on agentic AI for biology at the <strong>Rafael del Pino Foundation (C4T)</strong>, Boston.`,
   },
   {
     date: 'May 2025',
     tags: [{ label: 'talk', type: 'talk' }],
-    hidden: true,
-    html: `Invited talk at <strong>MIT</strong>, Cambridge —
-           <em>"AI Agents for Automated and Scalable Neuroscience"</em>.`,
+    html: `Invited talk at <strong>MIT</strong> on AI agents for automated and scalable neuroscience.`,
   },
   {
     date: 'Apr 2025',
     tags: [{ label: 'talk', type: 'talk' }],
-    hidden: true,
-    html: `Invited talks on AI agents for neuroscience and spike sorting at
-           <strong>Stanford University</strong>, <strong>UC San Francisco</strong>, and the
-           <strong>Flatiron Institute</strong> (Simons Foundation). Thanks to the Enigma group,
-           Prof. Edward Chang, and Alessio Buccino for the invitations and the engaging discussions.`,
+    html: `Invited talks on AI agents for neuroscience at <strong>Stanford</strong>, <strong>UCSF</strong>,
+           and the <strong>Flatiron Institute</strong>.`,
   },
   {
     date: 'Apr 2025',
-    tags: [{ label: 'paper', type: 'paper' }],
-    hidden: true,
-    html: `So happy to see our first paper published! Joint work with Mavi Sanchez-Vives,
-           Leo Dalla Porta, and Arnau Manasanch, now out in <em>Communications Biology</em>.`,
+    html: `Our first paper is out in <em>Communications Biology</em>!`,
     links: [
       { label: 'paper', href: 'https://www.nature.com/articles/s42003-025-07991-3' },
       { label: 'GitHub', href: 'https://github.com/arnaumarin/LFPDeepStates' },
     ],
-    thumb: '/images/pub/lfp-deepstates.png',
-    thumbAlt: 'LFP DeepStates figure, Communications Biology',
   },
   {
     date: 'Jul 2024',
     tags: [{ label: 'talk', type: 'talk' }],
-    hidden: true,
-    html: `Invited talk at <strong>ETH Zurich</strong> —
-           <em>"Methods to Stably Track Neurons in High-Density Probes"</em>.`,
+    html: `Invited talk at <strong>ETH Zurich</strong> on stably tracking neurons in high-density probes.`,
   },
 ]
