@@ -17,6 +17,7 @@ export default [
   {
     selected: true,
     title: 'Individual parameters in weight-sparse transformers appear interpretable.',
+    thumb: '/images/pub/weight-sparse.png',
     pubTags: [{ label: 'ICML 2026 Workshop', type: 'conference' }],
     authorsHtml: '<strong>A. Marin-Llobet</strong> and S. Heimersheim.',
     venueHtml: '<em>Mechanistic Interpretability Workshop, ICML</em> 2026.',
@@ -35,7 +36,7 @@ export default [
     title: 'Vision-language models suppress female representations under ambiguous input.',
     pubTags: [{ label: 'EMNLP 2026 Main', type: 'conference' }, { label: 'Oral · CVPR HOW Workshop', type: 'award' }],
     authorsHtml: '<strong>A. Marin-Llobet</strong>, S. Henniger, M.R. Banaji.',
-    venueHtml: '<em>Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, Main Conference, 2026. Also an oral talk at the <em>HOW Workshop, CVPR</em> 2026.',
+    venueHtml: '<em>Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, Main Conference, 2026.',
     thumb: '/images/pub/vlm-bias.png',
     tags: [{ label: 'DL & Interp.', type: 'dl' }],
     cats: ['dl'],
@@ -98,6 +99,7 @@ export default [
   {
     selected: true,
     title: 'Can neurons speak? Semantic narration of vision at single-cell resolution.',
+    thumb: '/images/pub/neurrator.png',
     authorsHtml: '<strong>A. Marin-Llobet</strong>, R. Hakim, S. Matias, V.N. Murthy, N. Li, D. Ba.',
     venueHtml: 'Preprint, 2026.',
     pubTags: [{ label: 'Preprint', type: 'venue' }],

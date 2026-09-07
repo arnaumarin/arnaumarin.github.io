@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import news from '../data/news.js'
 
-const MAX_VISIBLE = 4
+const MAX_VISIBLE = 5
 const expanded = ref(false)
 const visible = computed(() => (expanded.value ? news : news.slice(0, MAX_VISIBLE)))
 const hiddenCount = news.length - MAX_VISIBLE

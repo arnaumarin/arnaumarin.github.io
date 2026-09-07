@@ -14,6 +14,8 @@ const mainHref = (p) => p.links?.[0]?.href
 
     <div class="pub-list">
       <div v-for="p in selected" :key="p.title" class="pub-card">
+        <div class="pub-card-inner">
+        <div class="pub-card-body">
         <div v-if="p.pubTags" class="pub-tags">
           <span v-for="t in p.pubTags" :key="t.label" class="tag" :class="`tag-${t.type}`">{{
             t.label
@@ -35,6 +37,9 @@ const mainHref = (p) => p.links?.[0]?.href
             class="pub-link"
             >{{ l.label }}</a
           >
+        </div>
+        </div>
+        <img v-if="p.thumb" :src="p.thumb" :alt="p.title" class="pub-thumb" loading="lazy" />
         </div>
       </div>
     </div>

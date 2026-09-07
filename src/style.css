@@ -514,6 +514,24 @@ button { font-family: inherit; }
   background: var(--c-accent-bg);
 }
 
+.pub-card-inner {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.pub-card-body { flex: 1; min-width: 0; }
+.pub-card-body > :last-child { margin-bottom: 0; }
+.pub-thumb {
+  flex-shrink: 0;
+  width: 148px;
+  max-height: 110px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+@media (max-width: 500px) {
+  .pub-thumb { width: 96px; }
+}
+
 .pub-footnote {
   margin-top: 18px;
   font-size: .83rem;
