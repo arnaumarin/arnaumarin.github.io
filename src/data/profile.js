@@ -25,7 +25,7 @@ export const fundingHtml = `My PhD is currently supported by
   and <a class="prose-link" href="https://www.neuropac.info">NSF-NeuroPAC</a>, among others.`
 
 export const bioHtml = [
-  `I am a PhD candidate in Computational Neuroscience at
+  `I am a PhD candidate at
    <a class="prose-link" href="https://seas.harvard.edu/">Harvard University</a>, where I mostly work with
    <a class="prose-link" href="https://psychology.fas.harvard.edu/people/mahzarin-r-banaji">Mahzarin Banaji</a>,
    <a class="prose-link" href="https://crisp.seas.harvard.edu/">Demba Ba</a>, and
