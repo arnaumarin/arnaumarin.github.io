@@ -4,6 +4,15 @@
 
 export default [
   {
+    date: 'Sep 2026',
+    html: `Gave a short interview to Catalan media on the recent OpenAI and Hugging Face incident and AI safety.`,
+    links: [
+      { label: 'RAC1', href: 'https://www.rac1.cat/societat/20260916/372112/arnau-marin-llobet-catala-treballat-anthropic-internament-discutint-ia-podria-encara-perillosa-elmon.html' },
+      { label: 'La Vanguardia', href: 'https://www.lavanguardia.com/neo/20260916/11636457/arnau-marin-llobet-catalan-trabajado-anthropic-internamente-discutiendo-ia-aun-mas-peligrosa-epm.html' },
+      { label: 'Nació Digital', href: 'https://naciodigital.cat/societat/un-exinvestigador-catala-danthropic-alerta-que-la-ia-es-mes-perillosa-del-que-la-gent-sap.html' },
+    ],
+  },
+  {
     date: 'Aug 2026',
     html: `Our <a class="prose-link" href="https://arxiv.org/abs/2605.31556">paper</a> auditing gender bias
            in VLMs, with Simon Henniger and Mahzarin Banaji, was accepted at <strong>EMNLP 2026 (Main)</strong>!`,

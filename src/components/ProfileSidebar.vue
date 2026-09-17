@@ -26,7 +26,7 @@ const paths = {
     </div>
     <div class="profile-name">{{ name }}</div>
     <div class="profile-title">
-      PhD Candidate in Electrical and Computer Engineering at<br />
+      PhD Researcher in Electrical and Computer Engineering at<br />
       <a
         href="https://seas.harvard.edu/"
         target="_blank"

@@ -1,7 +1,7 @@
 // Identity, contact, socials, and the bio/funding HTML blocks.
 
 export const name = 'Arnau Marin-Llobet'
-export const tagline = 'PhD candidate at Harvard'
+export const tagline = 'PhD researcher at Harvard'
 export const photo = '/images/profile.png'
 
 // Email assembled at runtime (kept out of the static HTML source).
@@ -25,7 +25,7 @@ export const fundingHtml = `My PhD is currently supported by
   and <a class="prose-link" href="https://www.neuropac.info">NSF-NeuroPAC</a>, among others.`
 
 export const bioHtml = [
-  `I am a PhD candidate at
+  `I am a PhD researcher at
    <a class="prose-link" href="https://seas.harvard.edu/">Harvard University</a>, where I mostly work with
    <a class="prose-link" href="https://psychology.fas.harvard.edu/people/mahzarin-r-banaji">Mahzarin Banaji</a>,
    <a class="prose-link" href="https://crisp.seas.harvard.edu/">Demba Ba</a>, and
