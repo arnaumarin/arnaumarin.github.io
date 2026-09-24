@@ -18,14 +18,14 @@ export default [
     selected: true,
     title: 'Individual parameters in weight-sparse transformers appear interpretable.',
     thumb: '/images/pub/weight-sparse.png',
-    pubTags: [{ label: 'ICML 2026 Workshop', type: 'conference' }],
+    pubTags: [{ label: 'NeurIPS 2026', type: 'conference' }],
     authorsHtml: '<strong>A. Marin-Llobet</strong> and S. Heimersheim.',
-    venueHtml: '<em>Mechanistic Interpretability Workshop, ICML</em> 2026.',
+    venueHtml: '<em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2026.',
     tags: [{ label: 'DL & Interp.', type: 'dl' }],
     cats: ['dl'],
     links: [
       { label: 'arXiv', href: 'https://arxiv.org/abs/2607.02964' },
-      { label: 'Workshop paper', href: 'https://openreview.net/forum?id=Sx5Qth8Wmz' },
+      { label: 'Workshop version', href: 'https://openreview.net/forum?id=Sx5Qth8Wmz' },
       { label: 'Project website', href: 'https://weightpedia.org/' },
     ],
     tldrHtml: `An empirical study showing that individual parameters of weight-sparse transformers
@@ -52,7 +52,7 @@ export default [
   {
     selected: true,
     title: 'Automated Interpretability and Feature Discovery in Language Models with Agents (interpAgent).',
-    pubTags: [{ label: 'ICML 2026 Workshop', type: 'conference' }],
+    pubTags: [{ label: 'NeurIPS 2026', type: 'conference' }],
     authorsHtml: '<strong>A. Marin-Llobet</strong> and J. Ferrando.',
     venueHtml: '<em>ICML 2026 AIWILD Workshop</em>. Preprint, 2026.',
     thumb: '/images/pub/interpagent.png',

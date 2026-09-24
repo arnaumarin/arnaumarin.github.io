@@ -5,6 +5,15 @@
 export default [
   {
     date: 'Sep 2026',
+    html: `Our <a class="prose-link" href="https://arxiv.org/abs/2607.02964">paper</a> on weight-sparse
+           transformer interpretability, with Stefan Heimersheim, was accepted at <strong>NeurIPS 2026</strong>!`,
+    links: [
+      { label: 'arXiv', href: 'https://arxiv.org/abs/2607.02964' },
+      { label: 'Project website', href: 'https://weightpedia.org/' },
+    ],
+  },
+  {
+    date: 'Sep 2026',
     html: `Gave a short interview to Catalan media on the recent OpenAI and Hugging Face incident and AI safety.`,
     links: [
       { label: 'RAC1', href: 'https://www.rac1.cat/societat/20260916/372112/arnau-marin-llobet-catala-treballat-anthropic-internament-discutint-ia-podria-encara-perillosa-elmon.html' },
