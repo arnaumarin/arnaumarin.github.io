@@ -52,9 +52,9 @@ export default [
   {
     selected: true,
     title: 'Automated Interpretability and Feature Discovery in Language Models with Agents (interpAgent).',
-    pubTags: [{ label: 'NeurIPS 2026', type: 'conference' }],
+    pubTags: [{ label: 'Preprint', type: 'venue' }],
     authorsHtml: '<strong>A. Marin-Llobet</strong> and J. Ferrando.',
-    venueHtml: '<em>ICML 2026 AIWILD Workshop</em>. Preprint, 2026.',
+    venueHtml: 'Preprint, 2026.',
     thumb: '/images/pub/interpagent.png',
     tags: [{ label: 'DL & Interp.', type: 'dl' }, { label: 'AI for Discovery', type: 'ai4sci' }],
     cats: ['dl', 'ai4sci'],
