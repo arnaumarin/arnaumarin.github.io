@@ -41,9 +41,9 @@ export default [
     tags: [{ label: 'DL & Interp.', type: 'dl' }],
     cats: ['dl'],
     links: [
+      { label: 'ACL Anthology', href: 'https://aclanthology.org/2026.emnlp-main.1747/' },
       { label: 'arXiv', href: 'https://arxiv.org/abs/2605.31556' },
       { label: 'X thread', href: 'https://x.com/Arnauya/status/2090712173307969952' },
-      { label: 'Workshop', href: 'https://sites.google.com/view/how-cvpr-workshop/2026-workshop' },
     ],
     tldrHtml: `On gender-ambiguous images, aligned VLMs collapse to “male” even for female-stereotyped
                occupations; our zero-shot LALS metric shows the internal representations and the outputs
