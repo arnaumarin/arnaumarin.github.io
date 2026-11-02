@@ -92,6 +92,7 @@ export default [
     links: [
       { label: 'Preprint', href: 'https://www.biorxiv.org/content/10.1101/2025.02.11.637754v1' },
       { label: 'GitHub', href: 'https://github.com/spikeagent/spikeagent' },
+      { label: 'Project website', href: 'https://arnaumarin.github.io/spikeagent/' },
     ],
     tldrHtml: `A multimodal LLM agent that automates the full spike-sorting workflow — preprocessing,
                sorting, and visual curation — with step-by-step reasoning a human can audit.`,
