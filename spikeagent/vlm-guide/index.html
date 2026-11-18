@@ -1,0 +1,2154 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI-powered assistant for spike sorting and neural data analysis">
+      
+      
+      
+        <link rel="canonical" href="https://arnaumarin.github.io/spikeagent/vlm-guide/">
+      
+      
+        <link rel="prev" href="../api/models/">
+      
+      
+        <link rel="next" href="../reproducibility/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../spikeagent_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>VLM Guide - SpikeAgent</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vlm-curation-and-merging-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SpikeAgent" class="md-header__button md-logo" aria-label="SpikeAgent" data-md-component="logo">
+      
+  <img src="../spikeagent_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SpikeAgent
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              VLM Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SpikeAgent/SpikeAgent" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SpikeAgent/SpikeAgent
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SpikeAgent" class="md-nav__button md-logo" aria-label="SpikeAgent" data-md-component="logo">
+      
+  <img src="../spikeagent_logo.png" alt="logo">
+
+    </a>
+    SpikeAgent
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SpikeAgent/SpikeAgent" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SpikeAgent/SpikeAgent
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/api-keys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Keys
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflows
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workflows
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflows/spike-sorting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spike Sorting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflows/vlm-curation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VLM Curation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflows/vlm-merge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VLM Merge Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/vlm-curation-and-merging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VLM Curation and Merging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../api/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/curation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/plotting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plotting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VLM Guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VLM Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vlm-curation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VLM Curation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VLM Curation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How It Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vlm-merge-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VLM Merge Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VLM Merge Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How It Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#workflow_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision Criteria
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prompt System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Directory Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt Loading
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Customizing Prompts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Customizing Prompts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-locate-the-prompt-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Locate the Prompt File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-edit-the-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Edit the Prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-understand-the-prompt-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Understand the Prompt Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-test-your-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Test Your Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-effective-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips for Effective Prompts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-choosing-the-right-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Choosing the Right Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-feature-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Feature Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-quality-metrics-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Quality Metrics Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-few-shot-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Few-Shot Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See Also
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contributing
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reproducibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reproducibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-availability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Availability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../citation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Citation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vlm-curation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VLM Curation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VLM Curation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How It Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vlm-merge-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VLM Merge Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VLM Merge Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How It Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#workflow_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision Criteria
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prompt System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Directory Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt Loading
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Customizing Prompts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Customizing Prompts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-locate-the-prompt-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Locate the Prompt File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-edit-the-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Edit the Prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-understand-the-prompt-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Understand the Prompt Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-test-your-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Test Your Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-effective-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips for Effective Prompts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-choosing-the-right-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Choosing the Right Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-feature-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Feature Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-quality-metrics-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Quality Metrics Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-few-shot-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Few-Shot Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See Also
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contributing
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="vlm-curation-and-merging-guide">VLM Curation and Merging Guide<a class="headerlink" href="#vlm-curation-and-merging-guide" title="Permanent link">&para;</a></h1>
+<p>This guide provides an in-depth explanation of how Vision-Language Models (VLMs) are used in SpikeAgent for automated unit curation and merging, including how to customize prompts and behavior.</p>
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#architecture-overview">Architecture Overview</a></li>
+<li><a href="#vlm-curation">VLM Curation</a></li>
+<li><a href="#vlm-merge-analysis">VLM Merge Analysis</a></li>
+<li><a href="#prompt-system">Prompt System</a></li>
+<li><a href="#customizing-prompts">Customizing Prompts</a></li>
+<li><a href="#best-practices">Best Practices</a></li>
+</ul>
+<hr />
+<h2 id="architecture-overview">Architecture Overview<a class="headerlink" href="#architecture-overview" title="Permanent link">&para;</a></h2>
+<p>SpikeAgent uses an <strong>Ensemble of Experts</strong> approach where:
+1. <strong>Feature Experts</strong>: Specialized AI reviewers analyze individual modalities (waveforms, locations, etc.)
+2. <strong>Head Reviewer</strong>: Aggregates expert reports and makes final classification decisions
+3. <strong>Consensus Voting</strong>: Multiple independent reviews can be combined for robust decisions</p>
+<h3 id="key-components">Key Components<a class="headerlink" href="#key-components" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Image Encoding</strong>: Neural data features are rendered as diagnostic plots and encoded as base64 images</li>
+<li><strong>Asynchronous Processing</strong>: Multiple units are processed in parallel using <code>asyncio</code> for efficiency</li>
+<li><strong>Few-Shot Learning</strong>: Optional example units can guide the AI's decision-making</li>
+<li><strong>Quality Metrics Integration</strong>: Quantitative metrics can augment visual analysis</li>
+</ul>
+<hr />
+<h2 id="vlm-curation">VLM Curation<a class="headerlink" href="#vlm-curation" title="Permanent link">&para;</a></h2>
+<h3 id="how-it-works">How It Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h3>
+<p>Unit curation classifies each sorted unit as <strong>"Good"</strong> (well-isolated neuron) or <strong>"Bad"</strong> (noise/artifact).</p>
+<h4 id="workflow">Workflow:<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Image Generation</strong>: For each unit, diagnostic images are generated:</li>
+<li><code>waveform_single</code>: Average waveform on peak channel</li>
+<li><code>waveform_multi</code>: Multi-channel template view</li>
+<li><code>autocorr</code>: Autocorrelogram (ISI distribution)</li>
+<li><code>spike_locations</code>: Spatial scatter plot</li>
+<li>
+<p><code>amplitude_plot</code>: Amplitude over time</p>
+</li>
+<li>
+<p><strong>Expert Analysis</strong>: Each modality is sent to a specialized prompt:
+   <div class="highlight"><pre><span></span><code>User → Image → [Waveform Expert] → Analysis
+             → [Autocorr Expert] → Analysis
+             → [Location Expert] → Analysis
+             ...
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Head Aggregation</strong>: All expert analyses are combined:
+   <div class="highlight"><pre><span></span><code>[Head Reviewer] receives:
+- Waveform Expert Report
+- Autocorr Expert Report
+- Location Expert Report
+(+ optional quality metrics)
+
+→ Final Decision: Good/Bad + Quality Score (0.0-1.0)
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Consensus (Optional)</strong>: Multiple independent reviewers repeat steps 2-3, and results are combined by majority vote.</p>
+</li>
+</ol>
+<h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>num_reviewers</code> (default=1): Number of independent reviews per unit. Use <code>1</code> (default) for speed, <code>3</code> for robustness.</li>
+<li><code>with_metrics</code> (default=False): Include quantitative quality metrics in the prompt.</li>
+<li><code>metrics_list</code>: Specific metrics to include (e.g., <code>["snr", "isi_violations_ratio"]</code>).</li>
+<li><code>good_ids</code> / <code>bad_ids</code>: Example unit IDs for few-shot learning.</li>
+</ul>
+<hr />
+<h2 id="vlm-merge-analysis">VLM Merge Analysis<a class="headerlink" href="#vlm-merge-analysis" title="Permanent link">&para;</a></h2>
+<h3 id="how-it-works_1">How It Works<a class="headerlink" href="#how-it-works_1" title="Permanent link">&para;</a></h3>
+<p>Merge analysis determines if two or more units should be merged because they likely represent the same neuron.</p>
+<h4 id="workflow_1">Workflow:<a class="headerlink" href="#workflow_1" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p><strong>Candidate Identification</strong>: Use SpikeInterface's <code>compute_merge_unit_groups()</code> to find similar units based on template similarity.</p>
+</li>
+<li>
+<p><strong>Comparison Images</strong>: For each candidate group, generate overlaid comparison plots:</p>
+</li>
+<li><code>waveform_single</code>: Overlaid waveforms (color-coded by unit)</li>
+<li><code>crosscorrelograms</code>: Cross-correlation between units</li>
+<li>
+<p><code>amplitude_plot</code>: Amplitude distributions with histograms</p>
+</li>
+<li>
+<p><strong>Expert Analysis</strong>: Each comparison modality is analyzed by a specialized prompt.</p>
+</li>
+<li>
+<p><strong>Head Decision</strong>: The head reviewer determines:</p>
+</li>
+<li><strong>"merge"</strong>: Units should be combined</li>
+<li><strong>"not merge"</strong>: Units are distinct neurons</li>
+</ol>
+<h3 id="decision-criteria">Decision Criteria<a class="headerlink" href="#decision-criteria" title="Permanent link">&para;</a></h3>
+<p>The AI looks for:
+- <strong>Waveform similarity</strong>: Near-identical shapes suggest same neuron
+- <strong>Temporal relationship</strong>: Cross-correlograms show if units fire independently
+- <strong>Amplitude separation</strong>: Clear separation suggests distinct neurons
+- <strong>Spatial proximity</strong>: Similar locations support merging</p>
+<hr />
+<h2 id="prompt-system">Prompt System<a class="headerlink" href="#prompt-system" title="Permanent link">&para;</a></h2>
+<h3 id="directory-structure">Directory Structure<a class="headerlink" href="#directory-structure" title="Permanent link">&para;</a></h3>
+<p>Prompts are organized as plain text files:</p>
+<div class="highlight"><pre><span></span><code>src/spikeagent/curation/
+├── vlm_curation/prompts/
+│   ├── head.txt                    # Head reviewer prompt
+│   ├── modality/                   # Feature expert prompts
+│   │   ├── waveform_single.txt
+│   │   ├── waveform_multi.txt
+│   │   ├── autocorr.txt
+│   │   ├── spike_locations.txt
+│   │   └── amplitude_plot.txt
+│   ├── metrics_header.txt          # Quality metrics header
+│   ├── metrics/                    # Individual metric descriptions
+│   │   ├── snr.txt
+│   │   ├── isi_violations_ratio.txt
+│   │   ├── presence_ratio.txt
+│   │   └── ...
+│   └── fewshot_instruction.txt     # Few-shot learning instructions
+│
+└── vlm_merge/prompts/
+    ├── head.txt                    # Merge head reviewer prompt
+    ├── modality/                   # Merge feature expert prompts
+    │   ├── waveform_single.txt
+    │   ├── crosscorrelograms.txt
+    │   ├── amplitude_plot.txt
+    │   └── ...
+    └── fewshot_instruction.txt
+</code></pre></div>
+<h3 id="prompt-loading">Prompt Loading<a class="headerlink" href="#prompt-loading" title="Permanent link">&para;</a></h3>
+<p>Prompts are loaded dynamically by <code>prompt_loader.py</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Curation prompts</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">spikeagent.curation.vlm_curation.prompt_loader</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_all_prompts</span>
+
+<span class="n">prompts</span> <span class="o">=</span> <span class="n">load_all_prompts</span><span class="p">()</span>
+<span class="c1"># Access: prompts[&quot;modality&quot;][&quot;waveform_single&quot;]</span>
+
+<span class="c1"># Merge prompts</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">spikeagent.curation.vlm_merge.prompt_loader</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_all_prompts</span>
+</code></pre></div>
+<hr />
+<h2 id="customizing-prompts">Customizing Prompts<a class="headerlink" href="#customizing-prompts" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-locate-the-prompt-file">Step 1: Locate the Prompt File<a class="headerlink" href="#step-1-locate-the-prompt-file" title="Permanent link">&para;</a></h3>
+<p>Navigate to the appropriate directory:
+- <strong>Curation modality prompts</strong>: <code>src/spikeagent/curation/vlm_curation/prompts/modality/</code>
+- <strong>Curation head prompt</strong>: <code>src/spikeagent/curation/vlm_curation/prompts/head.txt</code>
+- <strong>Merge modality prompts</strong>: <code>src/spikeagent/curation/vlm_merge/prompts/modality/</code>
+- <strong>Merge head prompt</strong>: <code>src/spikeagent/curation/vlm_merge/prompts/head.txt</code></p>
+<h3 id="step-2-edit-the-prompt">Step 2: Edit the Prompt<a class="headerlink" href="#step-2-edit-the-prompt" title="Permanent link">&para;</a></h3>
+<p>Open the relevant <code>.txt</code> file in a text editor. For example, to modify the waveform expert for curation:</p>
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>src/spikeagent/curation/vlm_curation/prompts/modality/waveform_single.txt
+</code></pre></div>
+<h3 id="step-3-understand-the-prompt-structure">Step 3: Understand the Prompt Structure<a class="headerlink" href="#step-3-understand-the-prompt-structure" title="Permanent link">&para;</a></h3>
+<p>Each modality prompt typically contains:
+1. <strong>Role definition</strong>: What the expert should focus on
+2. <strong>Visual cues</strong>: What patterns indicate good/bad units
+3. <strong>Decision criteria</strong>: Specific guidelines for classification</p>
+<p>Example structure (waveform expert):
+<div class="highlight"><pre><span></span><code>You are an expert in analyzing neural spike waveforms.
+
+Your task is to assess the quality of this unit based on its average waveform plot.
+
+Good units typically show:
+- Clean, stereotyped waveform shape
+- Low noise/jitter
+- Consistent amplitude
+
+Bad units typically show:
+- Noisy or irregular waveforms
+- Artifacts or drift
+- Very low amplitude
+
+Provide your analysis focusing on waveform quality.
+</code></pre></div></p>
+<h3 id="step-4-test-your-changes">Step 4: Test Your Changes<a class="headerlink" href="#step-4-test-your-changes" title="Permanent link">&para;</a></h3>
+<p>After modifying a prompt:
+1. Restart the SpikeAgent application (if running)
+2. Run a small test dataset
+3. Review AI decisions to ensure prompts are effective</p>
+<h3 id="tips-for-effective-prompts">Tips for Effective Prompts<a class="headerlink" href="#tips-for-effective-prompts" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Be specific</strong>: Clearly define what to look for</li>
+<li><strong>Use examples</strong>: Describe concrete patterns (e.g., "sharp peak followed by trough")</li>
+<li><strong>Set scope</strong>: Tell the expert to focus ONLY on their modality</li>
+<li><strong>Avoid jargon</strong>: Use clear, descriptive language</li>
+<li><strong>Test iteratively</strong>: Refine prompts based on AI performance</li>
+</ul>
+<hr />
+<h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
+<h3 id="1-choosing-the-right-model">1. Choosing the Right Model<a class="headerlink" href="#1-choosing-the-right-model" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>For speed</strong> (default): Use <code>gpt-4o</code> with <code>num_reviewers=1</code> for curation</li>
+<li><strong>For robust consensus</strong>: Use <code>gpt-4.1</code> or <code>gpt-4o</code> with <code>num_reviewers=3</code></li>
+<li><strong>For merge analysis</strong>: Both <code>gpt-4.1</code> and <code>gpt-4o</code> are highly effective</li>
+</ul>
+<h3 id="2-feature-selection">2. Feature Selection<a class="headerlink" href="#2-feature-selection" title="Permanent link">&para;</a></h3>
+<p><strong>Curation essentials:</strong>
+- <code>waveform_single</code> + <code>autocorr</code> + <code>spike_locations</code> → Good baseline
+- Add <code>amplitude_plot</code> for drift detection
+- Add <code>waveform_multi</code> for probe geometry context</p>
+<p><strong>Merge essentials:</strong>
+- <code>waveform_single</code> + <code>crosscorrelograms</code> → Minimum viable set
+- Add <code>amplitude_plot</code> for temporal context</p>
+<h3 id="3-quality-metrics-integration">3. Quality Metrics Integration<a class="headerlink" href="#3-quality-metrics-integration" title="Permanent link">&para;</a></h3>
+<p>Enable metrics for:
+- <strong>High-noise datasets</strong>: Quantitative SNR helps AI decisions
+- <strong>Strict curation</strong>: ISI violations provide objective contamination measure
+- <strong>Validation</strong>: Compare AI decisions against traditional thresholds</p>
+<p>Recommended metrics:
+<div class="highlight"><pre><span></span><code><span class="n">metrics_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;snr&quot;</span><span class="p">,</span> <span class="s2">&quot;isi_violations_ratio&quot;</span><span class="p">,</span> <span class="s2">&quot;presence_ratio&quot;</span><span class="p">]</span>
+</code></pre></div></p>
+<h3 id="4-few-shot-learning">4. Few-Shot Learning<a class="headerlink" href="#4-few-shot-learning" title="Permanent link">&para;</a></h3>
+<p>Provide examples when:
+- Working with unusual neuron types (e.g., very fast-spiking)
+- Dataset has specific artifacts
+- You want AI to match your personal curation style</p>
+<p>How to use:
+<div class="highlight"><pre><span></span><code><span class="c1"># Manually label a few units</span>
+<span class="n">good_ids</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">23</span><span class="p">]</span>
+<span class="n">bad_ids</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span>
+
+<span class="n">results</span> <span class="o">=</span> <span class="n">run_vlm_curation</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
+    <span class="n">sorting_analyzer</span><span class="o">=</span><span class="n">analyzer</span><span class="p">,</span>
+    <span class="n">img_df</span><span class="o">=</span><span class="n">img_df</span><span class="p">,</span>
+    <span class="n">good_ids</span><span class="o">=</span><span class="n">good_ids</span><span class="p">,</span>
+    <span class="n">bad_ids</span><span class="o">=</span><span class="n">bad_ids</span><span class="p">,</span>
+    <span class="n">features</span><span class="o">=</span><span class="n">features</span>
+<span class="p">)</span>
+</code></pre></div></p>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<h3 id="common-issues">Common Issues<a class="headerlink" href="#common-issues" title="Permanent link">&para;</a></h3>
+<p><strong>"Prompt file not found"</strong>
+- Check that you're editing files in the correct directory
+- Ensure filenames match exactly (case-sensitive)</p>
+<p><strong>"AI makes unexpected decisions"</strong>
+- Review prompt clarity
+- Add few-shot examples
+- Try different model (e.g., gpt-4.1 vs gpt-4o)
+- Check if images are rendering correctly (<code>plot_units_with_features_df</code>)</p>
+<p><strong>"Rate limit errors"</strong>
+- Reduce <code>num_workers</code> parameter
+- Add delays between batches
+- Use fewer reviewers (<code>num_reviewers=1</code>)</p>
+<p><strong>"Inconsistent results with multiple reviewers"</strong>
+- This is expected for borderline units
+- Review average_score to see confidence level
+- Consider using <code>num_reviewers=5</code> for critical datasets</p>
+<hr />
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../api-reference/">API Reference</a> - Function signatures and parameters</li>
+<li><a href="../user-guide/">User Guide</a> - General usage workflows</li>
+<li><a href="../tutorials/vlm-curation-and-merging/">Tutorials</a> - End-to-end notebook example</li>
+<li><a href="https://spikeinterface.readthedocs.io/">SpikeInterface Documentation</a> - Underlying spike sorting framework</li>
+</ul>
+<hr />
+<h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
+<p>If you develop improved prompts or find effective prompt strategies, please consider contributing them back to the project!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.indexes", "navigation.top", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

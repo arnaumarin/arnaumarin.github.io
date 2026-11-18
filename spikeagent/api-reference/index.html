@@ -1,0 +1,2162 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI-powered assistant for spike sorting and neural data analysis">
+      
+      
+      
+        <link rel="canonical" href="https://arnaumarin.github.io/spikeagent/api-reference/">
+      
+      
+        <link rel="prev" href="../api/">
+      
+      
+        <link rel="next" href="../api/curation/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../spikeagent_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Manual Reference - SpikeAgent</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SpikeAgent" class="md-header__button md-logo" aria-label="SpikeAgent" data-md-component="logo">
+      
+  <img src="../spikeagent_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SpikeAgent
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Manual Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SpikeAgent/SpikeAgent" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SpikeAgent/SpikeAgent
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SpikeAgent" class="md-nav__button md-logo" aria-label="SpikeAgent" data-md-component="logo">
+      
+  <img src="../spikeagent_logo.png" alt="logo">
+
+    </a>
+    SpikeAgent
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SpikeAgent/SpikeAgent" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SpikeAgent/SpikeAgent
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/api-keys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Keys
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflows
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workflows
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflows/spike-sorting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spike Sorting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflows/vlm-curation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VLM Curation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflows/vlm-merge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VLM Merge Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/vlm-curation-and-merging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VLM Curation and Merging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../api/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual Reference
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-curation-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Curation &amp; Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Curation &amp; Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spikeagentcurationvlm_curation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        spikeagent.curation.vlm_curation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="spikeagent.curation.vlm_curation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run_vlm_curationmodel-sorting_analyzer-img_df" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        run_vlm_curation(model, sorting_analyzer, img_df, ...)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spikeagentcurationvlm_merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        spikeagent.curation.vlm_merge
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="spikeagent.curation.vlm_merge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run_vlm_mergemodel-merge_unit_groups-img_df" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        run_vlm_merge(model, merge_unit_groups, img_df, ...)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotting-image-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plotting &amp; Image Generation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plotting &amp; Image Generation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encoding-for-vlm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encoding for VLM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Encoding for VLM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create_unit_img_dfsortinganalyzer-unit_idsnone-featuresnone-load_if_existstrue-save_foldernone-kwargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        create_unit_img_df(sortinganalyzer, unit_ids=None, features=None, load_if_exists=True, save_folder=None, **kwargs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create_merge_img_dfsortinganalyzer-unit_groups-featuresnone-load_if_existstrue-save_foldernone-show_densitytrue-kwargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        create_merge_img_df(sortinganalyzer, unit_groups, features=None, load_if_exists=True, save_folder=None, show_density=True, **kwargs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnostic-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnostic Visualization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diagnostic Visualization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plot_units_with_featuressortinganalyzer-unit_idsnone-featuresnone-savefalse-kwargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        plot_units_with_features(sortinganalyzer, unit_ids=None, features=None, save=False, **kwargs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plot_units_with_features_dfsortinganalyzer-encoded_img_df-featuresnone-unit_idsnone-savefalse-resize_heightnone-save_dpi300" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        plot_units_with_features_df(sortinganalyzer, encoded_img_df, features=None, unit_ids=None, save=False, resize_height=None, save_dpi=300)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plot_spike_images_with_resultresults_df-encoded_img_df-featurewaveform_single" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        plot_spike_images_with_result(results_df, encoded_img_df, feature="waveform_single")
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plot_merge_resultsresults_df-encoded_img_df" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        plot_merge_results(results_df, encoded_img_df)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utilities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get_modelmodel_name-temperature0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_model(model_name, temperature=0)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Usage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-automated-unit-curation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Automated Unit Curation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference Lists
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reference Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modality-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modality Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See Also
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/curation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/plotting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plotting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vlm-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VLM Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reproducibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reproducibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-availability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Availability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../citation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Citation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-curation-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Curation &amp; Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Curation &amp; Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spikeagentcurationvlm_curation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        spikeagent.curation.vlm_curation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="spikeagent.curation.vlm_curation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run_vlm_curationmodel-sorting_analyzer-img_df" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        run_vlm_curation(model, sorting_analyzer, img_df, ...)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spikeagentcurationvlm_merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        spikeagent.curation.vlm_merge
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="spikeagent.curation.vlm_merge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run_vlm_mergemodel-merge_unit_groups-img_df" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        run_vlm_merge(model, merge_unit_groups, img_df, ...)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotting-image-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plotting &amp; Image Generation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plotting &amp; Image Generation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encoding-for-vlm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encoding for VLM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Encoding for VLM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create_unit_img_dfsortinganalyzer-unit_idsnone-featuresnone-load_if_existstrue-save_foldernone-kwargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        create_unit_img_df(sortinganalyzer, unit_ids=None, features=None, load_if_exists=True, save_folder=None, **kwargs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create_merge_img_dfsortinganalyzer-unit_groups-featuresnone-load_if_existstrue-save_foldernone-show_densitytrue-kwargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        create_merge_img_df(sortinganalyzer, unit_groups, features=None, load_if_exists=True, save_folder=None, show_density=True, **kwargs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnostic-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnostic Visualization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diagnostic Visualization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plot_units_with_featuressortinganalyzer-unit_idsnone-featuresnone-savefalse-kwargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        plot_units_with_features(sortinganalyzer, unit_ids=None, features=None, save=False, **kwargs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plot_units_with_features_dfsortinganalyzer-encoded_img_df-featuresnone-unit_idsnone-savefalse-resize_heightnone-save_dpi300" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        plot_units_with_features_df(sortinganalyzer, encoded_img_df, features=None, unit_ids=None, save=False, resize_height=None, save_dpi=300)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plot_spike_images_with_resultresults_df-encoded_img_df-featurewaveform_single" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        plot_spike_images_with_result(results_df, encoded_img_df, feature="waveform_single")
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plot_merge_resultsresults_df-encoded_img_df" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        plot_merge_results(results_df, encoded_img_df)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utilities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get_modelmodel_name-temperature0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_model(model_name, temperature=0)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Usage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-automated-unit-curation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Automated Unit Curation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference Lists
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reference Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modality-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modality Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See Also
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="api-reference">API Reference<a class="headerlink" href="#api-reference" title="Permanent link">&para;</a></h1>
+<p>This document provides detailed documentation for SpikeAgent's programmatic API.</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>SpikeAgent provides both a web interface and a Python API. This reference covers the Python API for programmatic usage, allowing you to integrate AI-powered curation and merging into your custom SpikeInterface workflows.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p>This section covers installing SpikeAgent for <strong>programmatic API usage</strong> in your own Python scripts and Jupyter notebooks. </p>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Python 3.11 or later</li>
+<li>pip (Python package manager)</li>
+<li>Git (to clone the repository)</li>
+</ul>
+<h3 id="installation-steps">Installation Steps<a class="headerlink" href="#installation-steps" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Clone the repository</strong>:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/SpikeAgent/SpikeAgent.git
+<span class="nb">cd</span><span class="w"> </span>SpikeAgent
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Install in editable mode</strong>:
+   <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</code></pre></div></p>
+</li>
+</ol>
+<h3 id="verify-installation">Verify Installation<a class="headerlink" href="#verify-installation" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Test the import</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">spikeagent.curation.vlm_curation</span><span class="w"> </span><span class="kn">import</span> <span class="n">run_vlm_curation</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">spikeagent.app.tool.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_model</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SpikeAgent installed successfully!&quot;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="core-curation-analysis">Core Curation &amp; Analysis<a class="headerlink" href="#core-curation-analysis" title="Permanent link">&para;</a></h2>
+<p>These functions represent the heart of SpikeAgent's AI logic.</p>
+<h3 id="spikeagentcurationvlm_curation"><code>spikeagent.curation.vlm_curation</code><a class="headerlink" href="#spikeagentcurationvlm_curation" title="Permanent link">&para;</a></h3>
+<h4 id="run_vlm_curationmodel-sorting_analyzer-img_df"><code>run_vlm_curation(model, sorting_analyzer, img_df, ...)</code><a class="headerlink" href="#run_vlm_curationmodel-sorting_analyzer-img_df" title="Permanent link">&para;</a></h4>
+<p>Classifies units as "Good" or "Bad" using a Vision-Language Model.</p>
+<p><strong>Parameters:</strong>
+- <code>model</code>: The VLM model instance (typically from <code>get_model()</code>). <strong>Note:</strong> <code>gpt-4o</code> is recommended for optimal speed.
+- <code>sorting_analyzer</code> (SortingAnalyzer): The SpikeInterface analyzer object.
+- <code>img_df</code> (pd.DataFrame): DataFrame of encoded images generated by <code>create_unit_img_df()</code>.
+- <code>features</code> (list): Modalities to analyze. Available: <code>"waveform_single"</code>, <code>"waveform_multi"</code>, <code>"autocorr"</code>, <code>"spike_locations"</code>, <code>"amplitude_plot"</code>.
+- <code>num_reviewers</code> (int, default=1): Number of independent AI reviews per unit. Use <code>1</code> for maximum speed (default), or <code>3</code> for robust consensus voting.
+- <code>with_metrics</code> (bool, default=False): If True, includes quantitative quality metrics in the AI prompt.
+- <code>metrics_list</code> (list, optional): Specific metrics to include (e.g., <code>["snr", "isi_violations_ratio"]</code>). See <a href="#quality-metrics">Quality Metrics</a> below.
+- <code>good_ids</code> / <code>bad_ids</code> (list): Pre-labeled unit IDs for few-shot learning (provides visual examples to the AI).
+- <code>unit_ids</code> (list, optional): Subset of units to analyze.
+- <code>num_workers</code> (int, default=50): Number of parallel processes for API calls.</p>
+<p><strong>Returns:</strong>
+- <code>pd.DataFrame</code>: Results containing final classifications, quality scores, and detailed AI reasoning.</p>
+<hr />
+<h3 id="spikeagentcurationvlm_merge"><code>spikeagent.curation.vlm_merge</code><a class="headerlink" href="#spikeagentcurationvlm_merge" title="Permanent link">&para;</a></h3>
+<h4 id="run_vlm_mergemodel-merge_unit_groups-img_df"><code>run_vlm_merge(model, merge_unit_groups, img_df, ...)</code><a class="headerlink" href="#run_vlm_mergemodel-merge_unit_groups-img_df" title="Permanent link">&para;</a></h4>
+<p>Analyzes pairs or groups of units to determine if they should be merged.</p>
+<p><strong>Parameters:</strong>
+- <code>model</code>: The VLM model instance. Both <code>gpt-4.1</code> and <code>gpt-4o</code> are highly effective for merge analysis.
+- <code>merge_unit_groups</code> (list): A list of unit groups (e.g., <code>[[1, 5], [10, 12]]</code>) to evaluate for merging. 
+    - <strong>Note:</strong> These are typically generated using <code>spikeinterface.curation.compute_merge_unit_groups</code>.
+- <code>img_df</code> (pd.DataFrame): DataFrame of encoded images generated by <code>create_merge_img_df()</code>.
+- <code>features</code> (list): Modalities to analyze. Available: <code>"waveform_single"</code>, <code>"waveform_multi"</code>, <code>"crosscorrelograms"</code>, <code>"spike_locations"</code>, <code>"amplitude_plot"</code>.
+- <code>good_merge_groups</code> / <code>bad_merge_groups</code> (list): Example group indices for few-shot calibration.
+- <code>num_workers</code> (int, default=50): Number of parallel processes.</p>
+<p><strong>Returns:</strong>
+- <code>pd.DataFrame</code>: Results with "merge" or "not merge" decisions and reasoning.</p>
+<hr />
+<h2 id="plotting-image-generation">Plotting &amp; Image Generation<a class="headerlink" href="#plotting-image-generation" title="Permanent link">&para;</a></h2>
+<p>These functions prepare the visual data required for VLM analysis or human review.</p>
+<h3 id="encoding-for-vlm">Encoding for VLM<a class="headerlink" href="#encoding-for-vlm" title="Permanent link">&para;</a></h3>
+<p><strong>Prerequisite:</strong> You must compute the required SpikeInterface extensions before generating images. To ensure compatibility with SpikeAgent's plotting functions, we recommend the following full suite computation:</p>
+<div class="highlight"><pre><span></span><code><span class="n">extension_params</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;random_spikes&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;uniform&quot;</span><span class="p">,</span> <span class="s2">&quot;max_spikes_per_unit&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">},</span>
+    <span class="s2">&quot;waveforms&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;ms_before&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;ms_after&quot;</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">},</span>
+    <span class="s2">&quot;templates&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;template_similarity&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;spike_locations&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;unit_locations&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;isi_histograms&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;window_ms&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;bin_ms&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s2">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;auto&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;correlograms&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;window_ms&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;bin_ms&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s2">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;auto&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;spike_amplitudes&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;noise_levels&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;principal_components&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;quality_metrics&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;metric_names&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;snr&quot;</span><span class="p">,</span> <span class="s2">&quot;firing_rate&quot;</span><span class="p">,</span> <span class="s2">&quot;isi_violation&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;presence_ratio&quot;</span><span class="p">,</span> <span class="s2">&quot;amplitude_cutoff&quot;</span><span class="p">,</span> <span class="s2">&quot;amplitude_median&quot;</span><span class="p">,</span> <span class="s1">&#39;l_ratio&#39;</span><span class="p">,</span> <span class="s1">&#39;nearest_neighbor&#39;</span><span class="p">,</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">extension_params</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">extension</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">get_extension</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+    <span class="c1"># Only compute if missing or parameters don&#39;t match</span>
+    <span class="k">if</span> <span class="n">extension</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="n">extension</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">analyzer</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="o">**</span><span class="n">value</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="create_unit_img_dfsortinganalyzer-unit_idsnone-featuresnone-load_if_existstrue-save_foldernone-kwargs"><code>create_unit_img_df(sortinganalyzer, unit_ids=None, features=None, load_if_exists=True, save_folder=None, **kwargs)</code><a class="headerlink" href="#create_unit_img_dfsortinganalyzer-unit_idsnone-featuresnone-load_if_existstrue-save_foldernone-kwargs" title="Permanent link">&para;</a></h4>
+<p>Generates base64-encoded diagnostic images for individual units. The resulting DataFrame is used as input for <code>run_vlm_curation</code>.</p>
+<p><strong>Parameters:</strong>
+- <code>sortinganalyzer</code> (SortingAnalyzer): The SpikeInterface analyzer object containing the data.
+- <code>unit_ids</code> (list, optional): List of unit IDs to generate images for. If <code>None</code>, processes all units in the analyzer.
+- <code>features</code> (list, optional): List of feature plots to generate. Default is <code>["waveform_single", "waveform_multi", "autocorr", "spike_locations", "amplitude_plot"]</code>.
+- <code>load_if_exists</code> (bool, default=True): If <code>True</code> and a cached CSV exists, loads it instead of regenerating. If <code>False</code>, deletes any existing cache and regenerates all images. If no file exists, always generates new images.
+- <code>save_folder</code> (str or Path, optional): Directory where <code>unit_img.csv</code> will be saved. If not provided, inferred from <code>sortinganalyzer.folder</code>.
+- <code>**kwargs</code>: Additional keyword arguments (currently unused).</p>
+<p><strong>Returns:</strong>
+- <code>pd.DataFrame</code>: DataFrame indexed by <code>unit_id</code>, with columns for each feature. Each cell contains a base64-encoded PNG image string.</p>
+<p><strong>Caching Behavior:</strong>
+- Automatically saves to/loads from <code>unit_img.csv</code> in the specified folder
+- If <code>save_folder</code> is not provided and analyzer has no folder, a warning is issued and images are not cached</p>
+<h4 id="create_merge_img_dfsortinganalyzer-unit_groups-featuresnone-load_if_existstrue-save_foldernone-show_densitytrue-kwargs"><code>create_merge_img_df(sortinganalyzer, unit_groups, features=None, load_if_exists=True, save_folder=None, show_density=True, **kwargs)</code><a class="headerlink" href="#create_merge_img_dfsortinganalyzer-unit_groups-featuresnone-load_if_existstrue-save_foldernone-show_densitytrue-kwargs" title="Permanent link">&para;</a></h4>
+<p>Generates base64-encoded comparison images for unit merge candidates. Used as input for <code>run_vlm_merge</code>.</p>
+<p><strong>Parameters:</strong>
+- <code>sortinganalyzer</code> (SortingAnalyzer): The analyzer object containing the data.
+- <code>unit_groups</code> (list of lists): List of unit ID groups to evaluate for merging (e.g., <code>[[1, 5], [10, 12]]</code>). Typically generated using <code>spikeinterface.curation.compute_merge_unit_groups</code>.
+- <code>features</code> (list, optional): List of feature plots to generate for comparison. Default is <code>["waveform_single", "amplitude_plot", "crosscorrelograms"]</code>.
+- <code>load_if_exists</code> (bool, default=True): Same behavior as <code>create_unit_img_df</code>.
+- <code>save_folder</code> (str or Path, optional): Directory where <code>merge_img.csv</code> will be saved.
+- <code>show_density</code> (bool, default=True): Reserved for future use (currently unused).
+- <code>**kwargs</code>: Additional keyword arguments (currently unused).</p>
+<p><strong>Returns:</strong>
+- <code>pd.DataFrame</code>: DataFrame indexed by <code>group_id</code>, with columns for each feature. Each cell contains a base64-encoded JPEG image string.</p>
+<p><strong>Caching Behavior:</strong>
+- Automatically saves to/loads from <code>merge_img.csv</code>
+- Each unit in a group is color-coded for visual comparison</p>
+<h3 id="diagnostic-visualization">Diagnostic Visualization<a class="headerlink" href="#diagnostic-visualization" title="Permanent link">&para;</a></h3>
+<h4 id="plot_units_with_featuressortinganalyzer-unit_idsnone-featuresnone-savefalse-kwargs"><code>plot_units_with_features(sortinganalyzer, unit_ids=None, features=None, save=False, **kwargs)</code><a class="headerlink" href="#plot_units_with_featuressortinganalyzer-unit_idsnone-featuresnone-savefalse-kwargs" title="Permanent link">&para;</a></h4>
+<p>Generates a multi-panel grid plot for each unit, displaying multiple diagnostic features side-by-side for human inspection.</p>
+<p><strong>Parameters:</strong>
+- <code>sortinganalyzer</code> (SortingAnalyzer): The analyzer object.
+- <code>unit_ids</code> (list, optional): List of unit IDs to plot. If <code>None</code>, plots the first 10 units.
+- <code>features</code> (list, optional): List of features to display. Default is <code>["waveform_single", "waveform_multi", "autocorr", "spike_locations", "amplitude_plot"]</code>.
+- <code>save</code> (bool, default=False): If <code>True</code>, saves plots as JPEG files to <code>[analyzer_folder]/feature_plot/</code>.
+- <code>**kwargs</code>: Additional keyword arguments (currently unused).</p>
+<p><strong>Returns:</strong>
+- None (displays matplotlib figures)</p>
+<p><strong>Notes:</strong>
+- Creates horizontal strip plots with dynamically sized panels
+- Each unit gets its own figure with all requested features</p>
+<h4 id="plot_units_with_features_dfsortinganalyzer-encoded_img_df-featuresnone-unit_idsnone-savefalse-resize_heightnone-save_dpi300"><code>plot_units_with_features_df(sortinganalyzer, encoded_img_df, features=None, unit_ids=None, save=False, resize_height=None, save_dpi=300)</code><a class="headerlink" href="#plot_units_with_features_dfsortinganalyzer-encoded_img_df-featuresnone-unit_idsnone-savefalse-resize_heightnone-save_dpi300" title="Permanent link">&para;</a></h4>
+<p>Displays the <em>encoded</em> images from a VLM DataFrame. Useful for visualizing exactly what images were sent to the AI during curation.</p>
+<p><strong>Parameters:</strong>
+- <code>sortinganalyzer</code> (SortingAnalyzer): The analyzer object.
+- <code>encoded_img_df</code> (pd.DataFrame): DataFrame of base64-encoded images (output from <code>create_unit_img_df</code>).
+- <code>features</code> (list, optional): Features to display. Default is <code>UNIT_FEATURES</code>.
+- <code>unit_ids</code> (list, optional): Subset of units to plot. If <code>None</code>, plots all units in the DataFrame.
+- <code>save</code> (bool, default=False): If <code>True</code>, saves PNG files to <code>[analyzer_folder]/feature_plot/</code>.
+- <code>resize_height</code> (int, optional): Height in pixels to resize images to. If <code>None</code>, uses native resolution.
+- <code>save_dpi</code> (int, default=300): DPI for saved images.</p>
+<p><strong>Returns:</strong>
+- None (displays matplotlib figures and optionally saves to disk)</p>
+<h4 id="plot_spike_images_with_resultresults_df-encoded_img_df-featurewaveform_single"><code>plot_spike_images_with_result(results_df, encoded_img_df, feature="waveform_single")</code><a class="headerlink" href="#plot_spike_images_with_resultresults_df-encoded_img_df-featurewaveform_single" title="Permanent link">&para;</a></h4>
+<p>Plots curation results alongside unit images to visually verify AI classification. Separates units into "Good" and "Bad" grids.</p>
+<p><strong>Parameters:</strong>
+- <code>results_df</code> (pd.DataFrame): Results from <code>run_vlm_curation</code> containing <code>final_classification</code> and <code>average_score</code> columns.
+- <code>encoded_img_df</code> (pd.DataFrame): DataFrame of base64-encoded images (from <code>create_unit_img_df</code>).
+- <code>feature</code> (str, default="waveform_single"): Which feature image to display for each unit.</p>
+<p><strong>Returns:</strong>
+- None (displays two matplotlib figures: one for "Good" units, one for "Bad" units)</p>
+<p><strong>Notes:</strong>
+- Displays up to 5 units per row in a grid layout
+- Shows unit ID and quality score as subplot titles
+- Automatically handles dynamic grid sizing</p>
+<h4 id="plot_merge_resultsresults_df-encoded_img_df"><code>plot_merge_results(results_df, encoded_img_df)</code><a class="headerlink" href="#plot_merge_resultsresults_df-encoded_img_df" title="Permanent link">&para;</a></h4>
+<p>Plots merge analysis results showing the comparison images and the AI's "merge" or "not merge" decision for each unit group.</p>
+<p><strong>Parameters:</strong>
+- <code>results_df</code> (pd.DataFrame): Results from <code>run_vlm_merge</code> containing <code>merge_type</code> and <code>merge_units</code> columns.
+- <code>encoded_img_df</code> (pd.DataFrame): DataFrame of base64-encoded merge images (from <code>create_merge_img_df</code>).</p>
+<p><strong>Returns:</strong>
+- None (displays matplotlib figures, one per merge group)</p>
+<p><strong>Notes:</strong>
+- Concatenates all features horizontally for each group
+- Shows group ID, unit IDs, and merge decision in the title
+- Each group gets its own figure</p>
+<hr />
+<h2 id="utilities">Utilities<a class="headerlink" href="#utilities" title="Permanent link">&para;</a></h2>
+<h4 id="get_modelmodel_name-temperature0"><code>get_model(model_name, temperature=0)</code><a class="headerlink" href="#get_modelmodel_name-temperature0" title="Permanent link">&para;</a></h4>
+<p>Initializes a chat model interface for use with curation functions.</p>
+<p><strong>Supported <code>model_name</code> strings:</strong>
+- <strong>OpenAI</strong>: <code>"gpt-4o"</code>, <code>"gpt-4.1"</code>, <code>"gpt-5.2"</code>, <code>"gpt-5-mini"</code>
+- <strong>Anthropic</strong>: <code>"claude_4_sonnet"</code>, <code>"claude_4_opus"</code>, <code>"claude_3_7_sonnet"</code>, <code>"claude_4_5_sonnet"</code>, <code>"claude_4_5_haiku"</code>, <code>"claude_4_5_opus"</code>
+- <strong>Gemini</strong>: <code>"gemini-3-pro-preview"</code>, <code>"gemini-3-flash-preview"</code>, <code>"gemini-2.5-pro"</code>, <code>"gemini-2.5-flash"</code></p>
+<hr />
+<h2 id="example-usage">Example Usage<a class="headerlink" href="#example-usage" title="Permanent link">&para;</a></h2>
+<h3 id="1-automated-unit-curation">1. Automated Unit Curation<a class="headerlink" href="#1-automated-unit-curation" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">spikeinterface.full</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">si</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">spikeagent.app.tool.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_model</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">spikeagent.app.tool.si_custom</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_unit_img_df</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">spikeagent.curation.vlm_curation</span><span class="w"> </span><span class="kn">import</span> <span class="n">run_vlm_curation</span>
+
+<span class="c1"># 1. Load data</span>
+<span class="n">analyzer</span> <span class="o">=</span> <span class="n">si</span><span class="o">.</span><span class="n">load_sorting_analyzer</span><span class="p">(</span><span class="s2">&quot;my_analyzer.zarr&quot;</span><span class="p">)</span>
+
+<span class="c1"># 2. Compute required extensions (using specific parameters for VLM)</span>
+<span class="n">extension_params</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;random_spikes&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;uniform&quot;</span><span class="p">,</span> <span class="s2">&quot;max_spikes_per_unit&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">},</span>
+    <span class="s2">&quot;waveforms&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;ms_before&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;ms_after&quot;</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">},</span>
+    <span class="s2">&quot;templates&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;template_similarity&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;spike_locations&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;unit_locations&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;isi_histograms&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;window_ms&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;bin_ms&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s2">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;auto&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;correlograms&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;window_ms&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;bin_ms&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s2">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;auto&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;spike_amplitudes&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;noise_levels&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;principal_components&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="s2">&quot;quality_metrics&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;metric_names&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;snr&quot;</span><span class="p">,</span> <span class="s2">&quot;firing_rate&quot;</span><span class="p">,</span> <span class="s2">&quot;isi_violation&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;presence_ratio&quot;</span><span class="p">,</span> <span class="s2">&quot;amplitude_cutoff&quot;</span><span class="p">,</span> <span class="s2">&quot;amplitude_median&quot;</span><span class="p">,</span> <span class="s1">&#39;l_ratio&#39;</span><span class="p">,</span> <span class="s1">&#39;nearest_neighbor&#39;</span><span class="p">,</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">extension_params</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">extension</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">get_extension</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">extension</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="n">extension</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">analyzer</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="o">**</span><span class="n">value</span><span class="p">)</span>
+
+<span class="c1"># 3. Encode images (Modality: Waveform + Autocorr + Locations)</span>
+<span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;waveform_single&quot;</span><span class="p">,</span> <span class="s2">&quot;autocorr&quot;</span><span class="p">,</span> <span class="s2">&quot;spike_locations&quot;</span><span class="p">]</span>
+<span class="n">img_df</span> <span class="o">=</span> <span class="n">create_unit_img_df</span><span class="p">(</span><span class="n">analyzer</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="n">features</span><span class="p">,</span> <span class="n">load_if_exists</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># 4. Run AI Curation (Fast mode with 1 reviewer)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">get_model</span><span class="p">(</span><span class="s2">&quot;gpt-4o&quot;</span><span class="p">)</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">run_vlm_curation</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
+    <span class="n">sorting_analyzer</span><span class="o">=</span><span class="n">analyzer</span><span class="p">,</span>
+    <span class="n">img_df</span><span class="o">=</span><span class="n">img_df</span><span class="p">,</span>
+    <span class="n">features</span><span class="o">=</span><span class="n">features</span><span class="p">,</span>
+    <span class="n">num_reviewers</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">with_metrics</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="c1"># 5. Filter for good units</span>
+<span class="n">good_unit_ids</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;final_classification&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Good&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">good_unit_ids</span><span class="p">)</span><span class="si">}</span><span class="s2"> high-quality units.&quot;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="reference-lists">Reference Lists<a class="headerlink" href="#reference-lists" title="Permanent link">&para;</a></h2>
+<h3 id="modality-features">Modality Features<a class="headerlink" href="#modality-features" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Used In</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>waveform_single</code></td>
+<td style="text-align: left;">Single-channel average waveform plot</td>
+<td style="text-align: left;">Curation &amp; Merge</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>waveform_multi</code></td>
+<td style="text-align: left;">Multi-channel template plot</td>
+<td style="text-align: left;">Curation &amp; Merge</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>autocorr</code></td>
+<td style="text-align: left;">Autocorrelogram of spike times</td>
+<td style="text-align: left;">Curation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>crosscorrelograms</code></td>
+<td style="text-align: left;">Cross-correlogram between units</td>
+<td style="text-align: left;">Merge</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>spike_locations</code></td>
+<td style="text-align: left;">Spatial spike location scatter plot</td>
+<td style="text-align: left;">Curation &amp; Merge</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>amplitude_plot</code></td>
+<td style="text-align: left;">Amplitude distribution over time</td>
+<td style="text-align: left;">Curation &amp; Merge</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quality-metrics">Quality Metrics<a class="headerlink" href="#quality-metrics" title="Permanent link">&para;</a></h3>
+<p>Available for use in <code>run_vlm_curation(metrics_list=...)</code>:
+- <code>snr</code>: Signal-to-Noise Ratio.
+- <code>isi_violations_ratio</code>: Inter-Spike Interval violation rate (contamination rate).
+- <code>presence_ratio</code>: Fraction of recording where spikes are present.
+- <code>amplitude_cutoff</code>: Estimate of missed spikes due to thresholding.
+- <code>l_ratio</code>: Cluster isolation based on Mahalanobis distance.
+- <code>nn_hit_rate</code>: Nearest-neighbor true positive rate.
+- <code>nn_miss_rate</code>: Nearest-neighbor false negative rate.</p>
+<hr />
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../vlm-guide/">VLM Guide</a> for in-depth VLM architecture and prompt customization.</li>
+<li><a href="../tutorials/vlm-curation-and-merging/">VLM curation and merging tutorial</a> for a complete end-to-end example.</li>
+<li><a href="../user-guide/">User Guide</a> for workflow guidance.</li>
+<li><a href="https://spikeinterface.readthedocs.io/">SpikeInterface Documentation</a> for the underlying framework.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.indexes", "navigation.top", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
