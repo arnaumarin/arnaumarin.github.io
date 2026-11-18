@@ -29,7 +29,7 @@ export const bioHtml = [
    <a class="prose-link" href="https://seas.harvard.edu/">Harvard University</a>, where I mostly work with
    <a class="prose-link" href="https://psychology.fas.harvard.edu/people/mahzarin-r-banaji">Mahzarin Banaji</a>,
    <a class="prose-link" href="https://crisp.seas.harvard.edu/">Demba Ba</a>, and
-   <a class="prose-link" href="https://nali.seas.harvard.edu/">Na Li</a>, among other collaborators.
+   <a class="prose-link" href="https://sites.google.com/andrew.cmu.edu/tarrlab/people/michael-j-tarr">Mike Tarr</a>, among other collaborators.
    I received my B.Sc. in Electrical Engineering from the
    <a class="prose-link" href="https://telecos.upc.edu/en">UPC-BarcelonaTech</a> in 2022.`,
 
